@@ -1,0 +1,6764 @@
+{
+  "dataset": {
+    "path": "datasets/memory-eval-v1",
+    "corpus": 240,
+    "queries": 64,
+    "split": "dev",
+    "k": 10,
+    "skipped": []
+  },
+  "environment": {
+    "memory_merge": "0.2.0a1",
+    "python": "3.13.5",
+    "sqlite": "3.50.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "vector_kernel": "native"
+  },
+  "command": "memory-merge eval --dataset datasets/memory-eval-v1 --split dev --modes baseline-v0.1;lexical;lexical[stop_words=0,unigrams=0,prefix=0];lexical[stop_words=0,unigrams=0,prefix=1];lexical[stop_words=0,unigrams=1,prefix=0];lexical[stop_words=0,unigrams=1,prefix=1];lexical[stop_words=1,unigrams=0,prefix=0];lexical[stop_words=1,unigrams=0,prefix=1];lexical[stop_words=1,unigrams=1,prefix=0] --out docs/eval/lexical-dev.json",
+  "generated": "2026-10-13T14:07:15Z",
+  "modes": {
+    "baseline-v0.1": {
+      "overall": {
+        "recall": 0.3932,
+        "success": 0.4531,
+        "mrr": 0.3979,
+        "ndcg": 0.3619,
+        "zero_result_rate": 0.4062,
+        "n": 64
+      },
+      "by_type": {
+        "cross_lingual": {
+          "recall": 0.1667,
+          "success": 0.125,
+          "mrr": 0.1375,
+          "ndcg": 0.0664,
+          "zero_result_rate": 0.375,
+          "n": 8
+        },
+        "keyword": {
+          "recall": 0.95,
+          "success": 1.0,
+          "mrr": 0.95,
+          "ndcg": 0.9042,
+          "zero_result_rate": 0.0,
+          "n": 10
+        },
+        "negative": {
+          "recall": 0.125,
+          "success": 0.25,
+          "mrr": 0.0417,
+          "ndcg": 0.0736,
+          "zero_result_rate": 0.5,
+          "n": 4
+        },
+        "paraphrase": {
+          "recall": 0.2143,
+          "success": 0.2143,
+          "mrr": 0.2143,
+          "ndcg": 0.2143,
+          "zero_result_rate": 0.5714,
+          "n": 14
+        },
+        "question": {
+          "recall": 0.3021,
+          "success": 0.375,
+          "mrr": 0.3333,
+          "ndcg": 0.3115,
+          "zero_result_rate": 0.5625,
+          "n": 16
+        },
+        "scoped": {
+          "recall": 0.2222,
+          "success": 0.3333,
+          "mrr": 0.1944,
+          "ndcg": 0.1545,
+          "zero_result_rate": 0.6667,
+          "n": 6
+        },
+        "short": {
+          "recall": 0.7778,
+          "success": 1.0,
+          "mrr": 0.8667,
+          "ndcg": 0.7308,
+          "zero_result_rate": 0.0,
+          "n": 6
+        }
+      },
+      "by_lang": {
+        "en": {
+          "recall": 0.5238,
+          "success": 0.5714,
+          "mrr": 0.4651,
+          "ndcg": 0.4383,
+          "zero_result_rate": 0.0,
+          "n": 21
+        },
+        "ja": {
+          "recall": 0.4,
+          "success": 0.4,
+          "mrr": 0.4,
+          "ndcg": 0.4,
+          "zero_result_rate": 0.6,
+          "n": 5
+        },
+        "mixed": {
+          "recall": 0.7143,
+          "success": 0.8571,
+          "mrr": 0.7857,
+          "ndcg": 0.7127,
+          "zero_result_rate": 0.1429,
+          "n": 7
+        },
+        "zh": {
+          "recall": 0.2312,
+          "success": 0.2903,
+          "mrr": 0.2645,
+          "ndcg": 0.2248,
+          "zero_result_rate": 0.7097,
+          "n": 31
+        }
+      },
+      "latency_ms": {
+        "p50": 11.34,
+        "p95": 14.45,
+        "mean": 11.1
+      },
+      "per_query": [
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q003",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.2943107231069255,
+          "zero": 0.0,
+          "id": "q005",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q006",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q009",
+          "type": "short",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q011",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7262287617954056,
+          "zero": 0.0,
+          "id": "q016",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q017",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q019",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.24207625393180188,
+          "zero": 0.0,
+          "id": "q021",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q026",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q031",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q036",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q037",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7579237460681981,
+          "zero": 0.0,
+          "id": "q039",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7437707309491556,
+          "zero": 0.0,
+          "id": "q043",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q049",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q050",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q052",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q054",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q055",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q058",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q059",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q061",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q063",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8065735963827292,
+          "zero": 0.0,
+          "id": "q065",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7002755876478819,
+          "zero": 0.0,
+          "id": "q067",
+          "type": "scoped",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q069",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9327783893101107,
+          "zero": 0.0,
+          "id": "q071",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q072",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q075",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q078",
+          "type": "keyword",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q081",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q084",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q094",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6732934624429354,
+          "zero": 0.0,
+          "id": "q095",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q096",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q097",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.45250913162345313,
+          "zero": 0.0,
+          "id": "q098",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q099",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q100",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q101",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q104",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q105",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q110",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q114",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q115",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q116",
+          "type": "paraphrase",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.41311732856427996,
+          "zero": 0.0,
+          "id": "q118",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q120",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.1,
+          "ndcg": 0.2890648263178878,
+          "zero": 0.0,
+          "id": "q123",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9111774142739887,
+          "zero": 0.0,
+          "id": "q130",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q131",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q134",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q138",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q139",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q141",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q144",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.22685879364394523,
+          "zero": 0.0,
+          "id": "q145",
+          "type": "scoped",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6509209298071326,
+          "zero": 0.0,
+          "id": "q149",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q151",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q157",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q158",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q159",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.25,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.515157140670655,
+          "zero": 0.0,
+          "id": "q160",
+          "type": "short",
+          "lang": "zh"
+        }
+      ]
+    },
+    "lexical": {
+      "overall": {
+        "recall": 0.7487,
+        "success": 0.8281,
+        "mrr": 0.7349,
+        "ndcg": 0.6741,
+        "zero_result_rate": 0.0156,
+        "n": 64
+      },
+      "by_type": {
+        "cross_lingual": {
+          "recall": 0.875,
+          "success": 1.0,
+          "mrr": 0.6845,
+          "ndcg": 0.7221,
+          "zero_result_rate": 0.0,
+          "n": 8
+        },
+        "keyword": {
+          "recall": 0.95,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9659,
+          "zero_result_rate": 0.0,
+          "n": 10
+        },
+        "negative": {
+          "recall": 0.4375,
+          "success": 0.5,
+          "mrr": 0.369,
+          "ndcg": 0.3538,
+          "zero_result_rate": 0.0,
+          "n": 4
+        },
+        "paraphrase": {
+          "recall": 0.5595,
+          "success": 0.5714,
+          "mrr": 0.4821,
+          "ndcg": 0.4399,
+          "zero_result_rate": 0.0714,
+          "n": 14
+        },
+        "question": {
+          "recall": 0.8385,
+          "success": 0.875,
+          "mrr": 0.8125,
+          "ndcg": 0.7279,
+          "zero_result_rate": 0.0,
+          "n": 16
+        },
+        "scoped": {
+          "recall": 0.5833,
+          "success": 0.8333,
+          "mrr": 0.7222,
+          "ndcg": 0.5671,
+          "zero_result_rate": 0.0,
+          "n": 6
+        },
+        "short": {
+          "recall": 0.8194,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8477,
+          "zero_result_rate": 0.0,
+          "n": 6
+        }
+      },
+      "by_lang": {
+        "en": {
+          "recall": 0.7143,
+          "success": 0.7619,
+          "mrr": 0.6259,
+          "ndcg": 0.6105,
+          "zero_result_rate": 0.0476,
+          "n": 21
+        },
+        "ja": {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero_result_rate": 0.0,
+          "n": 5
+        },
+        "mixed": {
+          "recall": 0.8095,
+          "success": 0.8571,
+          "mrr": 0.7857,
+          "ndcg": 0.7033,
+          "zero_result_rate": 0.0,
+          "n": 7
+        },
+        "zh": {
+          "recall": 0.7177,
+          "success": 0.8387,
+          "mrr": 0.7546,
+          "ndcg": 0.6581,
+          "zero_result_rate": 0.0,
+          "n": 31
+        }
+      },
+      "latency_ms": {
+        "p50": 7.41,
+        "p95": 10.13,
+        "mean": 7.71
+      },
+      "per_query": [
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.4306765580733931,
+          "zero": 0.0,
+          "id": "q003",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.944847956559586,
+          "zero": 0.0,
+          "id": "q005",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q006",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q009",
+          "type": "short",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q011",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8213137146137828,
+          "zero": 0.0,
+          "id": "q016",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q017",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q019",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9832184408687481,
+          "zero": 0.0,
+          "id": "q021",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "zero": 0.0,
+          "id": "q026",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q031",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q036",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.25,
+          "success": 0.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.057239682296739446,
+          "zero": 0.0,
+          "id": "q037",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q039",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9055866445611575,
+          "zero": 0.0,
+          "id": "q043",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q049",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q050",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.91311732856428,
+          "zero": 0.0,
+          "id": "q052",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q054",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q055",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q058",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q059",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.41311732856427996,
+          "zero": 0.0,
+          "id": "q061",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q063",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "zero": 0.0,
+          "id": "q065",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7002755876478819,
+          "zero": 0.0,
+          "id": "q067",
+          "type": "scoped",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.5364180057596336,
+          "zero": 0.0,
+          "id": "q069",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6278397607958708,
+          "zero": 0.0,
+          "id": "q071",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q072",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q075",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q078",
+          "type": "keyword",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q081",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q084",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q094",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6732934624429354,
+          "zero": 0.0,
+          "id": "q095",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q096",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q097",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7345754915543795,
+          "zero": 0.0,
+          "id": "q098",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q099",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q100",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q101",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "zero": 0.0,
+          "id": "q104",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q105",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q110",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q114",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q115",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q116",
+          "type": "paraphrase",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q118",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q120",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q123",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.770251317946363,
+          "zero": 0.0,
+          "id": "q130",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.3868528072345416,
+          "zero": 0.0,
+          "id": "q131",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8374860160930435,
+          "zero": 0.0,
+          "id": "q134",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.639909328045346,
+          "zero": 0.0,
+          "id": "q138",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q139",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q141",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q144",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.339960129109602,
+          "zero": 0.0,
+          "id": "q145",
+          "type": "scoped",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q149",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.538891418360014,
+          "zero": 0.0,
+          "id": "q151",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q157",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q158",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.18543279769614657,
+          "zero": 0.0,
+          "id": "q159",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7727357110059825,
+          "zero": 0.0,
+          "id": "q160",
+          "type": "short",
+          "lang": "zh"
+        }
+      ]
+    },
+    "lexical[stop_words=0,unigrams=0,prefix=0]": {
+      "overall": {
+        "recall": 0.7018,
+        "success": 0.7812,
+        "mrr": 0.6732,
+        "ndcg": 0.6141,
+        "zero_result_rate": 0.0156,
+        "n": 64
+      },
+      "by_type": {
+        "cross_lingual": {
+          "recall": 0.8125,
+          "success": 0.875,
+          "mrr": 0.5116,
+          "ndcg": 0.5428,
+          "zero_result_rate": 0.0,
+          "n": 8
+        },
+        "keyword": {
+          "recall": 0.95,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9659,
+          "zero_result_rate": 0.0,
+          "n": 10
+        },
+        "negative": {
+          "recall": 0.5,
+          "success": 0.75,
+          "mrr": 0.3542,
+          "ndcg": 0.3834,
+          "zero_result_rate": 0.0,
+          "n": 4
+        },
+        "paraphrase": {
+          "recall": 0.5238,
+          "success": 0.5,
+          "mrr": 0.3864,
+          "ndcg": 0.3622,
+          "zero_result_rate": 0.0,
+          "n": 14
+        },
+        "question": {
+          "recall": 0.776,
+          "success": 0.8125,
+          "mrr": 0.8125,
+          "ndcg": 0.7102,
+          "zero_result_rate": 0.0,
+          "n": 16
+        },
+        "scoped": {
+          "recall": 0.4167,
+          "success": 0.6667,
+          "mrr": 0.5278,
+          "ndcg": 0.4541,
+          "zero_result_rate": 0.1667,
+          "n": 6
+        },
+        "short": {
+          "recall": 0.7778,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7682,
+          "zero_result_rate": 0.0,
+          "n": 6
+        }
+      },
+      "by_lang": {
+        "en": {
+          "recall": 0.7222,
+          "success": 0.7619,
+          "mrr": 0.5668,
+          "ndcg": 0.5503,
+          "zero_result_rate": 0.0,
+          "n": 21
+        },
+        "ja": {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero_result_rate": 0.0,
+          "n": 5
+        },
+        "mixed": {
+          "recall": 0.7619,
+          "success": 0.8571,
+          "mrr": 0.8571,
+          "ndcg": 0.746,
+          "zero_result_rate": 0.0,
+          "n": 7
+        },
+        "zh": {
+          "recall": 0.6263,
+          "success": 0.7419,
+          "mrr": 0.6511,
+          "ndcg": 0.5653,
+          "zero_result_rate": 0.0323,
+          "n": 31
+        }
+      },
+      "latency_ms": {
+        "p50": 6.67,
+        "p95": 7.85,
+        "mean": 6.55
+      },
+      "per_query": [
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q003",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q005",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q006",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q009",
+          "type": "short",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q011",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8213137146137828,
+          "zero": 0.0,
+          "id": "q016",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q017",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q019",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.804532155482531,
+          "zero": 0.0,
+          "id": "q021",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.4306765580733931,
+          "zero": 0.0,
+          "id": "q026",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q031",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q036",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q037",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q039",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q043",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q049",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.41292402253795163,
+          "zero": 0.0,
+          "id": "q050",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.91311732856428,
+          "zero": 0.0,
+          "id": "q052",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q054",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q055",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q058",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q059",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.2943107231069255,
+          "zero": 0.0,
+          "id": "q061",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q063",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "zero": 0.0,
+          "id": "q065",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7002755876478819,
+          "zero": 0.0,
+          "id": "q067",
+          "type": "scoped",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q069",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.639909328045346,
+          "zero": 0.0,
+          "id": "q071",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q072",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q075",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q078",
+          "type": "keyword",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q081",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "zero": 0.0,
+          "id": "q084",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q094",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6732934624429354,
+          "zero": 0.0,
+          "id": "q095",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q096",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q097",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7345754915543795,
+          "zero": 0.0,
+          "id": "q098",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q099",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q100",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q101",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.1,
+          "ndcg": 0.17723928678404774,
+          "zero": 0.0,
+          "id": "q104",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q105",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q110",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.3333333333333333,
+          "zero": 0.0,
+          "id": "q114",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q115",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q116",
+          "type": "paraphrase",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.944847956559586,
+          "zero": 0.0,
+          "id": "q118",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q120",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "zero": 0.0,
+          "id": "q123",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7002755876478819,
+          "zero": 0.0,
+          "id": "q130",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.3868528072345416,
+          "zero": 0.0,
+          "id": "q131",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8374860160930435,
+          "zero": 0.0,
+          "id": "q134",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.4573369727327457,
+          "zero": 0.0,
+          "id": "q138",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q139",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.09180385079206221,
+          "zero": 0.0,
+          "id": "q141",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q144",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.19815748579474593,
+          "zero": 0.0,
+          "id": "q145",
+          "type": "scoped",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q149",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q151",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q157",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q158",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.18543279769614657,
+          "zero": 0.0,
+          "id": "q159",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.25,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.515157140670655,
+          "zero": 0.0,
+          "id": "q160",
+          "type": "short",
+          "lang": "zh"
+        }
+      ]
+    },
+    "lexical[stop_words=0,unigrams=0,prefix=1]": {
+      "overall": {
+        "recall": 0.7201,
+        "success": 0.7812,
+        "mrr": 0.6885,
+        "ndcg": 0.6333,
+        "zero_result_rate": 0.0156,
+        "n": 64
+      },
+      "by_type": {
+        "cross_lingual": {
+          "recall": 0.875,
+          "success": 1.0,
+          "mrr": 0.6271,
+          "ndcg": 0.6521,
+          "zero_result_rate": 0.0,
+          "n": 8
+        },
+        "keyword": {
+          "recall": 0.95,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.971,
+          "zero_result_rate": 0.0,
+          "n": 10
+        },
+        "negative": {
+          "recall": 0.5,
+          "success": 0.5,
+          "mrr": 0.3375,
+          "ndcg": 0.3353,
+          "zero_result_rate": 0.0,
+          "n": 4
+        },
+        "paraphrase": {
+          "recall": 0.5238,
+          "success": 0.5,
+          "mrr": 0.3952,
+          "ndcg": 0.3707,
+          "zero_result_rate": 0.0,
+          "n": 14
+        },
+        "question": {
+          "recall": 0.7969,
+          "success": 0.8125,
+          "mrr": 0.8125,
+          "ndcg": 0.7303,
+          "zero_result_rate": 0.0,
+          "n": 16
+        },
+        "scoped": {
+          "recall": 0.4722,
+          "success": 0.6667,
+          "mrr": 0.5278,
+          "ndcg": 0.4634,
+          "zero_result_rate": 0.1667,
+          "n": 6
+        },
+        "short": {
+          "recall": 0.7778,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7682,
+          "zero_result_rate": 0.0,
+          "n": 6
+        }
+      },
+      "by_lang": {
+        "en": {
+          "recall": 0.7857,
+          "success": 0.8095,
+          "mrr": 0.6206,
+          "ndcg": 0.6079,
+          "zero_result_rate": 0.0,
+          "n": 21
+        },
+        "ja": {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero_result_rate": 0.0,
+          "n": 5
+        },
+        "mixed": {
+          "recall": 0.8095,
+          "success": 0.8571,
+          "mrr": 0.8571,
+          "ndcg": 0.7815,
+          "zero_result_rate": 0.0,
+          "n": 7
+        },
+        "zh": {
+          "recall": 0.6102,
+          "success": 0.7097,
+          "mrr": 0.6462,
+          "ndcg": 0.5579,
+          "zero_result_rate": 0.0323,
+          "n": 31
+        }
+      },
+      "latency_ms": {
+        "p50": 7.03,
+        "p95": 8.94,
+        "mean": 7.0
+      },
+      "per_query": [
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q003",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9058464496821221,
+          "zero": 0.0,
+          "id": "q005",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q006",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q009",
+          "type": "short",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q011",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8213137146137828,
+          "zero": 0.0,
+          "id": "q016",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q017",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q019",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.804532155482531,
+          "zero": 0.0,
+          "id": "q021",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.4306765580733931,
+          "zero": 0.0,
+          "id": "q026",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q031",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q036",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q037",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q039",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q043",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q049",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 0.1,
+          "ndcg": 0.07961179255356228,
+          "zero": 0.0,
+          "id": "q050",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9639404333166532,
+          "zero": 0.0,
+          "id": "q052",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q054",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q055",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q058",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q059",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.35583989829307827,
+          "zero": 0.0,
+          "id": "q061",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q063",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "zero": 0.0,
+          "id": "q065",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7002755876478819,
+          "zero": 0.0,
+          "id": "q067",
+          "type": "scoped",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q069",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q071",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q072",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q075",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q078",
+          "type": "keyword",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q081",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q084",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q094",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6732934624429354,
+          "zero": 0.0,
+          "id": "q095",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q096",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q097",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7345754915543795,
+          "zero": 0.0,
+          "id": "q098",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q099",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q100",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q101",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.1,
+          "ndcg": 0.17723928678404774,
+          "zero": 0.0,
+          "id": "q104",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7437707309491556,
+          "zero": 0.0,
+          "id": "q105",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q110",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.3562071871080222,
+          "zero": 0.0,
+          "id": "q114",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q115",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q116",
+          "type": "paraphrase",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.944847956559586,
+          "zero": 0.0,
+          "id": "q118",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q120",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q123",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9489376033325803,
+          "zero": 0.0,
+          "id": "q130",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.3868528072345416,
+          "zero": 0.0,
+          "id": "q131",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8339032696716178,
+          "zero": 0.0,
+          "id": "q134",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.4573369727327457,
+          "zero": 0.0,
+          "id": "q138",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.1,
+          "ndcg": 0.2388353776606868,
+          "zero": 0.0,
+          "id": "q139",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 0.1,
+          "ndcg": 0.07961179255356228,
+          "zero": 0.0,
+          "id": "q141",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q144",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.2539783200811768,
+          "zero": 0.0,
+          "id": "q145",
+          "type": "scoped",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q149",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q151",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q157",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q158",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.18543279769614657,
+          "zero": 0.0,
+          "id": "q159",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.25,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.515157140670655,
+          "zero": 0.0,
+          "id": "q160",
+          "type": "short",
+          "lang": "zh"
+        }
+      ]
+    },
+    "lexical[stop_words=0,unigrams=1,prefix=0]": {
+      "overall": {
+        "recall": 0.7669,
+        "success": 0.8438,
+        "mrr": 0.701,
+        "ndcg": 0.6408,
+        "zero_result_rate": 0.0,
+        "n": 64
+      },
+      "by_type": {
+        "cross_lingual": {
+          "recall": 0.8125,
+          "success": 0.875,
+          "mrr": 0.5116,
+          "ndcg": 0.5174,
+          "zero_result_rate": 0.0,
+          "n": 8
+        },
+        "keyword": {
+          "recall": 0.95,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9659,
+          "zero_result_rate": 0.0,
+          "n": 10
+        },
+        "negative": {
+          "recall": 0.5625,
+          "success": 0.75,
+          "mrr": 0.369,
+          "ndcg": 0.391,
+          "zero_result_rate": 0.0,
+          "n": 4
+        },
+        "paraphrase": {
+          "recall": 0.6667,
+          "success": 0.6429,
+          "mrr": 0.5162,
+          "ndcg": 0.4822,
+          "zero_result_rate": 0.0,
+          "n": 14
+        },
+        "question": {
+          "recall": 0.8385,
+          "success": 0.875,
+          "mrr": 0.7438,
+          "ndcg": 0.6654,
+          "zero_result_rate": 0.0,
+          "n": 16
+        },
+        "scoped": {
+          "recall": 0.5278,
+          "success": 0.8333,
+          "mrr": 0.6944,
+          "ndcg": 0.5277,
+          "zero_result_rate": 0.0,
+          "n": 6
+        },
+        "short": {
+          "recall": 0.8194,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8477,
+          "zero_result_rate": 0.0,
+          "n": 6
+        }
+      },
+      "by_lang": {
+        "en": {
+          "recall": 0.7222,
+          "success": 0.7619,
+          "mrr": 0.5668,
+          "ndcg": 0.5503,
+          "zero_result_rate": 0.0,
+          "n": 21
+        },
+        "ja": {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.84,
+          "ndcg": 0.8774,
+          "zero_result_rate": 0.0,
+          "n": 5
+        },
+        "mixed": {
+          "recall": 0.8095,
+          "success": 0.8571,
+          "mrr": 0.7429,
+          "ndcg": 0.6412,
+          "zero_result_rate": 0.0,
+          "n": 7
+        },
+        "zh": {
+          "recall": 0.75,
+          "success": 0.871,
+          "mrr": 0.76,
+          "ndcg": 0.6639,
+          "zero_result_rate": 0.0,
+          "n": 31
+        }
+      },
+      "latency_ms": {
+        "p50": 7.03,
+        "p95": 10.07,
+        "mean": 7.32
+      },
+      "per_query": [
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.4306765580733931,
+          "zero": 0.0,
+          "id": "q003",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q005",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q006",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q009",
+          "type": "short",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q011",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8213137146137828,
+          "zero": 0.0,
+          "id": "q016",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q017",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q019",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.804532155482531,
+          "zero": 0.0,
+          "id": "q021",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.4306765580733931,
+          "zero": 0.0,
+          "id": "q026",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7967075809905066,
+          "zero": 0.0,
+          "id": "q031",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q036",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.25,
+          "success": 0.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.057239682296739446,
+          "zero": 0.0,
+          "id": "q037",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q039",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9055866445611575,
+          "zero": 0.0,
+          "id": "q043",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q049",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.38611457389898773,
+          "zero": 0.0,
+          "id": "q050",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.91311732856428,
+          "zero": 0.0,
+          "id": "q052",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q054",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q055",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q058",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q059",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.2943107231069255,
+          "zero": 0.0,
+          "id": "q061",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q063",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "zero": 0.0,
+          "id": "q065",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6051906348295047,
+          "zero": 0.0,
+          "id": "q067",
+          "type": "scoped",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.5364180057596336,
+          "zero": 0.0,
+          "id": "q069",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.639909328045346,
+          "zero": 0.0,
+          "id": "q071",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q072",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q075",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q078",
+          "type": "keyword",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q081",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "zero": 0.0,
+          "id": "q084",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q094",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6732934624429354,
+          "zero": 0.0,
+          "id": "q095",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "zero": 0.0,
+          "id": "q096",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q097",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7345754915543795,
+          "zero": 0.0,
+          "id": "q098",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q099",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "zero": 0.0,
+          "id": "q100",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q101",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "zero": 0.0,
+          "id": "q104",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q105",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q110",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.3333333333333333,
+          "zero": 0.0,
+          "id": "q114",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q115",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q116",
+          "type": "paraphrase",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.944847956559586,
+          "zero": 0.0,
+          "id": "q118",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q120",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "zero": 0.0,
+          "id": "q123",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6751663651279859,
+          "zero": 0.0,
+          "id": "q130",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.3868528072345416,
+          "zero": 0.0,
+          "id": "q131",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.833581164668644,
+          "zero": 0.0,
+          "id": "q134",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.639909328045346,
+          "zero": 0.0,
+          "id": "q138",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q139",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.09180385079206221,
+          "zero": 0.0,
+          "id": "q141",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q144",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.19815748579474593,
+          "zero": 0.0,
+          "id": "q145",
+          "type": "scoped",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q149",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.538891418360014,
+          "zero": 0.0,
+          "id": "q151",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q157",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q158",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.18543279769614657,
+          "zero": 0.0,
+          "id": "q159",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7727357110059825,
+          "zero": 0.0,
+          "id": "q160",
+          "type": "short",
+          "lang": "zh"
+        }
+      ]
+    },
+    "lexical[stop_words=0,unigrams=1,prefix=1]": {
+      "overall": {
+        "recall": 0.7721,
+        "success": 0.8438,
+        "mrr": 0.7332,
+        "ndcg": 0.6733,
+        "zero_result_rate": 0.0,
+        "n": 64
+      },
+      "by_type": {
+        "cross_lingual": {
+          "recall": 0.875,
+          "success": 1.0,
+          "mrr": 0.6271,
+          "ndcg": 0.6521,
+          "zero_result_rate": 0.0,
+          "n": 8
+        },
+        "keyword": {
+          "recall": 0.95,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9659,
+          "zero_result_rate": 0.0,
+          "n": 10
+        },
+        "negative": {
+          "recall": 0.4375,
+          "success": 0.5,
+          "mrr": 0.3482,
+          "ndcg": 0.3297,
+          "zero_result_rate": 0.0,
+          "n": 4
+        },
+        "paraphrase": {
+          "recall": 0.6667,
+          "success": 0.6429,
+          "mrr": 0.525,
+          "ndcg": 0.4907,
+          "zero_result_rate": 0.0,
+          "n": 14
+        },
+        "question": {
+          "recall": 0.8385,
+          "success": 0.875,
+          "mrr": 0.8125,
+          "ndcg": 0.7264,
+          "zero_result_rate": 0.0,
+          "n": 16
+        },
+        "scoped": {
+          "recall": 0.5833,
+          "success": 0.8333,
+          "mrr": 0.6944,
+          "ndcg": 0.5528,
+          "zero_result_rate": 0.0,
+          "n": 6
+        },
+        "short": {
+          "recall": 0.8194,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8477,
+          "zero_result_rate": 0.0,
+          "n": 6
+        }
+      },
+      "by_lang": {
+        "en": {
+          "recall": 0.7857,
+          "success": 0.8095,
+          "mrr": 0.6206,
+          "ndcg": 0.6079,
+          "zero_result_rate": 0.0,
+          "n": 21
+        },
+        "ja": {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero_result_rate": 0.0,
+          "n": 5
+        },
+        "mixed": {
+          "recall": 0.8095,
+          "success": 0.8571,
+          "mrr": 0.7857,
+          "ndcg": 0.7033,
+          "zero_result_rate": 0.0,
+          "n": 7
+        },
+        "zh": {
+          "recall": 0.7177,
+          "success": 0.8387,
+          "mrr": 0.7546,
+          "ndcg": 0.6581,
+          "zero_result_rate": 0.0,
+          "n": 31
+        }
+      },
+      "latency_ms": {
+        "p50": 7.75,
+        "p95": 10.12,
+        "mean": 7.78
+      },
+      "per_query": [
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.4306765580733931,
+          "zero": 0.0,
+          "id": "q003",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9058464496821221,
+          "zero": 0.0,
+          "id": "q005",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q006",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q009",
+          "type": "short",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q011",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8213137146137828,
+          "zero": 0.0,
+          "id": "q016",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q017",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q019",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.804532155482531,
+          "zero": 0.0,
+          "id": "q021",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.4306765580733931,
+          "zero": 0.0,
+          "id": "q026",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q031",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q036",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.25,
+          "success": 0.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.057239682296739446,
+          "zero": 0.0,
+          "id": "q037",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q039",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9055866445611575,
+          "zero": 0.0,
+          "id": "q043",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q049",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q050",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.91311732856428,
+          "zero": 0.0,
+          "id": "q052",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q054",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q055",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q058",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q059",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.35583989829307827,
+          "zero": 0.0,
+          "id": "q061",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q063",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "zero": 0.0,
+          "id": "q065",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7002755876478819,
+          "zero": 0.0,
+          "id": "q067",
+          "type": "scoped",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.5364180057596336,
+          "zero": 0.0,
+          "id": "q069",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q071",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q072",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q075",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q078",
+          "type": "keyword",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q081",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q084",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q094",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6732934624429354,
+          "zero": 0.0,
+          "id": "q095",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q096",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q097",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7345754915543795,
+          "zero": 0.0,
+          "id": "q098",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q099",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q100",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q101",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "zero": 0.0,
+          "id": "q104",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q105",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q110",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.3562071871080222,
+          "zero": 0.0,
+          "id": "q114",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q115",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q116",
+          "type": "paraphrase",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.944847956559586,
+          "zero": 0.0,
+          "id": "q118",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q120",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q123",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.770251317946363,
+          "zero": 0.0,
+          "id": "q130",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.3868528072345416,
+          "zero": 0.0,
+          "id": "q131",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8374860160930435,
+          "zero": 0.0,
+          "id": "q134",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.639909328045346,
+          "zero": 0.0,
+          "id": "q138",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.1,
+          "ndcg": 0.2388353776606868,
+          "zero": 0.0,
+          "id": "q139",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 0.1,
+          "ndcg": 0.07961179255356228,
+          "zero": 0.0,
+          "id": "q141",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q144",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.2539783200811768,
+          "zero": 0.0,
+          "id": "q145",
+          "type": "scoped",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q149",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.538891418360014,
+          "zero": 0.0,
+          "id": "q151",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q157",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q158",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.18543279769614657,
+          "zero": 0.0,
+          "id": "q159",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7727357110059825,
+          "zero": 0.0,
+          "id": "q160",
+          "type": "short",
+          "lang": "zh"
+        }
+      ]
+    },
+    "lexical[stop_words=1,unigrams=0,prefix=0]": {
+      "overall": {
+        "recall": 0.694,
+        "success": 0.7812,
+        "mrr": 0.6926,
+        "ndcg": 0.6301,
+        "zero_result_rate": 0.0312,
+        "n": 64
+      },
+      "by_type": {
+        "cross_lingual": {
+          "recall": 0.875,
+          "success": 1.0,
+          "mrr": 0.6845,
+          "ndcg": 0.6997,
+          "zero_result_rate": 0.0,
+          "n": 8
+        },
+        "keyword": {
+          "recall": 0.95,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9659,
+          "zero_result_rate": 0.0,
+          "n": 10
+        },
+        "negative": {
+          "recall": 0.625,
+          "success": 0.75,
+          "mrr": 0.3958,
+          "ndcg": 0.4427,
+          "zero_result_rate": 0.0,
+          "n": 4
+        },
+        "paraphrase": {
+          "recall": 0.4167,
+          "success": 0.4286,
+          "mrr": 0.3524,
+          "ndcg": 0.3199,
+          "zero_result_rate": 0.0714,
+          "n": 14
+        },
+        "question": {
+          "recall": 0.776,
+          "success": 0.8125,
+          "mrr": 0.8125,
+          "ndcg": 0.7129,
+          "zero_result_rate": 0.0,
+          "n": 16
+        },
+        "scoped": {
+          "recall": 0.4167,
+          "success": 0.6667,
+          "mrr": 0.5556,
+          "ndcg": 0.4674,
+          "zero_result_rate": 0.1667,
+          "n": 6
+        },
+        "short": {
+          "recall": 0.7778,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7682,
+          "zero_result_rate": 0.0,
+          "n": 6
+        }
+      },
+      "by_lang": {
+        "en": {
+          "recall": 0.6984,
+          "success": 0.7619,
+          "mrr": 0.6259,
+          "ndcg": 0.599,
+          "zero_result_rate": 0.0476,
+          "n": 21
+        },
+        "ja": {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero_result_rate": 0.0,
+          "n": 5
+        },
+        "mixed": {
+          "recall": 0.7619,
+          "success": 0.8571,
+          "mrr": 0.8571,
+          "ndcg": 0.746,
+          "zero_result_rate": 0.0,
+          "n": 7
+        },
+        "zh": {
+          "recall": 0.6263,
+          "success": 0.7419,
+          "mrr": 0.6511,
+          "ndcg": 0.5653,
+          "zero_result_rate": 0.0323,
+          "n": 31
+        }
+      },
+      "latency_ms": {
+        "p50": 5.93,
+        "p95": 7.62,
+        "mean": 6.01
+      },
+      "per_query": [
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q003",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.944847956559586,
+          "zero": 0.0,
+          "id": "q005",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q006",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q009",
+          "type": "short",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q011",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8213137146137828,
+          "zero": 0.0,
+          "id": "q016",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q017",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q019",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.804532155482531,
+          "zero": 0.0,
+          "id": "q021",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "zero": 0.0,
+          "id": "q026",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q031",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q036",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q037",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q039",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q043",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q049",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.41292402253795163,
+          "zero": 0.0,
+          "id": "q050",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.91311732856428,
+          "zero": 0.0,
+          "id": "q052",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q054",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q055",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q058",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q059",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.41311732856427996,
+          "zero": 0.0,
+          "id": "q061",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q063",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "zero": 0.0,
+          "id": "q065",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7002755876478819,
+          "zero": 0.0,
+          "id": "q067",
+          "type": "scoped",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q069",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6278397607958708,
+          "zero": 0.0,
+          "id": "q071",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q072",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q075",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q078",
+          "type": "keyword",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q081",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q084",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q094",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6732934624429354,
+          "zero": 0.0,
+          "id": "q095",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q096",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q097",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7345754915543795,
+          "zero": 0.0,
+          "id": "q098",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q099",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q100",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q101",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.1,
+          "ndcg": 0.17723928678404774,
+          "zero": 0.0,
+          "id": "q104",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q105",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q110",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q114",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q115",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q116",
+          "type": "paraphrase",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q118",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q120",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q123",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7002755876478819,
+          "zero": 0.0,
+          "id": "q130",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.3868528072345416,
+          "zero": 0.0,
+          "id": "q131",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8374860160930435,
+          "zero": 0.0,
+          "id": "q134",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.4573369727327457,
+          "zero": 0.0,
+          "id": "q138",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q139",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q141",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q144",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.2781491965442198,
+          "zero": 0.0,
+          "id": "q145",
+          "type": "scoped",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q149",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q151",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q157",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q158",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.18543279769614657,
+          "zero": 0.0,
+          "id": "q159",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.25,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.515157140670655,
+          "zero": 0.0,
+          "id": "q160",
+          "type": "short",
+          "lang": "zh"
+        }
+      ]
+    },
+    "lexical[stop_words=1,unigrams=0,prefix=1]": {
+      "overall": {
+        "recall": 0.6966,
+        "success": 0.7656,
+        "mrr": 0.6903,
+        "ndcg": 0.6342,
+        "zero_result_rate": 0.0312,
+        "n": 64
+      },
+      "by_type": {
+        "cross_lingual": {
+          "recall": 0.875,
+          "success": 1.0,
+          "mrr": 0.6845,
+          "ndcg": 0.7221,
+          "zero_result_rate": 0.0,
+          "n": 8
+        },
+        "keyword": {
+          "recall": 0.95,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.971,
+          "zero_result_rate": 0.0,
+          "n": 10
+        },
+        "negative": {
+          "recall": 0.5,
+          "success": 0.5,
+          "mrr": 0.3583,
+          "ndcg": 0.3594,
+          "zero_result_rate": 0.0,
+          "n": 4
+        },
+        "paraphrase": {
+          "recall": 0.4167,
+          "success": 0.4286,
+          "mrr": 0.3524,
+          "ndcg": 0.3199,
+          "zero_result_rate": 0.0714,
+          "n": 14
+        },
+        "question": {
+          "recall": 0.7969,
+          "success": 0.8125,
+          "mrr": 0.8125,
+          "ndcg": 0.7318,
+          "zero_result_rate": 0.0,
+          "n": 16
+        },
+        "scoped": {
+          "recall": 0.4722,
+          "success": 0.6667,
+          "mrr": 0.5556,
+          "ndcg": 0.4777,
+          "zero_result_rate": 0.1667,
+          "n": 6
+        },
+        "short": {
+          "recall": 0.7778,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7682,
+          "zero_result_rate": 0.0,
+          "n": 6
+        }
+      },
+      "by_lang": {
+        "en": {
+          "recall": 0.7143,
+          "success": 0.7619,
+          "mrr": 0.6259,
+          "ndcg": 0.6105,
+          "zero_result_rate": 0.0476,
+          "n": 21
+        },
+        "ja": {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero_result_rate": 0.0,
+          "n": 5
+        },
+        "mixed": {
+          "recall": 0.8095,
+          "success": 0.8571,
+          "mrr": 0.8571,
+          "ndcg": 0.7815,
+          "zero_result_rate": 0.0,
+          "n": 7
+        },
+        "zh": {
+          "recall": 0.6102,
+          "success": 0.7097,
+          "mrr": 0.6462,
+          "ndcg": 0.5579,
+          "zero_result_rate": 0.0323,
+          "n": 31
+        }
+      },
+      "latency_ms": {
+        "p50": 6.19,
+        "p95": 8.1,
+        "mean": 6.46
+      },
+      "per_query": [
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q003",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.944847956559586,
+          "zero": 0.0,
+          "id": "q005",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q006",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q009",
+          "type": "short",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q011",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8213137146137828,
+          "zero": 0.0,
+          "id": "q016",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q017",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q019",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9832184408687481,
+          "zero": 0.0,
+          "id": "q021",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "zero": 0.0,
+          "id": "q026",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q031",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q036",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q037",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q039",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q043",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q049",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 0.1,
+          "ndcg": 0.07961179255356228,
+          "zero": 0.0,
+          "id": "q050",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9639404333166532,
+          "zero": 0.0,
+          "id": "q052",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q054",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q055",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q058",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q059",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.41311732856427996,
+          "zero": 0.0,
+          "id": "q061",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q063",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "zero": 0.0,
+          "id": "q065",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7002755876478819,
+          "zero": 0.0,
+          "id": "q067",
+          "type": "scoped",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q069",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6278397607958708,
+          "zero": 0.0,
+          "id": "q071",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q072",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q075",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q078",
+          "type": "keyword",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q081",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q084",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q094",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6732934624429354,
+          "zero": 0.0,
+          "id": "q095",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q096",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q097",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7345754915543795,
+          "zero": 0.0,
+          "id": "q098",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q099",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q100",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q101",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.1,
+          "ndcg": 0.17723928678404774,
+          "zero": 0.0,
+          "id": "q104",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7437707309491556,
+          "zero": 0.0,
+          "id": "q105",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q110",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q114",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q115",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q116",
+          "type": "paraphrase",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q118",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q120",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q123",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9489376033325803,
+          "zero": 0.0,
+          "id": "q130",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.3868528072345416,
+          "zero": 0.0,
+          "id": "q131",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8339032696716178,
+          "zero": 0.0,
+          "id": "q134",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.4573369727327457,
+          "zero": 0.0,
+          "id": "q138",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q139",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q141",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q144",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.339960129109602,
+          "zero": 0.0,
+          "id": "q145",
+          "type": "scoped",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q149",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q151",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q157",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q158",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.18543279769614657,
+          "zero": 0.0,
+          "id": "q159",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.25,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.515157140670655,
+          "zero": 0.0,
+          "id": "q160",
+          "type": "short",
+          "lang": "zh"
+        }
+      ]
+    },
+    "lexical[stop_words=1,unigrams=1,prefix=0]": {
+      "overall": {
+        "recall": 0.7591,
+        "success": 0.8438,
+        "mrr": 0.7203,
+        "ndcg": 0.6568,
+        "zero_result_rate": 0.0156,
+        "n": 64
+      },
+      "by_type": {
+        "cross_lingual": {
+          "recall": 0.875,
+          "success": 1.0,
+          "mrr": 0.6845,
+          "ndcg": 0.6743,
+          "zero_result_rate": 0.0,
+          "n": 8
+        },
+        "keyword": {
+          "recall": 0.95,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9659,
+          "zero_result_rate": 0.0,
+          "n": 10
+        },
+        "negative": {
+          "recall": 0.6875,
+          "success": 0.75,
+          "mrr": 0.4107,
+          "ndcg": 0.4503,
+          "zero_result_rate": 0.0,
+          "n": 4
+        },
+        "paraphrase": {
+          "recall": 0.5595,
+          "success": 0.5714,
+          "mrr": 0.4821,
+          "ndcg": 0.4399,
+          "zero_result_rate": 0.0714,
+          "n": 14
+        },
+        "question": {
+          "recall": 0.8385,
+          "success": 0.875,
+          "mrr": 0.7438,
+          "ndcg": 0.6681,
+          "zero_result_rate": 0.0,
+          "n": 16
+        },
+        "scoped": {
+          "recall": 0.5278,
+          "success": 0.8333,
+          "mrr": 0.7222,
+          "ndcg": 0.541,
+          "zero_result_rate": 0.0,
+          "n": 6
+        },
+        "short": {
+          "recall": 0.8194,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8477,
+          "zero_result_rate": 0.0,
+          "n": 6
+        }
+      },
+      "by_lang": {
+        "en": {
+          "recall": 0.6984,
+          "success": 0.7619,
+          "mrr": 0.6259,
+          "ndcg": 0.599,
+          "zero_result_rate": 0.0476,
+          "n": 21
+        },
+        "ja": {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.84,
+          "ndcg": 0.8774,
+          "zero_result_rate": 0.0,
+          "n": 5
+        },
+        "mixed": {
+          "recall": 0.8095,
+          "success": 0.8571,
+          "mrr": 0.7429,
+          "ndcg": 0.6412,
+          "zero_result_rate": 0.0,
+          "n": 7
+        },
+        "zh": {
+          "recall": 0.75,
+          "success": 0.871,
+          "mrr": 0.76,
+          "ndcg": 0.6639,
+          "zero_result_rate": 0.0,
+          "n": 31
+        }
+      },
+      "latency_ms": {
+        "p50": 6.97,
+        "p95": 10.32,
+        "mean": 7.19
+      },
+      "per_query": [
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.4306765580733931,
+          "zero": 0.0,
+          "id": "q003",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.944847956559586,
+          "zero": 0.0,
+          "id": "q005",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 1.0,
+          "id": "q006",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q009",
+          "type": "short",
+          "lang": "ja"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q011",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8213137146137828,
+          "zero": 0.0,
+          "id": "q016",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q017",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q019",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.804532155482531,
+          "zero": 0.0,
+          "id": "q021",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "zero": 0.0,
+          "id": "q026",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7967075809905066,
+          "zero": 0.0,
+          "id": "q031",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q036",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.25,
+          "success": 0.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.057239682296739446,
+          "zero": 0.0,
+          "id": "q037",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q039",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9055866445611575,
+          "zero": 0.0,
+          "id": "q043",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q049",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.16666666666666666,
+          "ndcg": 0.38611457389898773,
+          "zero": 0.0,
+          "id": "q050",
+          "type": "negative",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.91311732856428,
+          "zero": 0.0,
+          "id": "q052",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q054",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q055",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q058",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q059",
+          "type": "keyword",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.41311732856427996,
+          "zero": 0.0,
+          "id": "q061",
+          "type": "negative",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q063",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "zero": 0.0,
+          "id": "q065",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6051906348295047,
+          "zero": 0.0,
+          "id": "q067",
+          "type": "scoped",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.5364180057596336,
+          "zero": 0.0,
+          "id": "q069",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6278397607958708,
+          "zero": 0.0,
+          "id": "q071",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q072",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q075",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q078",
+          "type": "keyword",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q081",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q084",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q094",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6732934624429354,
+          "zero": 0.0,
+          "id": "q095",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "zero": 0.0,
+          "id": "q096",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q097",
+          "type": "question",
+          "lang": "ja"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7345754915543795,
+          "zero": 0.0,
+          "id": "q098",
+          "type": "short",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q099",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "zero": 0.0,
+          "id": "q100",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q101",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "zero": 0.0,
+          "id": "q104",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.75,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6863656220351223,
+          "zero": 0.0,
+          "id": "q105",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6590018048024133,
+          "zero": 0.0,
+          "id": "q110",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q114",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8262346571285599,
+          "zero": 0.0,
+          "id": "q115",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q116",
+          "type": "paraphrase",
+          "lang": "mixed"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q118",
+          "type": "question",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q120",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q123",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.6751663651279859,
+          "zero": 0.0,
+          "id": "q130",
+          "type": "question",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.3868528072345416,
+          "zero": 0.0,
+          "id": "q131",
+          "type": "cross_lingual",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.833581164668644,
+          "zero": 0.0,
+          "id": "q134",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.639909328045346,
+          "zero": 0.0,
+          "id": "q138",
+          "type": "paraphrase",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 0.14285714285714285,
+          "ndcg": 0.27541155237618664,
+          "zero": 0.0,
+          "id": "q139",
+          "type": "cross_lingual",
+          "lang": "en"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q141",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q144",
+          "type": "keyword",
+          "lang": "en"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.2781491965442198,
+          "zero": 0.0,
+          "id": "q145",
+          "type": "scoped",
+          "lang": "en"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "zero": 0.0,
+          "id": "q149",
+          "type": "keyword",
+          "lang": "mixed"
+        },
+        {
+          "recall": 0.6666666666666666,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.538891418360014,
+          "zero": 0.0,
+          "id": "q151",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.0,
+          "success": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "zero": 0.0,
+          "id": "q157",
+          "type": "scoped",
+          "lang": "zh"
+        },
+        {
+          "recall": 1.0,
+          "success": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714574,
+          "zero": 0.0,
+          "id": "q158",
+          "type": "question",
+          "lang": "zh"
+        },
+        {
+          "recall": 0.3333333333333333,
+          "success": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.18543279769614657,
+          "zero": 0.0,
+          "id": "q159",
+          "type": "paraphrase",
+          "lang": "en"
+        },
+        {
+          "recall": 0.5,
+          "success": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7727357110059825,
+          "zero": 0.0,
+          "id": "q160",
+          "type": "short",
+          "lang": "zh"
+        }
+      ]
+    }
+  }
+}

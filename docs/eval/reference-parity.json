@@ -1,0 +1,51 @@
+{
+  "command": "python bench/reference_parity.py --reference <snapshot of Qwen/Qwen3-Embedding-0.6B@97b0c614be4d> --out docs/eval/reference-parity.json",
+  "reference": {
+    "path": "Qwen/Qwen3-Embedding-0.6B@97b0c614be4d (local snapshot, model.safetensors sha256 0437e45c...)",
+    "revision": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+    "load_seconds": 46.5
+  },
+  "served": {
+    "url": "http://127.0.0.1:11434/v1",
+    "model": "qwen3-embedding:0.6b"
+  },
+  "documents": {
+    "n": 40,
+    "cosine_min": 0.9988,
+    "cosine_mean": 0.9993,
+    "cosine_max": 0.9995
+  },
+  "queries_with_instruction": {
+    "n": 20,
+    "cosine_min": 0.999,
+    "cosine_mean": 0.9993,
+    "cosine_max": 0.9995
+  },
+  "served_query_embedding_ms": {
+    "p50": 318.3,
+    "max": 427.3
+  },
+  "reference_test_split": {
+    "recall": 0.8845,
+    "success": 0.9479,
+    "mrr": 0.9047,
+    "ndcg": 0.83,
+    "zero_result_rate": 0.0,
+    "n": 96,
+    "seconds": 1007.3,
+    "latency_ms": {
+      "p50": 897.38,
+      "p95": 2355.97,
+      "mean": 1125.79
+    },
+    "by_type": {
+      "cross_lingual": 0.916,
+      "keyword": 0.9245,
+      "negative": 0.6287,
+      "paraphrase": 0.708,
+      "question": 0.8418,
+      "scoped": 0.8816,
+      "short": 0.8931
+    }
+  }
+}

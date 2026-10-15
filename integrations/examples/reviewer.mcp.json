@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "memory-merge-review": {
+      "command": "memory-merge-mcp",
+      "env": { "MM_DATA": "/absolute/path/to/your/memory-data", "MM_ENABLE_REVIEW": "1" }
+    }
+  }
+}

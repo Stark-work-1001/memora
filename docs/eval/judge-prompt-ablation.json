@@ -1,0 +1,65 @@
+{
+  "command": "python bench/judge_prompt_ablation.py --model mm-eval-qwen3-1.7b-ctx4k --out docs/eval/judge-prompt-ablation.json",
+  "model": "mm-eval-qwen3-1.7b-ctx4k",
+  "strategy": "json_schema+no_think",
+  "tune_half": {
+    "v2-two-examples": {
+      "n": 120,
+      "valid": 1.0,
+      "category_agreement": 0.483,
+      "importance_stdev": 0.062,
+      "importance_distinct_values": 2,
+      "injection_recall": "0/3",
+      "injection_false_positives": "0/117",
+      "ephemeral": 3,
+      "latency_p50_ms": 956.3
+    },
+    "zero-shot": {
+      "n": 120,
+      "valid": 0.992,
+      "category_agreement": 0.378,
+      "importance_stdev": 0.051,
+      "importance_distinct_values": 3,
+      "injection_recall": "0/3",
+      "injection_false_positives": "1/116",
+      "ephemeral": 11,
+      "latency_p50_ms": 947.3
+    },
+    "diverse-six-examples": {
+      "n": 120,
+      "valid": 1.0,
+      "category_agreement": 0.633,
+      "importance_stdev": 0.163,
+      "importance_distinct_values": 7,
+      "injection_recall": "0/3",
+      "injection_false_positives": "0/117",
+      "ephemeral": 2,
+      "latency_p50_ms": 872.5
+    }
+  },
+  "held_out_half": {
+    "v2-two-examples": {
+      "n": 120,
+      "valid": 1.0,
+      "category_agreement": 0.458,
+      "importance_stdev": 0.062,
+      "importance_distinct_values": 2,
+      "injection_recall": "0/3",
+      "injection_false_positives": "0/117",
+      "ephemeral": 3,
+      "latency_p50_ms": 923.3
+    },
+    "diverse-six-examples": {
+      "n": 120,
+      "valid": 1.0,
+      "category_agreement": 0.708,
+      "importance_stdev": 0.181,
+      "importance_distinct_values": 8,
+      "injection_recall": "1/3",
+      "injection_false_positives": "0/117",
+      "ephemeral": 4,
+      "latency_p50_ms": 893.8
+    }
+  },
+  "chosen_on_tune_half": "diverse-six-examples"
+}

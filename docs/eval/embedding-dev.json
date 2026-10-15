@@ -1,0 +1,1462 @@
+{
+  "command": "python bench/embedding_eval.py --split dev --out docs/eval/embedding-dev.json",
+  "model": "qwen3-embedding:0.6b",
+  "url": "http://127.0.0.1:11434/v1",
+  "split": "dev",
+  "runs": {
+    "default": {
+      "dataset": {
+        "path": "datasets/memory-eval-v1",
+        "corpus": 240,
+        "queries": 64,
+        "split": "dev",
+        "k": 10,
+        "skipped": []
+      },
+      "environment": {
+        "memory_merge": "0.2.0a1",
+        "python": "3.13.5",
+        "sqlite": "3.50.2",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "vector_kernel": "native"
+      },
+      "command": "bench/embedding_eval.py --split dev --out docs/eval/embedding-dev.json",
+      "generated": "2026-10-13T13:18:02Z",
+      "modes": {
+        "baseline-v0.1": {
+          "overall": {
+            "recall": 0.3932,
+            "success": 0.4531,
+            "mrr": 0.3979,
+            "ndcg": 0.3619,
+            "zero_result_rate": 0.4062,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.1667,
+              "success": 0.125,
+              "mrr": 0.1375,
+              "ndcg": 0.0664,
+              "zero_result_rate": 0.375,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.95,
+              "success": 1.0,
+              "mrr": 0.95,
+              "ndcg": 0.9042,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.125,
+              "success": 0.25,
+              "mrr": 0.0417,
+              "ndcg": 0.0736,
+              "zero_result_rate": 0.5,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.2143,
+              "success": 0.2143,
+              "mrr": 0.2143,
+              "ndcg": 0.2143,
+              "zero_result_rate": 0.5714,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.3021,
+              "success": 0.375,
+              "mrr": 0.3333,
+              "ndcg": 0.3115,
+              "zero_result_rate": 0.5625,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.2222,
+              "success": 0.3333,
+              "mrr": 0.1944,
+              "ndcg": 0.1545,
+              "zero_result_rate": 0.6667,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.7778,
+              "success": 1.0,
+              "mrr": 0.8667,
+              "ndcg": 0.7308,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.5238,
+              "success": 0.5714,
+              "mrr": 0.4651,
+              "ndcg": 0.4383,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 0.4,
+              "success": 0.4,
+              "mrr": 0.4,
+              "ndcg": 0.4,
+              "zero_result_rate": 0.6,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.7143,
+              "success": 0.8571,
+              "mrr": 0.7857,
+              "ndcg": 0.7127,
+              "zero_result_rate": 0.1429,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.2312,
+              "success": 0.2903,
+              "mrr": 0.2645,
+              "ndcg": 0.2248,
+              "zero_result_rate": 0.7097,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 5.25,
+            "p95": 7.75,
+            "mean": 5.49
+          }
+        },
+        "lexical": {
+          "overall": {
+            "recall": 0.7487,
+            "success": 0.8281,
+            "mrr": 0.7349,
+            "ndcg": 0.6741,
+            "zero_result_rate": 0.0156,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.875,
+              "success": 1.0,
+              "mrr": 0.6845,
+              "ndcg": 0.7221,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.95,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9659,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.4375,
+              "success": 0.5,
+              "mrr": 0.369,
+              "ndcg": 0.3538,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.5595,
+              "success": 0.5714,
+              "mrr": 0.4821,
+              "ndcg": 0.4399,
+              "zero_result_rate": 0.0714,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.8385,
+              "success": 0.875,
+              "mrr": 0.8125,
+              "ndcg": 0.7279,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.5833,
+              "success": 0.8333,
+              "mrr": 0.7222,
+              "ndcg": 0.5671,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.8194,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.8477,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.7143,
+              "success": 0.7619,
+              "mrr": 0.6259,
+              "ndcg": 0.6105,
+              "zero_result_rate": 0.0476,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.8095,
+              "success": 0.8571,
+              "mrr": 0.7857,
+              "ndcg": 0.7033,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.7177,
+              "success": 0.8387,
+              "mrr": 0.7546,
+              "ndcg": 0.6581,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 3.85,
+            "p95": 6.07,
+            "mean": 4.11
+          }
+        },
+        "vector": {
+          "overall": {
+            "recall": 0.9049,
+            "success": 0.9531,
+            "mrr": 0.8997,
+            "ndcg": 0.865,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.9583,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9735,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9729,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.6875,
+              "success": 0.75,
+              "mrr": 0.625,
+              "ndcg": 0.5897,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8929,
+              "success": 0.9286,
+              "mrr": 0.8393,
+              "ndcg": 0.8428,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.9062,
+              "success": 1.0,
+              "mrr": 0.9062,
+              "ndcg": 0.8647,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.8333,
+              "success": 0.8333,
+              "mrr": 0.8056,
+              "ndcg": 0.6938,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.9167,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9473,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.8889,
+              "success": 0.9524,
+              "mrr": 0.9286,
+              "ndcg": 0.8936,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.9524,
+              "success": 1.0,
+              "mrr": 0.9286,
+              "ndcg": 0.868,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.8898,
+              "success": 0.9355,
+              "mrr": 0.8575,
+              "ndcg": 0.8231,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 192.47,
+            "p95": 214.36,
+            "mean": 191.65
+          }
+        },
+        "hybrid": {
+          "overall": {
+            "recall": 0.8607,
+            "success": 0.9062,
+            "mrr": 0.8678,
+            "ndcg": 0.8122,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.875,
+              "success": 1.0,
+              "mrr": 0.9375,
+              "ndcg": 0.8897,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.95,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9759,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.5625,
+              "success": 0.5,
+              "mrr": 0.5625,
+              "ndcg": 0.489,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8214,
+              "success": 0.8571,
+              "mrr": 0.7411,
+              "ndcg": 0.7289,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.9167,
+              "success": 0.9375,
+              "mrr": 0.8906,
+              "ndcg": 0.8241,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.7778,
+              "success": 0.8333,
+              "mrr": 0.8611,
+              "ndcg": 0.689,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.9167,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9369,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.8889,
+              "success": 0.9524,
+              "mrr": 0.8571,
+              "ndcg": 0.8286,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.8571,
+              "success": 0.8571,
+              "mrr": 0.8571,
+              "ndcg": 0.7612,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.8199,
+              "success": 0.871,
+              "mrr": 0.8562,
+              "ndcg": 0.7822,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 203.69,
+            "p95": 224.85,
+            "mean": 203.17
+          }
+        }
+      },
+      "index": {
+        "indexed": 240,
+        "skipped_changed": 0,
+        "remaining": 0,
+        "fingerprint": "emb-7f08810782624896c886",
+        "dim": 1024,
+        "model": "qwen3-embedding:0.6b",
+        "kernel": "native",
+        "seconds": 6.59
+      },
+      "wall_seconds": 43.0
+    },
+    "no-instruction": {
+      "dataset": {
+        "path": "datasets/memory-eval-v1",
+        "corpus": 240,
+        "queries": 64,
+        "split": "dev",
+        "k": 10,
+        "skipped": []
+      },
+      "environment": {
+        "memory_merge": "0.2.0a1",
+        "python": "3.13.5",
+        "sqlite": "3.50.2",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "vector_kernel": "native"
+      },
+      "command": "bench/embedding_eval.py --split dev --out docs/eval/embedding-dev.json",
+      "generated": "2026-10-13T13:18:44Z",
+      "modes": {
+        "vector": {
+          "overall": {
+            "recall": 0.8737,
+            "success": 0.9531,
+            "mrr": 0.9036,
+            "ndcg": 0.8476,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.8958,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9631,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.9,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9474,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.6875,
+              "success": 0.75,
+              "mrr": 0.5,
+              "ndcg": 0.5112,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8929,
+              "success": 0.9286,
+              "mrr": 0.881,
+              "ndcg": 0.875,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.8958,
+              "success": 1.0,
+              "mrr": 0.9375,
+              "ndcg": 0.8643,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.8333,
+              "success": 0.8333,
+              "mrr": 0.75,
+              "ndcg": 0.6518,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.8611,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.8387,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.873,
+              "success": 0.9524,
+              "mrr": 0.9286,
+              "ndcg": 0.8889,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.9524,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.8853,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.836,
+              "success": 0.9355,
+              "mrr": 0.8495,
+              "ndcg": 0.7865,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 203.63,
+            "p95": 245.72,
+            "mean": 208.59
+          }
+        },
+        "hybrid": {
+          "overall": {
+            "recall": 0.8542,
+            "success": 0.9219,
+            "mrr": 0.885,
+            "ndcg": 0.8149,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.875,
+              "success": 1.0,
+              "mrr": 0.9375,
+              "ndcg": 0.8897,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.95,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9739,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.5625,
+              "success": 0.5,
+              "mrr": 0.5833,
+              "ndcg": 0.4979,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8214,
+              "success": 0.8571,
+              "mrr": 0.744,
+              "ndcg": 0.7318,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.9271,
+              "success": 1.0,
+              "mrr": 0.9531,
+              "ndcg": 0.8676,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.7778,
+              "success": 0.8333,
+              "mrr": 0.8571,
+              "ndcg": 0.6774,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.8194,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.8521,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.8889,
+              "success": 0.9524,
+              "mrr": 0.8571,
+              "ndcg": 0.8335,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.8095,
+              "success": 0.8571,
+              "mrr": 0.8571,
+              "ndcg": 0.7503,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.8172,
+              "success": 0.9032,
+              "mrr": 0.8917,
+              "ndcg": 0.787,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 204.81,
+            "p95": 235.73,
+            "mean": 207.31
+          }
+        }
+      },
+      "index": {
+        "indexed": 240,
+        "skipped_changed": 0,
+        "remaining": 0,
+        "fingerprint": "emb-7f08810782624896c886",
+        "dim": 1024,
+        "model": "qwen3-embedding:0.6b",
+        "kernel": "native",
+        "seconds": 7.17
+      },
+      "wall_seconds": 39.4
+    },
+    "dim512": {
+      "dataset": {
+        "path": "datasets/memory-eval-v1",
+        "corpus": 240,
+        "queries": 64,
+        "split": "dev",
+        "k": 10,
+        "skipped": []
+      },
+      "environment": {
+        "memory_merge": "0.2.0a1",
+        "python": "3.13.5",
+        "sqlite": "3.50.2",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "vector_kernel": "native"
+      },
+      "command": "bench/embedding_eval.py --split dev --out docs/eval/embedding-dev.json",
+      "generated": "2026-10-13T13:19:24Z",
+      "modes": {
+        "vector": {
+          "overall": {
+            "recall": 0.9115,
+            "success": 0.9531,
+            "mrr": 0.9141,
+            "ndcg": 0.8779,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.9583,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.978,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9687,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.6875,
+              "success": 0.75,
+              "mrr": 0.5833,
+              "ndcg": 0.6177,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8929,
+              "success": 0.9286,
+              "mrr": 0.881,
+              "ndcg": 0.8689,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.9531,
+              "success": 1.0,
+              "mrr": 0.9375,
+              "ndcg": 0.8827,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.7778,
+              "success": 0.8333,
+              "mrr": 0.8056,
+              "ndcg": 0.7116,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.9167,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.941,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.9127,
+              "success": 0.9524,
+              "mrr": 0.9206,
+              "ndcg": 0.8869,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.9524,
+              "success": 1.0,
+              "mrr": 0.9286,
+              "ndcg": 0.8888,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.8871,
+              "success": 0.9355,
+              "mrr": 0.8925,
+              "ndcg": 0.8496,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 206.25,
+            "p95": 235.31,
+            "mean": 208.43
+          }
+        },
+        "hybrid": {
+          "overall": {
+            "recall": 0.8685,
+            "success": 0.9219,
+            "mrr": 0.8768,
+            "ndcg": 0.8191,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.875,
+              "success": 1.0,
+              "mrr": 0.875,
+              "ndcg": 0.8422,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.95,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9751,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.5625,
+              "success": 0.5,
+              "mrr": 0.5625,
+              "ndcg": 0.4927,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8214,
+              "success": 0.8571,
+              "mrr": 0.7464,
+              "ndcg": 0.7275,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.9479,
+              "success": 1.0,
+              "mrr": 0.9531,
+              "ndcg": 0.8753,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.7778,
+              "success": 0.8333,
+              "mrr": 0.8611,
+              "ndcg": 0.689,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.9167,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9392,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.8889,
+              "success": 0.9524,
+              "mrr": 0.8333,
+              "ndcg": 0.8094,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.8571,
+              "success": 0.8571,
+              "mrr": 0.8571,
+              "ndcg": 0.7612,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.836,
+              "success": 0.9032,
+              "mrr": 0.8909,
+              "ndcg": 0.8095,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 204.98,
+            "p95": 233.8,
+            "mean": 207.4
+          }
+        }
+      },
+      "index": {
+        "indexed": 240,
+        "skipped_changed": 0,
+        "remaining": 0,
+        "fingerprint": "emb-56693aa9d5e2b3cd9a3f",
+        "dim": 512,
+        "model": "qwen3-embedding:0.6b",
+        "kernel": "native",
+        "seconds": 7.87
+      },
+      "wall_seconds": 40.9
+    },
+    "dim256": {
+      "dataset": {
+        "path": "datasets/memory-eval-v1",
+        "corpus": 240,
+        "queries": 64,
+        "split": "dev",
+        "k": 10,
+        "skipped": []
+      },
+      "environment": {
+        "memory_merge": "0.2.0a1",
+        "python": "3.13.5",
+        "sqlite": "3.50.2",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "vector_kernel": "native"
+      },
+      "command": "bench/embedding_eval.py --split dev --out docs/eval/embedding-dev.json",
+      "generated": "2026-10-13T13:20:05Z",
+      "modes": {
+        "vector": {
+          "overall": {
+            "recall": 0.8711,
+            "success": 0.9375,
+            "mrr": 0.9076,
+            "ndcg": 0.858,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.9583,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9849,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.9167,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9451,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.6875,
+              "success": 0.75,
+              "mrr": 0.75,
+              "ndcg": 0.6196,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8929,
+              "success": 0.9286,
+              "mrr": 0.8393,
+              "ndcg": 0.8451,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.901,
+              "success": 1.0,
+              "mrr": 0.9271,
+              "ndcg": 0.8599,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.7222,
+              "success": 0.6667,
+              "mrr": 0.75,
+              "ndcg": 0.6494,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.8194,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9361,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.873,
+              "success": 0.9524,
+              "mrr": 0.9167,
+              "ndcg": 0.8796,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.9524,
+              "success": 1.0,
+              "mrr": 0.9048,
+              "ndcg": 0.8726,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.8306,
+              "success": 0.9032,
+              "mrr": 0.8871,
+              "ndcg": 0.8171,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 190.12,
+            "p95": 213.12,
+            "mean": 190.19
+          }
+        },
+        "hybrid": {
+          "overall": {
+            "recall": 0.8555,
+            "success": 0.9062,
+            "mrr": 0.8794,
+            "ndcg": 0.8126,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.875,
+              "success": 1.0,
+              "mrr": 0.875,
+              "ndcg": 0.8422,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.95,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9742,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.5625,
+              "success": 0.5,
+              "mrr": 0.5833,
+              "ndcg": 0.4935,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8214,
+              "success": 0.8571,
+              "mrr": 0.7464,
+              "ndcg": 0.7308,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.8958,
+              "success": 0.9375,
+              "mrr": 0.9531,
+              "ndcg": 0.839,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.7778,
+              "success": 0.8333,
+              "mrr": 0.875,
+              "ndcg": 0.7042,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.9167,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9456,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.8889,
+              "success": 0.9524,
+              "mrr": 0.8333,
+              "ndcg": 0.8137,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.8095,
+              "success": 0.8571,
+              "mrr": 0.8571,
+              "ndcg": 0.7386,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.8199,
+              "success": 0.871,
+              "mrr": 0.8962,
+              "ndcg": 0.7984,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 186.43,
+            "p95": 211.84,
+            "mean": 188.89
+          }
+        }
+      },
+      "index": {
+        "indexed": 240,
+        "skipped_changed": 0,
+        "remaining": 0,
+        "fingerprint": "emb-7936ed7e8844ddd4c703",
+        "dim": 256,
+        "model": "qwen3-embedding:0.6b",
+        "kernel": "native",
+        "seconds": 8.01
+      },
+      "wall_seconds": 38.6
+    },
+    "dim128": {
+      "dataset": {
+        "path": "datasets/memory-eval-v1",
+        "corpus": 240,
+        "queries": 64,
+        "split": "dev",
+        "k": 10,
+        "skipped": []
+      },
+      "environment": {
+        "memory_merge": "0.2.0a1",
+        "python": "3.13.5",
+        "sqlite": "3.50.2",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "vector_kernel": "native"
+      },
+      "command": "bench/embedding_eval.py --split dev --out docs/eval/embedding-dev.json",
+      "generated": "2026-10-13T13:20:44Z",
+      "modes": {
+        "vector": {
+          "overall": {
+            "recall": 0.8763,
+            "success": 0.9375,
+            "mrr": 0.8737,
+            "ndcg": 0.8395,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.9583,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9804,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.95,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9506,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.6875,
+              "success": 0.75,
+              "mrr": 0.5625,
+              "ndcg": 0.5983,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8929,
+              "success": 0.9286,
+              "mrr": 0.7857,
+              "ndcg": 0.8027,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.9219,
+              "success": 1.0,
+              "mrr": 0.9062,
+              "ndcg": 0.8373,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.6667,
+              "success": 0.6667,
+              "mrr": 0.6944,
+              "ndcg": 0.6528,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.8194,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9058,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.8889,
+              "success": 0.9524,
+              "mrr": 0.9127,
+              "ndcg": 0.8846,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.9524,
+              "success": 1.0,
+              "mrr": 0.9286,
+              "ndcg": 0.8462,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.8306,
+              "success": 0.9032,
+              "mrr": 0.8145,
+              "ndcg": 0.7815,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 208.43,
+            "p95": 239.44,
+            "mean": 209.8
+          }
+        },
+        "hybrid": {
+          "overall": {
+            "recall": 0.862,
+            "success": 0.9062,
+            "mrr": 0.883,
+            "ndcg": 0.8217,
+            "zero_result_rate": 0.0,
+            "n": 64
+          },
+          "by_type": {
+            "cross_lingual": {
+              "recall": 0.875,
+              "success": 1.0,
+              "mrr": 0.9375,
+              "ndcg": 0.8804,
+              "zero_result_rate": 0.0,
+              "n": 8
+            },
+            "keyword": {
+              "recall": 0.95,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9742,
+              "zero_result_rate": 0.0,
+              "n": 10
+            },
+            "negative": {
+              "recall": 0.5625,
+              "success": 0.5,
+              "mrr": 0.55,
+              "ndcg": 0.4908,
+              "zero_result_rate": 0.0,
+              "n": 4
+            },
+            "paraphrase": {
+              "recall": 0.8214,
+              "success": 0.8571,
+              "mrr": 0.744,
+              "ndcg": 0.7318,
+              "zero_result_rate": 0.0,
+              "n": 14
+            },
+            "question": {
+              "recall": 0.9167,
+              "success": 0.9375,
+              "mrr": 0.9531,
+              "ndcg": 0.8568,
+              "zero_result_rate": 0.0,
+              "n": 16
+            },
+            "scoped": {
+              "recall": 0.8333,
+              "success": 0.8333,
+              "mrr": 0.8571,
+              "ndcg": 0.709,
+              "zero_result_rate": 0.0,
+              "n": 6
+            },
+            "short": {
+              "recall": 0.875,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9389,
+              "zero_result_rate": 0.0,
+              "n": 6
+            }
+          },
+          "by_lang": {
+            "en": {
+              "recall": 0.9048,
+              "success": 0.9524,
+              "mrr": 0.8571,
+              "ndcg": 0.8317,
+              "zero_result_rate": 0.0,
+              "n": 21
+            },
+            "ja": {
+              "recall": 1.0,
+              "success": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0,
+              "zero_result_rate": 0.0,
+              "n": 5
+            },
+            "mixed": {
+              "recall": 0.8571,
+              "success": 0.8571,
+              "mrr": 0.8571,
+              "ndcg": 0.767,
+              "zero_result_rate": 0.0,
+              "n": 7
+            },
+            "zh": {
+              "recall": 0.8118,
+              "success": 0.871,
+              "mrr": 0.8874,
+              "ndcg": 0.7985,
+              "zero_result_rate": 0.0,
+              "n": 31
+            }
+          },
+          "latency_ms": {
+            "p50": 204.67,
+            "p95": 225.27,
+            "mean": 203.6
+          }
+        }
+      },
+      "index": {
+        "indexed": 240,
+        "skipped_changed": 0,
+        "remaining": 0,
+        "fingerprint": "emb-40fae259f688a04c25e0",
+        "dim": 128,
+        "model": "qwen3-embedding:0.6b",
+        "kernel": "native",
+        "seconds": 7.87
+      },
+      "wall_seconds": 40.7
+    }
+  }
+}

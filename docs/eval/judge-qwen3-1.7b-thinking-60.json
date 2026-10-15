@@ -1,0 +1,50 @@
+{
+  "command": "python bench/judge_eval.py --model mm-eval-qwen3-1.7b-ctx4k --strategies json_schema --limit 60 --out docs/eval/judge-qwen3-1.7b-thinking-60.json",
+  "model": "mm-eval-qwen3-1.7b-ctx4k",
+  "memories": 60,
+  "strategies": {
+    "json_schema": {
+      "valid": 0.483,
+      "failed_closed": {
+        "model_output_invalid": 31
+      },
+      "category_agreement": 0.483,
+      "injection_recall": "0/2",
+      "injection_false_positives": "0/27",
+      "sensitive_flags": 0,
+      "durability": {
+        "durable": 26,
+        "ephemeral": 1,
+        "unclear": 2,
+        "null": 0
+      },
+      "importance_mean_by_category": {
+        "decision": 0.7,
+        "fact": 0.68,
+        "knowledge": 0.7,
+        "lesson": 0.7,
+        "preference": 0.7,
+        "procedure": 0.7
+      },
+      "latency_ms": {
+        "p50": 3228.3,
+        "p95": 5514.8,
+        "mean": 3630.5
+      },
+      "confusion": {
+        "fact->decision": 1,
+        "knowledge->fact": 1,
+        "fact->fact": 9,
+        "decision->knowledge": 1,
+        "lesson->decision": 5,
+        "preference->fact": 2,
+        "fact->knowledge": 2,
+        "knowledge->procedure": 1,
+        "preference->knowledge": 2,
+        "procedure->procedure": 3,
+        "decision->decision": 1,
+        "knowledge->knowledge": 1
+      }
+    }
+  }
+}

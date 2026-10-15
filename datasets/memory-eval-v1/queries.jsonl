@@ -1,0 +1,160 @@
+{"id": "q001", "project": "bamboo", "query": "字体", "relevant": {"m125": 2, "m128": 2, "m189": 1}, "type": "short", "lang": "zh", "split": "test"}
+{"id": "q002", "project": "delta", "query": "项目用的什么数据库？", "relevant": {"m037": 2}, "type": "scoped", "lang": "zh", "split": "test"}
+{"id": "q003", "project": "delta", "query": "怎么避免外人蹭我们的站点给他们的远程素材做缩放压缩？", "relevant": {"m190": 2}, "type": "paraphrase", "lang": "zh", "split": "dev"}
+{"id": "q004", "project": "delta", "query": "CMS 里改了内容，页面却没有 revalidate，是怎么回事？", "relevant": {"m187": 2}, "type": "question", "lang": "mixed", "split": "test"}
+{"id": "q005", "project": "atlas", "query": "What went wrong with catalogue migrations in the past?", "relevant": {"m175": 2, "m162": 1}, "type": "negative", "lang": "en", "split": "dev"}
+{"id": "q006", "project": "bamboo", "query": "Why do we transcribe spoken memos on the handset itself?", "relevant": {"m177": 2}, "type": "paraphrase", "lang": "en", "split": "dev"}
+{"id": "q007", "project": "bamboo", "query": "Where can I see bamboo's crash reports?", "relevant": {"m103": 2}, "type": "question", "lang": "en", "split": "test"}
+{"id": "q008", "project": "cobalt", "query": "为什么不能在流程定义文件的最外层去调外部接口？", "relevant": {"m010": 2}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q009", "project": "delta", "query": "フォント", "relevant": {"m028": 2}, "type": "short", "lang": "ja", "split": "dev"}
+{"id": "q010", "project": "atlas", "query": "大批量导入时RAM占用冲得很高，后来怎么解决的？", "relevant": {"m113": 2}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q011", "project": "cobalt", "query": "备份是怎么做的？", "relevant": {"m161": 2, "m084": 1}, "type": "scoped", "lang": "zh", "split": "dev"}
+{"id": "q012", "project": "cobalt", "query": "数据库磁盘被写满的那次是什么原因？", "relevant": {"m144": 2, "m220": 1}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q013", "project": "bamboo", "query": "要给本地的 notes 表加一个 column，流程是什么？", "relevant": {"m085": 2, "m114": 1}, "type": "question", "lang": "mixed", "split": "test"}
+{"id": "q014", "project": "@user", "query": "How should you talk to me, language-wise?", "relevant": {"m213": 2, "m224": 2, "m134": 1}, "type": "paraphrase", "lang": "en", "split": "test"}
+{"id": "q015", "project": "cobalt", "query": "新的数据源要怎么接入？", "relevant": {"m195": 2, "m240": 1}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q016", "project": "atlas", "query": "atlas 发新 release 的步骤是什么？", "relevant": {"m202": 2, "m061": 1, "m154": 1}, "type": "question", "lang": "mixed", "split": "dev"}
+{"id": "q017", "project": "atlas", "query": "atlasのGPSから地名を出す処理はオンラインが必要？", "relevant": {"m002": 2}, "type": "question", "lang": "ja", "split": "dev"}
+{"id": "q018", "project": "cobalt", "query": "做报表的同事跑大SQL，该接哪个库？", "relevant": {"m139": 2}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q019", "project": "@user", "query": "pnpm or npm", "relevant": {"m150": 2}, "type": "keyword", "lang": "en", "split": "dev"}
+{"id": "q020", "project": "bamboo", "query": "bamboo最低支持到哪个iOS版本？", "relevant": {"m210": 2, "m178": 1}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q021", "project": "cobalt", "query": "What timezone are timestamps stored in?", "relevant": {"m014": 2, "m047": 1, "m205": 1}, "type": "cross_lingual", "lang": "en", "split": "dev"}
+{"id": "q022", "project": "cobalt", "query": "表很大的时候加一个必填字段要注意什么？", "relevant": {"m109": 2}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q023", "project": "bamboo", "query": "数据库用的是什么？", "relevant": {"m052": 2, "m222": 2, "m038": 1, "m155": 1}, "type": "scoped", "lang": "zh", "split": "test"}
+{"id": "q024", "project": "atlas", "query": "atlas的日志怎么打开调试级别？", "relevant": {"m023": 2, "m124": 1}, "type": "cross_lingual", "lang": "zh", "split": "test"}
+{"id": "q025", "project": "bamboo", "query": "drift schemaVersion 迁移", "relevant": {"m085": 2, "m114": 1}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q026", "project": "bamboo", "query": "Why did the editor lose its state when switching pages?", "relevant": {"m022": 2}, "type": "cross_lingual", "lang": "en", "split": "dev"}
+{"id": "q027", "project": "cobalt", "query": "VACUUM FULL lock", "relevant": {"m060": 2}, "type": "keyword", "lang": "en", "split": "test"}
+{"id": "q028", "project": "atlas", "query": "lint 规则和 format 检查怎么跑？", "relevant": {"m017": 2}, "type": "scoped", "lang": "mixed", "split": "test"}
+{"id": "q029", "project": "delta", "query": "lint", "relevant": {"m215": 2, "m050": 1}, "type": "short", "lang": "en", "split": "test"}
+{"id": "q030", "project": "bamboo", "query": "flutter test 覆盖率", "relevant": {"m147": 2, "m217": 2}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q031", "project": "delta", "query": "e2e测试为什么不跑Firefox？", "relevant": {"m032": 2, "m077": 1}, "type": "cross_lingual", "lang": "zh", "split": "dev"}
+{"id": "q032", "project": "@user", "query": "What's my rule about force-pushing?", "relevant": {"m204": 2, "m193": 1}, "type": "cross_lingual", "lang": "en", "split": "test"}
+{"id": "q033", "project": "atlas", "query": "Why do some imports from SD cards have no file creation time?", "relevant": {"m207": 2}, "type": "cross_lingual", "lang": "en", "split": "test"}
+{"id": "q034", "project": "atlas", "query": "Where is atlas's remote photo backup stored now?", "relevant": {"m138": 2, "m100": 1}, "type": "question", "lang": "en", "split": "test"}
+{"id": "q035", "project": "@user", "query": "我希望你回复的风格是什么样的？", "relevant": {"m191": 2, "m158": 1, "m213": 1, "m224": 1}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q036", "project": "cobalt", "query": "测试怎么跑？", "relevant": {"m101": 2}, "type": "scoped", "lang": "zh", "split": "dev"}
+{"id": "q037", "project": "cobalt", "query": "对生产库做维护操作有什么禁忌？", "relevant": {"m060": 2, "m109": 2, "m084": 1, "m235": 1}, "type": "negative", "lang": "zh", "split": "dev"}
+{"id": "q038", "project": "cobalt", "query": "pgbouncer 端口", "relevant": {"m186": 2, "m121": 1}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q039", "project": "atlas", "query": "dHash 汉明距离阈值", "relevant": {"m016": 2, "m057": 1, "m076": 1}, "type": "keyword", "lang": "zh", "split": "dev"}
+{"id": "q040", "project": "bamboo", "query": "release 发版流程是怎样的？", "relevant": {"m126": 2}, "type": "scoped", "lang": "mixed", "split": "test"}
+{"id": "q041", "project": "bamboo", "query": "隐私政策 SDK 初始化", "relevant": {"m064": 2, "m089": 1}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q042", "project": "delta", "query": "监控和 alert 是怎么配的？", "relevant": {"m163": 2}, "type": "scoped", "lang": "mixed", "split": "test"}
+{"id": "q043", "project": "cobalt", "query": "部署", "relevant": {"m025": 2, "m011": 1, "m181": 1, "m235": 1}, "type": "short", "lang": "zh", "split": "dev"}
+{"id": "q044", "project": "delta", "query": "Which CI system builds and deploys the site?", "relevant": {"m050": 2, "m136": 1, "m170": 1}, "type": "scoped", "lang": "en", "split": "test"}
+{"id": "q045", "project": "bamboo", "query": "CocoaPods 版本", "relevant": {"m107": 2}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q046", "project": "bamboo", "query": "给苹果检查人员登录用的那套凭据去哪里找？", "relevant": {"m126": 2}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q047", "project": "bamboo", "query": "bamboo在性能上踩过什么坑？", "relevant": {"m153": 2}, "type": "negative", "lang": "zh", "split": "test"}
+{"id": "q048", "project": "cobalt", "query": "dbt的模型命名有什么规范？", "relevant": {"m047": 2, "m151": 1}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q049", "project": "bamboo", "query": "Supabase row level security 策略", "relevant": {"m222": 2}, "type": "keyword", "lang": "mixed", "split": "dev"}
+{"id": "q050", "project": "atlas", "query": "atlas的CI里有什么不能做的？", "relevant": {"m166": 2, "m123": 1}, "type": "negative", "lang": "zh", "split": "dev"}
+{"id": "q051", "project": "atlas", "query": "出国拍的图片按时间排列总是对不上，怎么回事？", "relevant": {"m148": 2, "m076": 1}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q052", "project": "atlas", "query": "nextest 测试命令", "relevant": {"m176": 2, "m202": 1}, "type": "keyword", "lang": "zh", "split": "dev"}
+{"id": "q053", "project": "delta", "query": "Why don't we have comments on the blog?", "relevant": {"m008": 2}, "type": "cross_lingual", "lang": "en", "split": "test"}
+{"id": "q054", "project": "delta", "query": "Turborepo远程缓存为什么关掉了？", "relevant": {"m055": 2}, "type": "cross_lingual", "lang": "zh", "split": "dev"}
+{"id": "q055", "project": "@user", "query": "Where should I keep project checkouts so version-control commands stay snappy?", "relevant": {"m029": 2, "m018": 1}, "type": "paraphrase", "lang": "en", "split": "dev"}
+{"id": "q056", "project": "bamboo", "query": "bamboo为什么从Isar换成了drift？", "relevant": {"m052": 2, "m155": 2, "m038": 1}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q057", "project": "cobalt", "query": "What CPU and memory does each Airflow task pod get on Kubernetes?", "relevant": {"m004": 2, "m174": 1}, "type": "cross_lingual", "lang": "en", "split": "test"}
+{"id": "q058", "project": "cobalt", "query": "增量模型 MERGE 策略", "relevant": {"m237": 2, "m047": 1}, "type": "keyword", "lang": "zh", "split": "dev"}
+{"id": "q059", "project": "@user", "query": "Conventional Commits 格式", "relevant": {"m027": 2, "m172": 2}, "type": "keyword", "lang": "zh", "split": "dev"}
+{"id": "q060", "project": "delta", "query": "How do I roll back a bad deploy of the website?", "relevant": {"m136": 2, "m110": 1}, "type": "question", "lang": "en", "split": "test"}
+{"id": "q061", "project": "@user", "query": "Anything I don't want to see in variable or file names?", "relevant": {"m048": 2, "m080": 1}, "type": "negative", "lang": "en", "split": "dev"}
+{"id": "q062", "project": "delta", "query": "i18n", "relevant": {"m137": 2, "m036": 1, "m049": 1, "m110": 1}, "type": "short", "lang": "en", "split": "test"}
+{"id": "q063", "project": "@user", "query": "密码", "relevant": {"m059": 2}, "type": "short", "lang": "zh", "split": "dev"}
+{"id": "q064", "project": "@user", "query": "WSL", "relevant": {"m018": 2, "m029": 2, "m183": 1}, "type": "short", "lang": "en", "split": "test"}
+{"id": "q065", "project": "delta", "query": "Strapi upload size limit", "relevant": {"m142": 2, "m199": 2}, "type": "keyword", "lang": "en", "split": "dev"}
+{"id": "q066", "project": "delta", "query": "delta的网站现在是怎么部署的？", "relevant": {"m136": 2, "m170": 2, "m050": 1, "m133": 1}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q067", "project": "cobalt", "query": "lint 用的什么工具？", "relevant": {"m206": 2, "m167": 1, "m209": 1}, "type": "scoped", "lang": "mixed", "split": "dev"}
+{"id": "q068", "project": "cobalt", "query": "Where do logs and metrics go?", "relevant": {"m051": 2, "m196": 1}, "type": "scoped", "lang": "en", "split": "test"}
+{"id": "q069", "project": "atlas", "query": "怎么发版？", "relevant": {"m061": 2, "m202": 2, "m154": 1}, "type": "scoped", "lang": "zh", "split": "dev"}
+{"id": "q070", "project": "cobalt", "query": "慢查询", "relevant": {"m196": 2, "m212": 1, "m230": 1}, "type": "short", "lang": "zh", "split": "test"}
+{"id": "q071", "project": "atlas", "query": "Where does atlas keep its config file on Windows?", "relevant": {"m218": 2, "m201": 1}, "type": "question", "lang": "en", "split": "dev"}
+{"id": "q072", "project": "delta", "query": "内容库有没有定时存档？存多久？", "relevant": {"m223": 2}, "type": "paraphrase", "lang": "zh", "split": "dev"}
+{"id": "q073", "project": "delta", "query": "How is traffic measured on the site, and is a consent popup required?", "relevant": {"m227": 2}, "type": "paraphrase", "lang": "en", "split": "test"}
+{"id": "q074", "project": "cobalt", "query": "How do we fix \"prepared statement does not exist\" errors behind pgbouncer?", "relevant": {"m232": 2, "m121": 1, "m186": 1}, "type": "question", "lang": "en", "split": "test"}
+{"id": "q075", "project": "delta", "query": "Which languages does the company website support?", "relevant": {"m137": 2, "m036": 1, "m049": 1}, "type": "question", "lang": "en", "split": "dev"}
+{"id": "q076", "project": "cobalt", "query": "What mistakes have we made with Airflow DAG scheduling?", "relevant": {"m010": 2, "m239": 2, "m205": 1}, "type": "negative", "lang": "en", "split": "test"}
+{"id": "q077", "project": "bamboo", "query": "What did we do to shrink the download size caused by the bundled typeface?", "relevant": {"m125": 2, "m128": 1}, "type": "paraphrase", "lang": "en", "split": "test"}
+{"id": "q078", "project": "@user", "query": "日本語ドキュメント 説明", "relevant": {"m134": 2}, "type": "keyword", "lang": "ja", "split": "dev"}
+{"id": "q079", "project": "cobalt", "query": "PG跨主版本那次具体是怎么操作的？", "relevant": {"m230": 2, "m120": 1}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q080", "project": "delta", "query": "合并之前想让市场部先看看改版效果，有地方可以看吗？", "relevant": {"m050": 2, "m170": 2, "m133": 1}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q081", "project": "bamboo", "query": "用户还在选候选词的时候，语法着色把输入打断了，怎么处理？", "relevant": {"m127": 2}, "type": "paraphrase", "lang": "zh", "split": "dev"}
+{"id": "q082", "project": "cobalt", "query": "Airflow用的是什么executor，跑在哪里？", "relevant": {"m174": 2, "m004": 1}, "type": "cross_lingual", "lang": "zh", "split": "test"}
+{"id": "q083", "project": "@user", "query": "部署一般安排在什么时间比较好？", "relevant": {"m235": 2}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q084", "project": "atlas", "query": "Why did relocating images onto a second disk throw an error?", "relevant": {"m019": 2}, "type": "paraphrase", "lang": "en", "split": "dev"}
+{"id": "q085", "project": "cobalt", "query": "值班", "relevant": {"m063": 2, "m051": 1, "m181": 1, "m240": 1}, "type": "short", "lang": "zh", "split": "test"}
+{"id": "q086", "project": "@user", "query": "PR一般多大比较合适？", "relevant": {"m173": 2, "m045": 1}, "type": "cross_lingual", "lang": "zh", "split": "test"}
+{"id": "q087", "project": "cobalt", "query": "JSONB字段过滤怎么才能用上索引？", "relevant": {"m212": 2, "m069": 1}, "type": "cross_lingual", "lang": "zh", "split": "test"}
+{"id": "q088", "project": "cobalt", "query": "wal-g backup 保留天数", "relevant": {"m161": 2, "m084": 1}, "type": "keyword", "lang": "mixed", "split": "test"}
+{"id": "q089", "project": "bamboo", "query": "How are sync conflicts resolved when the same note is edited on two phones?", "relevant": {"m122": 2}, "type": "question", "lang": "en", "split": "test"}
+{"id": "q090", "project": "bamboo", "query": "How do I run the integration tests on a real device?", "relevant": {"m039": 2}, "type": "cross_lingual", "lang": "en", "split": "test"}
+{"id": "q091", "project": "atlas", "query": "HEIC libheif 依赖", "relevant": {"m152": 2, "m208": 2}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q092", "project": "bamboo", "query": "为什么bamboo不做端到端加密？", "relevant": {"m031": 2}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q093", "project": "@user", "query": "How should dates be written in file names?", "relevant": {"m080": 2}, "type": "cross_lingual", "lang": "en", "split": "test"}
+{"id": "q094", "project": "delta", "query": "Anything special about editing the website right before an exhibition?", "relevant": {"m001": 2}, "type": "paraphrase", "lang": "en", "split": "dev"}
+{"id": "q095", "project": "bamboo", "query": "推送", "relevant": {"m026": 2, "m141": 2, "m064": 1}, "type": "short", "lang": "zh", "split": "dev"}
+{"id": "q096", "project": "atlas", "query": "atlasにGUIがないのはなぜ？", "relevant": {"m203": 2}, "type": "question", "lang": "ja", "split": "dev"}
+{"id": "q097", "project": "delta", "query": "お問い合わせフォームの内容はどこに保存されますか？", "relevant": {"m143": 2}, "type": "question", "lang": "ja", "split": "dev"}
+{"id": "q098", "project": "atlas", "query": "Windows 路径", "relevant": {"m015": 2, "m024": 2, "m218": 1}, "type": "short", "lang": "zh", "split": "dev"}
+{"id": "q099", "project": "cobalt", "query": "After how long does the events source freshness check error out?", "relevant": {"m240": 2, "m195": 1}, "type": "question", "lang": "en", "split": "dev"}
+{"id": "q100", "project": "cobalt", "query": "Airflow 的数据库密码和 API token 存在哪里？", "relevant": {"m164": 2}, "type": "question", "lang": "mixed", "split": "dev"}
+{"id": "q101", "project": "atlas", "query": "atlas的缩略图现在是多大尺寸？", "relevant": {"m225": 2, "m033": 1}, "type": "question", "lang": "zh", "split": "dev"}
+{"id": "q102", "project": "delta", "query": "用Docker部署和维护时有哪些不要做的事？", "relevant": {"m165": 2, "m168": 2, "m136": 1}, "type": "negative", "lang": "zh", "split": "test"}
+{"id": "q103", "project": "cobalt", "query": "pg_partman 分区", "relevant": {"m069": 2, "m034": 1, "m230": 1}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q104", "project": "bamboo", "query": "用户敲几个汉字找东西时，背后是怎么切词的？", "relevant": {"m041": 2, "m198": 2}, "type": "paraphrase", "lang": "zh", "split": "dev"}
+{"id": "q105", "project": "cobalt", "query": "cobalt用的Python是哪个版本？依赖用什么管理？", "relevant": {"m118": 2, "m054": 1, "m074": 1, "m099": 1}, "type": "question", "lang": "zh", "split": "dev"}
+{"id": "q106", "project": "bamboo", "query": "What state management does bamboo use?", "relevant": {"m156": 2, "m022": 1}, "type": "question", "lang": "en", "split": "test"}
+{"id": "q107", "project": "@user", "query": "我对提交信息有什么要求？", "relevant": {"m027": 2, "m172": 2, "m221": 1, "m224": 1}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q108", "project": "atlas", "query": "EXIF 时间", "relevant": {"m148": 2, "m207": 1}, "type": "short", "lang": "zh", "split": "test"}
+{"id": "q109", "project": "cobalt", "query": "大的 dbt/SQL 转换作业怎么限流，避免把 warehouse 连接抢光？", "relevant": {"m214": 2, "m186": 1}, "type": "paraphrase", "lang": "mixed", "split": "test"}
+{"id": "q110", "project": "bamboo", "query": "安卓那边的应用商店因为什么把我们打回来过？", "relevant": {"m089": 2, "m064": 1}, "type": "paraphrase", "lang": "zh", "split": "dev"}
+{"id": "q111", "project": "delta", "query": "How do I run the tests?", "relevant": {"m077": 2, "m032": 1}, "type": "scoped", "lang": "en", "split": "test"}
+{"id": "q112", "project": "cobalt", "query": "回填历史数据的标准流程是什么？", "relevant": {"m034": 2, "m097": 1, "m239": 1}, "type": "cross_lingual", "lang": "zh", "split": "test"}
+{"id": "q113", "project": "delta", "query": "next-sitemap 配置文件", "relevant": {"m086": 2, "m129": 1, "m200": 1}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q114", "project": "delta", "query": "What's on the SEO checklist before a new page goes live?", "relevant": {"m036": 2}, "type": "cross_lingual", "lang": "en", "split": "dev"}
+{"id": "q115", "project": "cobalt", "query": "我们当时为什么放弃了MongoDB？", "relevant": {"m087": 2, "m069": 1}, "type": "question", "lang": "zh", "split": "dev"}
+{"id": "q116", "project": "cobalt", "query": "数仓里的数据是从哪几路上游 feed 进来的，频率各是多少？", "relevant": {"m072": 2}, "type": "paraphrase", "lang": "mixed", "split": "dev"}
+{"id": "q117", "project": "atlas", "query": "Why did we pick SQLite instead of an embedded key-value store for the catalogue?", "relevant": {"m131": 2, "m007": 1, "m065": 1}, "type": "question", "lang": "en", "split": "test"}
+{"id": "q118", "project": "@user", "query": "Should I use poetry or uv for a new Python project?", "relevant": {"m074": 2, "m054": 1}, "type": "question", "lang": "en", "split": "dev"}
+{"id": "q119", "project": "bamboo", "query": "审核", "relevant": {"m073": 2, "m089": 2, "m064": 1, "m126": 1}, "type": "short", "lang": "zh", "split": "test"}
+{"id": "q120", "project": "delta", "query": "首屏大图出来得特别慢，后来是怎么解决的？", "relevant": {"m194": 2}, "type": "paraphrase", "lang": "zh", "split": "dev"}
+{"id": "q121", "project": "cobalt", "query": "走连接池的时候，为什么有些 session 级别的设置不生效？", "relevant": {"m121": 2, "m186": 1, "m232": 1}, "type": "paraphrase", "lang": "mixed", "split": "test"}
+{"id": "q122", "project": "atlas", "query": "一秒内按了好几下快门，存下来的名字会冲突吗？", "relevant": {"m091": 2}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q123", "project": "bamboo", "query": "Where should unsaved drafts be stored on iOS so they don't disappear?", "relevant": {"m006": 2}, "type": "cross_lingual", "lang": "en", "split": "dev"}
+{"id": "q124", "project": "delta", "query": "www 跳转 Caddy", "relevant": {"m003": 2, "m036": 1}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q125", "project": "delta", "query": "日本語フォント サブセット", "relevant": {"m028": 2}, "type": "keyword", "lang": "ja", "split": "test"}
+{"id": "q126", "project": "bamboo", "query": "桌面小部件上显示的内容是从哪里来的？", "relevant": {"m117": 2}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q127", "project": "cobalt", "query": "往Postgres灌大量数据有什么性能陷阱？", "relevant": {"m184": 2}, "type": "negative", "lang": "zh", "split": "test"}
+{"id": "q128", "project": "delta", "query": "备份", "relevant": {"m223": 2, "m169": 1}, "type": "short", "lang": "zh", "split": "test"}
+{"id": "q129", "project": "delta", "query": "想把线上的内容数据弄一份到自己电脑上调试，怎么做？", "relevant": {"m169": 2, "m223": 1}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q130", "project": "cobalt", "query": "上个月的数据要 backfill，DAG 应该怎么跑？", "relevant": {"m034": 2, "m097": 1, "m239": 1}, "type": "question", "lang": "mixed", "split": "dev"}
+{"id": "q131", "project": "bamboo", "query": "安卓有几个构建渠道？推送分别走什么？", "relevant": {"m026": 2, "m141": 2}, "type": "cross_lingual", "lang": "zh", "split": "dev"}
+{"id": "q132", "project": "cobalt", "query": "cobalt的生产库现在是哪个版本的Postgres？", "relevant": {"m120": 2, "m115": 1}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q133", "project": "bamboo", "query": "iOS上有哪些做法要避免？", "relevant": {"m006": 2, "m107": 2, "m073": 1, "m126": 1}, "type": "negative", "lang": "zh", "split": "test"}
+{"id": "q134", "project": "delta", "query": "delta现在用的Strapi是哪个大版本？升级时遇到过哪些破坏性变更？", "relevant": {"m110": 2, "m130": 2, "m009": 1, "m106": 1}, "type": "question", "lang": "zh", "split": "dev"}
+{"id": "q135", "project": "@user", "query": "我平时用什么编辑器？", "relevant": {"m183": 2}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q136", "project": "delta", "query": "Strapi后台有哪些人可以登录？", "relevant": {"m157": 2}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q137", "project": "@user", "query": "Any conventions for the small automation helpers I hack together?", "relevant": {"m135": 2}, "type": "paraphrase", "lang": "en", "split": "test"}
+{"id": "q138", "project": "cobalt", "query": "最底层的行为日志能放多久？能识别到个人的字段怎么处理？", "relevant": {"m146": 2, "m069": 1}, "type": "paraphrase", "lang": "zh", "split": "dev"}
+{"id": "q139", "project": "atlas", "query": "What's the naming scheme for imported photo files?", "relevant": {"m091": 2, "m080": 1}, "type": "cross_lingual", "lang": "en", "split": "dev"}
+{"id": "q140", "project": "atlas", "query": "atlas导入时怎么判断一张照片是不是已经导入过了？", "relevant": {"m112": 2, "m016": 1}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q141", "project": "atlas", "query": "What's the oldest compiler toolchain the photo tool still has to build with?", "relevant": {"m160": 2, "m119": 1}, "type": "paraphrase", "lang": "en", "split": "dev"}
+{"id": "q142", "project": "delta", "query": "Where are uploaded images stored on the server?", "relevant": {"m102": 2}, "type": "question", "lang": "en", "split": "test"}
+{"id": "q143", "project": "bamboo", "query": "图片附件上传前会压缩吗？压到多大？", "relevant": {"m075": 2}, "type": "question", "lang": "zh", "split": "test"}
+{"id": "q144", "project": "atlas", "query": "EXDEV cross-device link", "relevant": {"m019": 2}, "type": "keyword", "lang": "en", "split": "dev"}
+{"id": "q145", "project": "atlas", "query": "Which database does the project use?", "relevant": {"m007": 2, "m065": 2, "m131": 1}, "type": "scoped", "lang": "en", "split": "dev"}
+{"id": "q146", "project": "atlas", "query": "atlasのテスト用サンプル写真はどうやって取得する？", "relevant": {"m238": 2}, "type": "cross_lingual", "lang": "ja", "split": "test"}
+{"id": "q147", "project": "delta", "query": "Node 版本 .nvmrc", "relevant": {"m229": 2, "m228": 1}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q148", "project": "atlas", "query": "有人说东西坏了，我该先让他提供什么环境信息？", "relevant": {"m201": 2}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q149", "project": "cobalt", "query": "Airflow DAG retries 默认值", "relevant": {"m079": 2, "m159": 2}, "type": "keyword", "lang": "mixed", "split": "dev"}
+{"id": "q150", "project": "cobalt", "query": "礼拜五傍晚能发新版本吗？", "relevant": {"m011": 2, "m181": 2, "m235": 1}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q151", "project": "@user", "query": "我主要在什么系统上干活？", "relevant": {"m018": 2, "m029": 1, "m183": 1}, "type": "question", "lang": "zh", "split": "dev"}
+{"id": "q152", "project": "bamboo", "query": "CI 跑在哪个平台上？", "relevant": {"m149": 2, "m039": 1}, "type": "scoped", "lang": "mixed", "split": "test"}
+{"id": "q153", "project": "delta", "query": "Caddy HTTPS 证书", "relevant": {"m078": 2, "m136": 2}, "type": "keyword", "lang": "zh", "split": "test"}
+{"id": "q154", "project": "atlas", "query": "这个工具按什么条款开源？引用的外部库合不合规怎么查？", "relevant": {"m098": 2, "m197": 1}, "type": "paraphrase", "lang": "zh", "split": "test"}
+{"id": "q155", "project": "atlas", "query": "insta snapshot review", "relevant": {"m092": 2, "m231": 1}, "type": "keyword", "lang": "en", "split": "test"}
+{"id": "q156", "project": "delta", "query": "日本語版サイトでやってはいけないことは？", "relevant": {"m058": 2, "m049": 1}, "type": "negative", "lang": "ja", "split": "test"}
+{"id": "q157", "project": "cobalt", "query": "用的什么数据库？", "relevant": {"m120": 2, "m115": 1, "m185": 1}, "type": "scoped", "lang": "zh", "split": "dev"}
+{"id": "q158", "project": "delta", "query": "联系表单有防刷机制吗？", "relevant": {"m234": 2}, "type": "question", "lang": "zh", "split": "dev"}
+{"id": "q159", "project": "atlas", "query": "What kind of storage engine backs the picture inventory?", "relevant": {"m007": 2, "m065": 2, "m131": 1}, "type": "paraphrase", "lang": "en", "split": "dev"}
+{"id": "q160", "project": "cobalt", "query": "时区", "relevant": {"m014": 2, "m205": 2, "m047": 1, "m236": 1}, "type": "short", "lang": "zh", "split": "dev"}

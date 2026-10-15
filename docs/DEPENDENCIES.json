@@ -1,0 +1,4212 @@
+[
+  {
+    "ecosystem": "Python",
+    "name": "altgraph",
+    "version": "0.17.5",
+    "license": "MIT",
+    "project": "https://altgraph.readthedocs.io",
+    "links": [
+      "https://altgraph.readthedocs.io/en/latest/",
+      "https://github.com/ronaldoussoren/altgraph/issues",
+      "https://github.com/ronaldoussoren/altgraph"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "license": "MIT",
+    "project": "https://github.com/annotated-types/annotated-types",
+    "links": [
+      "https://github.com/annotated-types/annotated-types",
+      "https://github.com/annotated-types/annotated-types",
+      "https://github.com/annotated-types/annotated-types/releases"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "anyio",
+    "version": "4.15.1",
+    "license": "MIT",
+    "project": "https://anyio.readthedocs.io/en/latest/",
+    "links": [
+      "https://anyio.readthedocs.io/en/latest/",
+      "https://anyio.readthedocs.io/en/stable/versionhistory.html",
+      "https://github.com/agronholm/anyio",
+      "https://github.com/agronholm/anyio/issues"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "attrs",
+    "version": "26.1.0",
+    "license": "MIT",
+    "project": "https://www.attrs.org/",
+    "links": [
+      "https://www.attrs.org/",
+      "https://www.attrs.org/en/stable/changelog.html",
+      "https://github.com/python-attrs/attrs",
+      "https://github.com/sponsors/hynek",
+      "https://tidelift.com/subscription/pkg/pypi-attrs?utm_source=pypi-attrs&utm_medium=pypi"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "build",
+    "version": "1.6.1",
+    "license": "MIT",
+    "project": "https://build.pypa.io/en/stable/changelog.html",
+    "links": [
+      "https://build.pypa.io/en/stable/changelog.html",
+      "https://build.pypa.io",
+      "https://github.com/pypa/build/issues",
+      "https://github.com/pypa/build"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "certifi",
+    "version": "2026.7.22",
+    "license": "MPL-2.0",
+    "project": "https://github.com/certifi/python-certifi",
+    "links": [
+      "https://github.com/certifi/python-certifi"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "cffi",
+    "version": "2.1.1",
+    "license": "MIT-0",
+    "project": "https://cffi.readthedocs.io/",
+    "links": [
+      "https://cffi.readthedocs.io/",
+      "https://cffi.readthedocs.io/en/latest/whatsnew.html",
+      "https://github.com/python-cffi/cffi/releases",
+      "https://groups.google.com/forum/#!forum/python-cffi",
+      "https://github.com/python-cffi/cffi",
+      "https://github.com/python-cffi/cffi/issues"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "click",
+    "version": "8.5.0",
+    "license": "BSD-3-Clause",
+    "project": "https://click.palletsprojects.com/page/changes/",
+    "links": [
+      "https://click.palletsprojects.com/page/changes/",
+      "https://discord.gg/pallets",
+      "https://click.palletsprojects.com/",
+      "https://palletsprojects.com/donate",
+      "https://github.com/pallets/click/"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "colorama",
+    "version": "0.4.6",
+    "license": "see distribution license",
+    "project": "https://github.com/tartley/colorama",
+    "links": [
+      "https://github.com/tartley/colorama"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "cryptography",
+    "version": "50.0.2",
+    "license": "Apache-2.0 OR BSD-3-Clause",
+    "project": "https://cryptography.io/en/latest/changelog/",
+    "links": [
+      "https://cryptography.io/en/latest/changelog/",
+      "https://cryptography.io/",
+      "https://github.com/pyca/cryptography",
+      "https://github.com/pyca/cryptography/issues",
+      "https://github.com/pyca/cryptography/"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "h11",
+    "version": "0.16.0",
+    "license": "MIT",
+    "project": "https://github.com/python-hyper/h11",
+    "links": []
+  },
+  {
+    "ecosystem": "Python",
+    "name": "httpcore",
+    "version": "1.0.9",
+    "license": "BSD-3-Clause",
+    "project": "https://www.encode.io/httpcore",
+    "links": [
+      "https://www.encode.io/httpcore",
+      "https://www.encode.io/httpcore/",
+      "https://github.com/encode/httpcore"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "httpx",
+    "version": "0.28.1",
+    "license": "BSD-3-Clause",
+    "project": "https://github.com/encode/httpx/blob/master/CHANGELOG.md",
+    "links": [
+      "https://github.com/encode/httpx/blob/master/CHANGELOG.md",
+      "https://www.python-httpx.org",
+      "https://github.com/encode/httpx",
+      "https://github.com/encode/httpx"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "httpx-sse",
+    "version": "0.4.3",
+    "license": "MIT",
+    "project": "https://github.com/florimondmanca/httpx-sse",
+    "links": [
+      "https://github.com/florimondmanca/httpx-sse"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "idna",
+    "version": "3.20",
+    "license": "BSD-3-Clause",
+    "project": "https://github.com/kjd/idna/blob/master/HISTORY.md",
+    "links": [
+      "https://github.com/kjd/idna/blob/master/HISTORY.md",
+      "https://github.com/kjd/idna/issues",
+      "https://github.com/kjd/idna"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "jsonschema",
+    "version": "4.26.0",
+    "license": "MIT",
+    "project": "https://github.com/python-jsonschema/jsonschema",
+    "links": [
+      "https://github.com/python-jsonschema/jsonschema",
+      "https://python-jsonschema.readthedocs.io/",
+      "https://github.com/python-jsonschema/jsonschema/issues/",
+      "https://github.com/sponsors/Julian",
+      "https://tidelift.com/subscription/pkg/pypi-jsonschema?utm_source=pypi-jsonschema&utm_medium=referral&utm_campaign=pypi-link",
+      "https://github.com/python-jsonschema/jsonschema/blob/main/CHANGELOG.rst",
+      "https://github.com/python-jsonschema/jsonschema"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "jsonschema-specifications",
+    "version": "2025.9.1",
+    "license": "MIT",
+    "project": "https://jsonschema-specifications.readthedocs.io/",
+    "links": [
+      "https://jsonschema-specifications.readthedocs.io/",
+      "https://github.com/python-jsonschema/jsonschema-specifications",
+      "https://github.com/python-jsonschema/jsonschema-specifications/issues/",
+      "https://github.com/sponsors/Julian",
+      "https://tidelift.com/subscription/pkg/pypi-jsonschema-specifications?utm_source=pypi-jsonschema-specifications&utm_medium=referral&utm_campaign=pypi-link",
+      "https://github.com/python-jsonschema/jsonschema-specifications"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "maturin",
+    "version": "1.15.0",
+    "license": "MIT OR Apache-2.0",
+    "project": "https://github.com/pyo3/maturin",
+    "links": [
+      "https://maturin.rs/changelog.html",
+      "https://maturin.rs",
+      "https://github.com/PyO3/maturin/issues",
+      "https://github.com/PyO3/maturin"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "mcp",
+    "version": "1.30.0",
+    "license": "MIT",
+    "project": "https://modelcontextprotocol.io",
+    "links": [
+      "https://modelcontextprotocol.io",
+      "https://py.sdk.modelcontextprotocol.io/v1/",
+      "https://github.com/modelcontextprotocol/python-sdk",
+      "https://github.com/modelcontextprotocol/python-sdk/issues"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "memory-merge-native",
+    "version": "1.0.1",
+    "license": "MIT",
+    "project": "https://pypi.org/project/memory-merge-native/",
+    "links": []
+  },
+  {
+    "ecosystem": "Python",
+    "name": "packaging",
+    "version": "26.3",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "project": "https://packaging.pypa.io/",
+    "links": [
+      "https://packaging.pypa.io/",
+      "https://github.com/pypa/packaging"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pefile",
+    "version": "2024.8.26",
+    "license": "MIT",
+    "project": "https://github.com/erocarrera/pefile",
+    "links": []
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pip",
+    "version": "25.0.1",
+    "license": "MIT",
+    "project": "https://pip.pypa.io/",
+    "links": [
+      "https://pip.pypa.io/",
+      "https://pip.pypa.io",
+      "https://github.com/pypa/pip",
+      "https://pip.pypa.io/en/stable/news/"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pycparser",
+    "version": "3.11",
+    "license": "BSD-3-Clause",
+    "project": "https://github.com/eliben/pycparser",
+    "links": [
+      "https://github.com/eliben/pycparser"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pydantic",
+    "version": "2.14.1",
+    "license": "MIT",
+    "project": "https://github.com/pydantic/pydantic",
+    "links": [
+      "https://github.com/pydantic/pydantic",
+      "https://pydantic.dev/docs/validation/latest/get-started/",
+      "https://github.com/sponsors/samuelcolvin",
+      "https://github.com/pydantic/pydantic",
+      "https://pydantic.dev/docs/validation/latest/get-started/changelog/"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pydantic-settings",
+    "version": "2.16.0",
+    "license": "MIT",
+    "project": "https://github.com/pydantic/pydantic-settings",
+    "links": [
+      "https://github.com/pydantic/pydantic-settings",
+      "https://github.com/sponsors/samuelcolvin",
+      "https://github.com/pydantic/pydantic-settings",
+      "https://github.com/pydantic/pydantic-settings/releases",
+      "https://docs.pydantic.dev/dev-v2/concepts/pydantic_settings/"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pydantic_core",
+    "version": "2.50.1",
+    "license": "MIT",
+    "project": "https://github.com/pydantic/pydantic",
+    "links": [
+      "https://github.com/sponsors/samuelcolvin",
+      "https://github.com/pydantic",
+      "https://github.com/pydantic/pydantic/tree/main/pydantic-core"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pyinstaller",
+    "version": "6.22.3",
+    "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+    "project": "https://pyinstaller.org",
+    "links": [
+      "https://pyinstaller.org",
+      "https://pyinstaller.org",
+      "https://github.com/pyinstaller/pyinstaller",
+      "https://pyinstaller.org/en/stable/CHANGES.html"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pyinstaller-hooks-contrib",
+    "version": "2026.8",
+    "license": "see distribution license",
+    "project": "https://github.com/pyinstaller/pyinstaller-hooks-contrib",
+    "links": []
+  },
+  {
+    "ecosystem": "Python",
+    "name": "PyJWT",
+    "version": "2.15.1",
+    "license": "MIT",
+    "project": "https://github.com/jpadilla/pyjwt",
+    "links": [
+      "https://github.com/jpadilla/pyjwt"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pyproject_hooks",
+    "version": "1.3.3",
+    "license": "MIT",
+    "project": "https://pyproject-hooks.readthedocs.io/en/latest/changelog.html",
+    "links": [
+      "https://pyproject-hooks.readthedocs.io/en/latest/changelog.html",
+      "https://pyproject-hooks.readthedocs.io/",
+      "https://github.com/pypa/pyproject-hooks"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "python-dotenv",
+    "version": "1.2.4",
+    "license": "BSD-3-Clause",
+    "project": "https://github.com/theskumar/python-dotenv",
+    "links": [
+      "https://github.com/theskumar/python-dotenv"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "python-multipart",
+    "version": "0.0.32",
+    "license": "Apache-2.0",
+    "project": "https://github.com/Kludex/python-multipart",
+    "links": [
+      "https://github.com/Kludex/python-multipart",
+      "https://kludex.github.io/python-multipart/",
+      "https://github.com/Kludex/python-multipart/blob/master/CHANGELOG.md",
+      "https://github.com/Kludex/python-multipart"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pywin32",
+    "version": "312",
+    "license": "PSF",
+    "project": "https://github.com/mhammond/pywin32",
+    "links": [
+      "https://github.com/mhammond/pywin32",
+      "https://github.com/mhammond/pywin32/blob/main/CHANGES.md",
+      "https://mhammond.github.io/pywin32/",
+      "https://github.com/mhammond/pywin32/issues",
+      "https://github.com/mhammond/pywin32/discussions",
+      "https://mail.python.org/mailman/listinfo/python-win32"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "pywin32-ctypes",
+    "version": "0.2.3",
+    "license": "BSD-3-Clause",
+    "project": "https://github.com/enthought/pywin32-ctypes",
+    "links": []
+  },
+  {
+    "ecosystem": "Python",
+    "name": "referencing",
+    "version": "0.37.0",
+    "license": "MIT",
+    "project": "https://referencing.readthedocs.io/",
+    "links": [
+      "https://referencing.readthedocs.io/",
+      "https://github.com/python-jsonschema/referencing",
+      "https://github.com/python-jsonschema/referencing/issues/",
+      "https://github.com/sponsors/Julian",
+      "https://tidelift.com/subscription/pkg/pypi-referencing?utm_source=pypi-referencing&utm_medium=referral&utm_campaign=pypi-link",
+      "https://referencing.readthedocs.io/en/stable/changes/",
+      "https://github.com/python-jsonschema/referencing"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "rpds-py",
+    "version": "2026.9.1",
+    "license": "MIT",
+    "project": "https://rpds.readthedocs.io/",
+    "links": [
+      "https://rpds.readthedocs.io/",
+      "https://github.com/sponsors/Julian",
+      "https://github.com/crate-py/rpds",
+      "https://github.com/crate-py/rpds/issues/",
+      "https://github.com/crate-py/rpds",
+      "https://tidelift.com/subscription/pkg/pypi-rpds-py?utm_source=pypi-rpds-py&utm_medium=referral&utm_campaign=pypi-link",
+      "https://github.com/orium/rpds"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "setuptools",
+    "version": "84.0.0",
+    "license": "MIT",
+    "project": "https://github.com/pypa/setuptools",
+    "links": [
+      "https://github.com/pypa/setuptools",
+      "https://setuptools.pypa.io/",
+      "https://setuptools.pypa.io/en/stable/history.html"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "sse-starlette",
+    "version": "3.5.0",
+    "license": "BSD-3-Clause",
+    "project": "https://github.com/sysid/sse-starlette",
+    "links": [
+      "https://github.com/sysid/sse-starlette",
+      "https://github.com/sysid/sse-starlette",
+      "https://github.com/sysid/sse-starlette/issues",
+      "https://github.com/sysid/sse-starlette"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "starlette",
+    "version": "1.8.0",
+    "license": "BSD-3-Clause",
+    "project": "https://github.com/Kludex/starlette",
+    "links": [
+      "https://github.com/Kludex/starlette",
+      "https://starlette.dev/",
+      "https://starlette.dev/release-notes/",
+      "https://github.com/sponsors/Kludex",
+      "https://github.com/Kludex/starlette"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "license": "MIT",
+    "project": "https://github.com/pydantic/typing-inspection",
+    "links": [
+      "https://github.com/pydantic/typing-inspection",
+      "https://pydantic.github.io/typing-inspection/dev/",
+      "https://github.com/pydantic/typing-inspection",
+      "https://github.com/pydantic/typing-inspection/blob/main/HISTORY.md"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license": "PSF-2.0",
+    "project": "https://github.com/python/typing_extensions/issues",
+    "links": [
+      "https://github.com/python/typing_extensions/issues",
+      "https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+      "https://typing-extensions.readthedocs.io/",
+      "https://github.com/python/typing_extensions",
+      "https://github.com/python/typing/discussions",
+      "https://github.com/python/typing_extensions"
+    ]
+  },
+  {
+    "ecosystem": "Python",
+    "name": "uvicorn",
+    "version": "0.54.0",
+    "license": "BSD-3-Clause",
+    "project": "https://uvicorn.dev/release-notes",
+    "links": [
+      "https://uvicorn.dev/release-notes",
+      "https://github.com/sponsors/Kludex",
+      "https://uvicorn.dev/",
+      "https://github.com/Kludex/uvicorn"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/aix-ppc64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/aix-ppc64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/aix-ppc64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/android-arm",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/android-arm",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/android-arm"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/android-arm64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/android-arm64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/android-arm64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/android-x64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/android-x64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/android-x64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/darwin-arm64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/darwin-arm64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/darwin-arm64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/darwin-x64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/darwin-x64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/darwin-x64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/freebsd-arm64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/freebsd-arm64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/freebsd-arm64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/freebsd-x64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/freebsd-x64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/freebsd-x64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/linux-arm",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/linux-arm",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/linux-arm"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/linux-arm64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/linux-arm64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/linux-arm64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/linux-ia32",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/linux-ia32",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/linux-ia32"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/linux-loong64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/linux-loong64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/linux-loong64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/linux-mips64el",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/linux-mips64el",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/linux-mips64el"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/linux-ppc64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/linux-ppc64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/linux-ppc64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/linux-riscv64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/linux-riscv64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/linux-riscv64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/linux-s390x",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/linux-s390x",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/linux-s390x"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/linux-x64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/linux-x64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/linux-x64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/netbsd-arm64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/netbsd-arm64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/netbsd-arm64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/netbsd-x64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/netbsd-x64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/netbsd-x64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/openbsd-arm64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/openbsd-arm64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/openbsd-arm64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/openbsd-x64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/openbsd-x64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/openbsd-x64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/openharmony-arm64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/openharmony-arm64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/openharmony-arm64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/sunos-x64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/sunos-x64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/sunos-x64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/win32-arm64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/win32-arm64",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/win32-arm64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/win32-ia32",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@esbuild/win32-ia32",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/win32-ia32"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@esbuild/win32-x64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://github.com/evanw/esbuild",
+    "links": [
+      "https://www.npmjs.com/package/@esbuild/win32-x64"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@types/node",
+    "version": "22.18.6",
+    "license": "MIT",
+    "project": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "links": [
+      "https://www.npmjs.com/package/@types/node"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@types/stats.js",
+    "version": "0.17.4",
+    "license": "MIT",
+    "project": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "links": [
+      "https://www.npmjs.com/package/@types/stats.js"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@types/three",
+    "version": "0.160.0",
+    "license": "MIT",
+    "project": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "links": [
+      "https://www.npmjs.com/package/@types/three"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "@types/webxr",
+    "version": "0.5.24",
+    "license": "MIT",
+    "project": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "links": [
+      "https://www.npmjs.com/package/@types/webxr"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "commander",
+    "version": "8.3.0",
+    "license": "MIT",
+    "project": "https://github.com/tj/commander.js",
+    "links": [
+      "https://www.npmjs.com/package/commander"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "esbuild",
+    "version": "0.25.12",
+    "license": "MIT",
+    "project": "https://github.com/evanw/esbuild",
+    "links": [
+      "https://www.npmjs.com/package/esbuild"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "fflate",
+    "version": "0.6.11",
+    "license": "MIT",
+    "project": "https://github.com/101arrowz/fflate",
+    "links": [
+      "https://www.npmjs.com/package/fflate"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "katex",
+    "version": "0.16.47",
+    "license": "MIT",
+    "project": "https://github.com/KaTeX/KaTeX",
+    "links": [
+      "https://www.npmjs.com/package/katex"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "meshoptimizer",
+    "version": "0.18.1",
+    "license": "MIT",
+    "project": "https://github.com/zeux/meshoptimizer",
+    "links": [
+      "https://www.npmjs.com/package/meshoptimizer"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "three",
+    "version": "0.160.1",
+    "license": "MIT",
+    "project": "https://github.com/mrdoob/three.js",
+    "links": [
+      "https://www.npmjs.com/package/three"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "typescript",
+    "version": "5.9.3",
+    "license": "Apache-2.0",
+    "project": "https://github.com/microsoft/TypeScript",
+    "links": [
+      "https://www.npmjs.com/package/typescript"
+    ]
+  },
+  {
+    "ecosystem": "npm/frontend",
+    "name": "undici-types",
+    "version": "6.21.0",
+    "license": "MIT",
+    "project": "https://github.com/nodejs/undici",
+    "links": [
+      "https://www.npmjs.com/package/undici-types"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@develar/schema-utils",
+    "version": "2.6.5",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@develar/schema-utils",
+    "links": [
+      "https://www.npmjs.com/package/@develar/schema-utils"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron-internal/extract-zip",
+    "version": "1.0.5",
+    "license": "BSD-2-Clause",
+    "project": "https://www.npmjs.com/package/@electron-internal/extract-zip",
+    "links": [
+      "https://www.npmjs.com/package/@electron-internal/extract-zip"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron/asar",
+    "version": "3.2.18",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@electron/asar",
+    "links": [
+      "https://www.npmjs.com/package/@electron/asar"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron/fuses",
+    "version": "1.8.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@electron/fuses",
+    "links": [
+      "https://www.npmjs.com/package/@electron/fuses"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron/get",
+    "version": "5.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@electron/get",
+    "links": [
+      "https://www.npmjs.com/package/@electron/get"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron/node-gyp",
+    "version": "10.2.0-electron.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@electron/node-gyp",
+    "links": [
+      "https://www.npmjs.com/package/@electron/node-gyp"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron/notarize",
+    "version": "2.5.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@electron/notarize",
+    "links": [
+      "https://www.npmjs.com/package/@electron/notarize"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron/osx-sign",
+    "version": "1.3.1",
+    "license": "BSD-2-Clause",
+    "project": "https://www.npmjs.com/package/@electron/osx-sign",
+    "links": [
+      "https://www.npmjs.com/package/@electron/osx-sign"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron/rebuild",
+    "version": "3.7.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@electron/rebuild",
+    "links": [
+      "https://www.npmjs.com/package/@electron/rebuild"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron/universal",
+    "version": "2.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@electron/universal",
+    "links": [
+      "https://www.npmjs.com/package/@electron/universal"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@electron/windows-sign",
+    "version": "1.2.2",
+    "license": "BSD-2-Clause",
+    "project": "https://www.npmjs.com/package/@electron/windows-sign",
+    "links": [
+      "https://www.npmjs.com/package/@electron/windows-sign"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@gar/promisify",
+    "version": "1.1.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@gar/promisify",
+    "links": [
+      "https://www.npmjs.com/package/@gar/promisify"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@isaacs/cliui",
+    "version": "8.0.2",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/@isaacs/cliui",
+    "links": [
+      "https://www.npmjs.com/package/@isaacs/cliui"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@malept/cross-spawn-promise",
+    "version": "2.0.0",
+    "license": "Apache-2.0",
+    "project": "https://www.npmjs.com/package/@malept/cross-spawn-promise",
+    "links": [
+      "https://www.npmjs.com/package/@malept/cross-spawn-promise"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@malept/flatpak-bundler",
+    "version": "0.4.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@malept/flatpak-bundler",
+    "links": [
+      "https://www.npmjs.com/package/@malept/flatpak-bundler"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@npmcli/fs",
+    "version": "2.1.2",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/@npmcli/fs",
+    "links": [
+      "https://www.npmjs.com/package/@npmcli/fs"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@npmcli/move-file",
+    "version": "2.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@npmcli/move-file",
+    "links": [
+      "https://www.npmjs.com/package/@npmcli/move-file"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@pkgjs/parseargs",
+    "version": "0.11.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@pkgjs/parseargs",
+    "links": [
+      "https://www.npmjs.com/package/@pkgjs/parseargs"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@sindresorhus/is",
+    "version": "4.6.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@sindresorhus/is",
+    "links": [
+      "https://www.npmjs.com/package/@sindresorhus/is"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@szmarczak/http-timer",
+    "version": "4.0.6",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@szmarczak/http-timer",
+    "links": [
+      "https://www.npmjs.com/package/@szmarczak/http-timer"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@tootallnate/once",
+    "version": "2.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@tootallnate/once",
+    "links": [
+      "https://www.npmjs.com/package/@tootallnate/once"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/cacheable-request",
+    "version": "6.0.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/cacheable-request",
+    "links": [
+      "https://www.npmjs.com/package/@types/cacheable-request"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/debug",
+    "version": "4.1.13",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/debug",
+    "links": [
+      "https://www.npmjs.com/package/@types/debug"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/fs-extra",
+    "version": "9.0.13",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/fs-extra",
+    "links": [
+      "https://www.npmjs.com/package/@types/fs-extra"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/http-cache-semantics",
+    "version": "4.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/http-cache-semantics",
+    "links": [
+      "https://www.npmjs.com/package/@types/http-cache-semantics"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/keyv",
+    "version": "3.1.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/keyv",
+    "links": [
+      "https://www.npmjs.com/package/@types/keyv"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/ms",
+    "version": "2.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/ms",
+    "links": [
+      "https://www.npmjs.com/package/@types/ms"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/node",
+    "version": "24.19.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/node",
+    "links": [
+      "https://www.npmjs.com/package/@types/node"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/plist",
+    "version": "3.0.5",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/plist",
+    "links": [
+      "https://www.npmjs.com/package/@types/plist"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/responselike",
+    "version": "1.0.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/responselike",
+    "links": [
+      "https://www.npmjs.com/package/@types/responselike"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@types/verror",
+    "version": "1.10.11",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@types/verror",
+    "links": [
+      "https://www.npmjs.com/package/@types/verror"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "@xmldom/xmldom",
+    "version": "0.8.15",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/@xmldom/xmldom",
+    "links": [
+      "https://www.npmjs.com/package/@xmldom/xmldom"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "7zip-bin",
+    "version": "5.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/7zip-bin",
+    "links": [
+      "https://www.npmjs.com/package/7zip-bin"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "abbrev",
+    "version": "1.1.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/abbrev",
+    "links": [
+      "https://www.npmjs.com/package/abbrev"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "agent-base",
+    "version": "7.1.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/agent-base",
+    "links": [
+      "https://www.npmjs.com/package/agent-base"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "agentkeepalive",
+    "version": "4.6.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/agentkeepalive",
+    "links": [
+      "https://www.npmjs.com/package/agentkeepalive"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "aggregate-error",
+    "version": "3.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/aggregate-error",
+    "links": [
+      "https://www.npmjs.com/package/aggregate-error"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ajv",
+    "version": "6.15.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/ajv",
+    "links": [
+      "https://www.npmjs.com/package/ajv"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ajv-keywords",
+    "version": "3.5.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/ajv-keywords",
+    "links": [
+      "https://www.npmjs.com/package/ajv-keywords"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ansi-regex",
+    "version": "5.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/ansi-regex",
+    "links": [
+      "https://www.npmjs.com/package/ansi-regex"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ansi-styles",
+    "version": "4.3.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/ansi-styles",
+    "links": [
+      "https://www.npmjs.com/package/ansi-styles"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "app-builder-bin",
+    "version": "5.0.0-alpha.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/app-builder-bin",
+    "links": [
+      "https://www.npmjs.com/package/app-builder-bin"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "app-builder-lib",
+    "version": "26.0.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/app-builder-lib",
+    "links": [
+      "https://www.npmjs.com/package/app-builder-lib"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "argparse",
+    "version": "2.0.1",
+    "license": "Python-2.0",
+    "project": "https://www.npmjs.com/package/argparse",
+    "links": [
+      "https://www.npmjs.com/package/argparse"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "assert-plus",
+    "version": "1.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/assert-plus",
+    "links": [
+      "https://www.npmjs.com/package/assert-plus"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "astral-regex",
+    "version": "2.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/astral-regex",
+    "links": [
+      "https://www.npmjs.com/package/astral-regex"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "async",
+    "version": "3.2.6",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/async",
+    "links": [
+      "https://www.npmjs.com/package/async"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "async-exit-hook",
+    "version": "2.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/async-exit-hook",
+    "links": [
+      "https://www.npmjs.com/package/async-exit-hook"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "asynckit",
+    "version": "0.4.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/asynckit",
+    "links": [
+      "https://www.npmjs.com/package/asynckit"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "at-least-node",
+    "version": "1.0.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/at-least-node",
+    "links": [
+      "https://www.npmjs.com/package/at-least-node"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "balanced-match",
+    "version": "4.0.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/balanced-match",
+    "links": [
+      "https://www.npmjs.com/package/balanced-match"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "base64-js",
+    "version": "1.5.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/base64-js",
+    "links": [
+      "https://www.npmjs.com/package/base64-js"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "bl",
+    "version": "4.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/bl",
+    "links": [
+      "https://www.npmjs.com/package/bl"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "brace-expansion",
+    "version": "5.0.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/brace-expansion",
+    "links": [
+      "https://www.npmjs.com/package/brace-expansion"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "buffer",
+    "version": "5.7.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/buffer",
+    "links": [
+      "https://www.npmjs.com/package/buffer"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "buffer-from",
+    "version": "1.1.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/buffer-from",
+    "links": [
+      "https://www.npmjs.com/package/buffer-from"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "builder-util",
+    "version": "26.0.11",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/builder-util",
+    "links": [
+      "https://www.npmjs.com/package/builder-util"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "builder-util-runtime",
+    "version": "9.3.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/builder-util-runtime",
+    "links": [
+      "https://www.npmjs.com/package/builder-util-runtime"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "cacache",
+    "version": "16.1.3",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/cacache",
+    "links": [
+      "https://www.npmjs.com/package/cacache"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "cacheable-lookup",
+    "version": "5.0.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/cacheable-lookup",
+    "links": [
+      "https://www.npmjs.com/package/cacheable-lookup"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "cacheable-request",
+    "version": "7.0.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/cacheable-request",
+    "links": [
+      "https://www.npmjs.com/package/cacheable-request"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "call-bind-apply-helpers",
+    "version": "1.0.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/call-bind-apply-helpers",
+    "links": [
+      "https://www.npmjs.com/package/call-bind-apply-helpers"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "chalk",
+    "version": "4.1.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/chalk",
+    "links": [
+      "https://www.npmjs.com/package/chalk"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "chownr",
+    "version": "2.0.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/chownr",
+    "links": [
+      "https://www.npmjs.com/package/chownr"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "chromium-pickle-js",
+    "version": "0.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/chromium-pickle-js",
+    "links": [
+      "https://www.npmjs.com/package/chromium-pickle-js"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ci-info",
+    "version": "3.9.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/ci-info",
+    "links": [
+      "https://www.npmjs.com/package/ci-info"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "clean-stack",
+    "version": "2.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/clean-stack",
+    "links": [
+      "https://www.npmjs.com/package/clean-stack"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "cli-cursor",
+    "version": "3.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/cli-cursor",
+    "links": [
+      "https://www.npmjs.com/package/cli-cursor"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "cli-spinners",
+    "version": "2.9.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/cli-spinners",
+    "links": [
+      "https://www.npmjs.com/package/cli-spinners"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "cli-truncate",
+    "version": "2.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/cli-truncate",
+    "links": [
+      "https://www.npmjs.com/package/cli-truncate"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "cliui",
+    "version": "8.0.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/cliui",
+    "links": [
+      "https://www.npmjs.com/package/cliui"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "clone",
+    "version": "1.0.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/clone",
+    "links": [
+      "https://www.npmjs.com/package/clone"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "clone-response",
+    "version": "1.0.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/clone-response",
+    "links": [
+      "https://www.npmjs.com/package/clone-response"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "color-convert",
+    "version": "2.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/color-convert",
+    "links": [
+      "https://www.npmjs.com/package/color-convert"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "color-name",
+    "version": "1.1.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/color-name",
+    "links": [
+      "https://www.npmjs.com/package/color-name"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "combined-stream",
+    "version": "1.0.8",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/combined-stream",
+    "links": [
+      "https://www.npmjs.com/package/combined-stream"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "commander",
+    "version": "5.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/commander",
+    "links": [
+      "https://www.npmjs.com/package/commander"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "compare-version",
+    "version": "0.1.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/compare-version",
+    "links": [
+      "https://www.npmjs.com/package/compare-version"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "concat-map",
+    "version": "0.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/concat-map",
+    "links": [
+      "https://www.npmjs.com/package/concat-map"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "config-file-ts",
+    "version": "0.2.8-rc1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/config-file-ts",
+    "links": [
+      "https://www.npmjs.com/package/config-file-ts"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "core-util-is",
+    "version": "1.0.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/core-util-is",
+    "links": [
+      "https://www.npmjs.com/package/core-util-is"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "crc",
+    "version": "3.8.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/crc",
+    "links": [
+      "https://www.npmjs.com/package/crc"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "cross-dirname",
+    "version": "0.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/cross-dirname",
+    "links": [
+      "https://www.npmjs.com/package/cross-dirname"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "cross-spawn",
+    "version": "7.0.6",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/cross-spawn",
+    "links": [
+      "https://www.npmjs.com/package/cross-spawn"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "debug",
+    "version": "4.4.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/debug",
+    "links": [
+      "https://www.npmjs.com/package/debug"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "decompress-response",
+    "version": "6.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/decompress-response",
+    "links": [
+      "https://www.npmjs.com/package/decompress-response"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "defaults",
+    "version": "1.0.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/defaults",
+    "links": [
+      "https://www.npmjs.com/package/defaults"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "defer-to-connect",
+    "version": "2.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/defer-to-connect",
+    "links": [
+      "https://www.npmjs.com/package/defer-to-connect"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "delayed-stream",
+    "version": "1.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/delayed-stream",
+    "links": [
+      "https://www.npmjs.com/package/delayed-stream"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "detect-libc",
+    "version": "2.1.2",
+    "license": "Apache-2.0",
+    "project": "https://www.npmjs.com/package/detect-libc",
+    "links": [
+      "https://www.npmjs.com/package/detect-libc"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "dir-compare",
+    "version": "4.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/dir-compare",
+    "links": [
+      "https://www.npmjs.com/package/dir-compare"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "dmg-builder",
+    "version": "26.0.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/dmg-builder",
+    "links": [
+      "https://www.npmjs.com/package/dmg-builder"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "dmg-license",
+    "version": "1.0.11",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/dmg-license",
+    "links": [
+      "https://www.npmjs.com/package/dmg-license"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "dotenv",
+    "version": "16.6.1",
+    "license": "BSD-2-Clause",
+    "project": "https://www.npmjs.com/package/dotenv",
+    "links": [
+      "https://www.npmjs.com/package/dotenv"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "dotenv-expand",
+    "version": "11.0.7",
+    "license": "BSD-2-Clause",
+    "project": "https://www.npmjs.com/package/dotenv-expand",
+    "links": [
+      "https://www.npmjs.com/package/dotenv-expand"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "dunder-proto",
+    "version": "1.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/dunder-proto",
+    "links": [
+      "https://www.npmjs.com/package/dunder-proto"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "eastasianwidth",
+    "version": "0.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/eastasianwidth",
+    "links": [
+      "https://www.npmjs.com/package/eastasianwidth"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ejs",
+    "version": "3.1.10",
+    "license": "Apache-2.0",
+    "project": "https://www.npmjs.com/package/ejs",
+    "links": [
+      "https://www.npmjs.com/package/ejs"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "electron",
+    "version": "44.7.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/electron",
+    "links": [
+      "https://www.npmjs.com/package/electron"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "electron-builder",
+    "version": "26.0.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/electron-builder",
+    "links": [
+      "https://www.npmjs.com/package/electron-builder"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "electron-builder-squirrel-windows",
+    "version": "26.0.12",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/electron-builder-squirrel-windows",
+    "links": [
+      "https://www.npmjs.com/package/electron-builder-squirrel-windows"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "electron-publish",
+    "version": "26.0.11",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/electron-publish",
+    "links": [
+      "https://www.npmjs.com/package/electron-publish"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "electron-winstaller",
+    "version": "5.4.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/electron-winstaller",
+    "links": [
+      "https://www.npmjs.com/package/electron-winstaller"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "emoji-regex",
+    "version": "8.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/emoji-regex",
+    "links": [
+      "https://www.npmjs.com/package/emoji-regex"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "encoding",
+    "version": "0.1.13",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/encoding",
+    "links": [
+      "https://www.npmjs.com/package/encoding"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "end-of-stream",
+    "version": "1.4.5",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/end-of-stream",
+    "links": [
+      "https://www.npmjs.com/package/end-of-stream"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "env-paths",
+    "version": "3.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/env-paths",
+    "links": [
+      "https://www.npmjs.com/package/env-paths"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "err-code",
+    "version": "2.0.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/err-code",
+    "links": [
+      "https://www.npmjs.com/package/err-code"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "es-define-property",
+    "version": "1.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/es-define-property",
+    "links": [
+      "https://www.npmjs.com/package/es-define-property"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "es-errors",
+    "version": "1.3.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/es-errors",
+    "links": [
+      "https://www.npmjs.com/package/es-errors"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "es-object-atoms",
+    "version": "1.1.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/es-object-atoms",
+    "links": [
+      "https://www.npmjs.com/package/es-object-atoms"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "es-set-tostringtag",
+    "version": "2.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/es-set-tostringtag",
+    "links": [
+      "https://www.npmjs.com/package/es-set-tostringtag"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "escalade",
+    "version": "3.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/escalade",
+    "links": [
+      "https://www.npmjs.com/package/escalade"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "exponential-backoff",
+    "version": "3.1.3",
+    "license": "Apache-2.0",
+    "project": "https://www.npmjs.com/package/exponential-backoff",
+    "links": [
+      "https://www.npmjs.com/package/exponential-backoff"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "extsprintf",
+    "version": "1.4.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/extsprintf",
+    "links": [
+      "https://www.npmjs.com/package/extsprintf"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "fast-deep-equal",
+    "version": "3.1.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/fast-deep-equal",
+    "links": [
+      "https://www.npmjs.com/package/fast-deep-equal"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "fast-json-stable-stringify",
+    "version": "2.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/fast-json-stable-stringify",
+    "links": [
+      "https://www.npmjs.com/package/fast-json-stable-stringify"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "filelist",
+    "version": "1.0.6",
+    "license": "Apache-2.0",
+    "project": "https://www.npmjs.com/package/filelist",
+    "links": [
+      "https://www.npmjs.com/package/filelist"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "foreground-child",
+    "version": "3.3.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/foreground-child",
+    "links": [
+      "https://www.npmjs.com/package/foreground-child"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "form-data",
+    "version": "4.0.6",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/form-data",
+    "links": [
+      "https://www.npmjs.com/package/form-data"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "fs-extra",
+    "version": "10.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/fs-extra",
+    "links": [
+      "https://www.npmjs.com/package/fs-extra"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "fs-minipass",
+    "version": "2.1.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/fs-minipass",
+    "links": [
+      "https://www.npmjs.com/package/fs-minipass"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "fs.realpath",
+    "version": "1.0.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/fs.realpath",
+    "links": [
+      "https://www.npmjs.com/package/fs.realpath"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "function-bind",
+    "version": "1.1.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/function-bind",
+    "links": [
+      "https://www.npmjs.com/package/function-bind"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "get-caller-file",
+    "version": "2.0.5",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/get-caller-file",
+    "links": [
+      "https://www.npmjs.com/package/get-caller-file"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "get-intrinsic",
+    "version": "1.3.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/get-intrinsic",
+    "links": [
+      "https://www.npmjs.com/package/get-intrinsic"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "get-proto",
+    "version": "1.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/get-proto",
+    "links": [
+      "https://www.npmjs.com/package/get-proto"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "get-stream",
+    "version": "5.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/get-stream",
+    "links": [
+      "https://www.npmjs.com/package/get-stream"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "glob",
+    "version": "7.2.3",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/glob",
+    "links": [
+      "https://www.npmjs.com/package/glob"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "gopd",
+    "version": "1.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/gopd",
+    "links": [
+      "https://www.npmjs.com/package/gopd"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "got",
+    "version": "11.8.6",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/got",
+    "links": [
+      "https://www.npmjs.com/package/got"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "graceful-fs",
+    "version": "4.2.11",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/graceful-fs",
+    "links": [
+      "https://www.npmjs.com/package/graceful-fs"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "has-flag",
+    "version": "4.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/has-flag",
+    "links": [
+      "https://www.npmjs.com/package/has-flag"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "has-symbols",
+    "version": "1.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/has-symbols",
+    "links": [
+      "https://www.npmjs.com/package/has-symbols"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "has-tostringtag",
+    "version": "1.0.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/has-tostringtag",
+    "links": [
+      "https://www.npmjs.com/package/has-tostringtag"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "hasown",
+    "version": "2.0.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/hasown",
+    "links": [
+      "https://www.npmjs.com/package/hasown"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "hosted-git-info",
+    "version": "4.1.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/hosted-git-info",
+    "links": [
+      "https://www.npmjs.com/package/hosted-git-info"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "http-cache-semantics",
+    "version": "4.3.0",
+    "license": "BSD-2-Clause",
+    "project": "https://www.npmjs.com/package/http-cache-semantics",
+    "links": [
+      "https://www.npmjs.com/package/http-cache-semantics"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "http-proxy-agent",
+    "version": "7.0.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/http-proxy-agent",
+    "links": [
+      "https://www.npmjs.com/package/http-proxy-agent"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "http2-wrapper",
+    "version": "1.0.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/http2-wrapper",
+    "links": [
+      "https://www.npmjs.com/package/http2-wrapper"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "https-proxy-agent",
+    "version": "7.0.6",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/https-proxy-agent",
+    "links": [
+      "https://www.npmjs.com/package/https-proxy-agent"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "humanize-ms",
+    "version": "1.2.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/humanize-ms",
+    "links": [
+      "https://www.npmjs.com/package/humanize-ms"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "iconv-corefoundation",
+    "version": "1.1.7",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/iconv-corefoundation",
+    "links": [
+      "https://www.npmjs.com/package/iconv-corefoundation"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "iconv-lite",
+    "version": "0.6.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/iconv-lite",
+    "links": [
+      "https://www.npmjs.com/package/iconv-lite"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ieee754",
+    "version": "1.2.1",
+    "license": "BSD-3-Clause",
+    "project": "https://www.npmjs.com/package/ieee754",
+    "links": [
+      "https://www.npmjs.com/package/ieee754"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "imurmurhash",
+    "version": "0.1.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/imurmurhash",
+    "links": [
+      "https://www.npmjs.com/package/imurmurhash"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "indent-string",
+    "version": "4.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/indent-string",
+    "links": [
+      "https://www.npmjs.com/package/indent-string"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "infer-owner",
+    "version": "1.0.4",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/infer-owner",
+    "links": [
+      "https://www.npmjs.com/package/infer-owner"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "inflight",
+    "version": "1.0.6",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/inflight",
+    "links": [
+      "https://www.npmjs.com/package/inflight"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "inherits",
+    "version": "2.0.4",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/inherits",
+    "links": [
+      "https://www.npmjs.com/package/inherits"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ip-address",
+    "version": "10.7.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/ip-address",
+    "links": [
+      "https://www.npmjs.com/package/ip-address"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "is-ci",
+    "version": "3.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/is-ci",
+    "links": [
+      "https://www.npmjs.com/package/is-ci"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "is-fullwidth-code-point",
+    "version": "3.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/is-fullwidth-code-point",
+    "links": [
+      "https://www.npmjs.com/package/is-fullwidth-code-point"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "is-interactive",
+    "version": "1.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/is-interactive",
+    "links": [
+      "https://www.npmjs.com/package/is-interactive"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "is-lambda",
+    "version": "1.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/is-lambda",
+    "links": [
+      "https://www.npmjs.com/package/is-lambda"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "is-unicode-supported",
+    "version": "0.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/is-unicode-supported",
+    "links": [
+      "https://www.npmjs.com/package/is-unicode-supported"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "isbinaryfile",
+    "version": "5.0.7",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/isbinaryfile",
+    "links": [
+      "https://www.npmjs.com/package/isbinaryfile"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "isexe",
+    "version": "2.0.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/isexe",
+    "links": [
+      "https://www.npmjs.com/package/isexe"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "jackspeak",
+    "version": "3.4.3",
+    "license": "BlueOak-1.0.0",
+    "project": "https://www.npmjs.com/package/jackspeak",
+    "links": [
+      "https://www.npmjs.com/package/jackspeak"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "jake",
+    "version": "10.9.4",
+    "license": "Apache-2.0",
+    "project": "https://www.npmjs.com/package/jake",
+    "links": [
+      "https://www.npmjs.com/package/jake"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "js-yaml",
+    "version": "4.3.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/js-yaml",
+    "links": [
+      "https://www.npmjs.com/package/js-yaml"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "json-buffer",
+    "version": "3.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/json-buffer",
+    "links": [
+      "https://www.npmjs.com/package/json-buffer"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "json-schema-traverse",
+    "version": "0.4.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/json-schema-traverse",
+    "links": [
+      "https://www.npmjs.com/package/json-schema-traverse"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "json5",
+    "version": "2.2.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/json5",
+    "links": [
+      "https://www.npmjs.com/package/json5"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "jsonfile",
+    "version": "6.2.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/jsonfile",
+    "links": [
+      "https://www.npmjs.com/package/jsonfile"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "keyv",
+    "version": "4.5.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/keyv",
+    "links": [
+      "https://www.npmjs.com/package/keyv"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "lazy-val",
+    "version": "1.0.5",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/lazy-val",
+    "links": [
+      "https://www.npmjs.com/package/lazy-val"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "lodash",
+    "version": "4.18.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/lodash",
+    "links": [
+      "https://www.npmjs.com/package/lodash"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "log-symbols",
+    "version": "4.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/log-symbols",
+    "links": [
+      "https://www.npmjs.com/package/log-symbols"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "lowercase-keys",
+    "version": "2.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/lowercase-keys",
+    "links": [
+      "https://www.npmjs.com/package/lowercase-keys"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "lru-cache",
+    "version": "6.0.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/lru-cache",
+    "links": [
+      "https://www.npmjs.com/package/lru-cache"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "make-fetch-happen",
+    "version": "10.2.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/make-fetch-happen",
+    "links": [
+      "https://www.npmjs.com/package/make-fetch-happen"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "math-intrinsics",
+    "version": "1.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/math-intrinsics",
+    "links": [
+      "https://www.npmjs.com/package/math-intrinsics"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "mime",
+    "version": "2.6.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/mime",
+    "links": [
+      "https://www.npmjs.com/package/mime"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "mime-db",
+    "version": "1.52.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/mime-db",
+    "links": [
+      "https://www.npmjs.com/package/mime-db"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "mime-types",
+    "version": "2.1.35",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/mime-types",
+    "links": [
+      "https://www.npmjs.com/package/mime-types"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "mimic-fn",
+    "version": "2.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/mimic-fn",
+    "links": [
+      "https://www.npmjs.com/package/mimic-fn"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "mimic-response",
+    "version": "1.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/mimic-response",
+    "links": [
+      "https://www.npmjs.com/package/mimic-response"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "minimatch",
+    "version": "10.2.6",
+    "license": "BlueOak-1.0.0",
+    "project": "https://www.npmjs.com/package/minimatch",
+    "links": [
+      "https://www.npmjs.com/package/minimatch"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "minimist",
+    "version": "1.2.8",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/minimist",
+    "links": [
+      "https://www.npmjs.com/package/minimist"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "minipass",
+    "version": "3.3.6",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/minipass",
+    "links": [
+      "https://www.npmjs.com/package/minipass"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "minipass-collect",
+    "version": "1.0.2",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/minipass-collect",
+    "links": [
+      "https://www.npmjs.com/package/minipass-collect"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "minipass-fetch",
+    "version": "2.1.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/minipass-fetch",
+    "links": [
+      "https://www.npmjs.com/package/minipass-fetch"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "minipass-flush",
+    "version": "1.0.7",
+    "license": "BlueOak-1.0.0",
+    "project": "https://www.npmjs.com/package/minipass-flush",
+    "links": [
+      "https://www.npmjs.com/package/minipass-flush"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "minipass-pipeline",
+    "version": "1.2.4",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/minipass-pipeline",
+    "links": [
+      "https://www.npmjs.com/package/minipass-pipeline"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "minipass-sized",
+    "version": "1.0.3",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/minipass-sized",
+    "links": [
+      "https://www.npmjs.com/package/minipass-sized"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "minizlib",
+    "version": "2.1.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/minizlib",
+    "links": [
+      "https://www.npmjs.com/package/minizlib"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "mkdirp",
+    "version": "1.0.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/mkdirp",
+    "links": [
+      "https://www.npmjs.com/package/mkdirp"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ms",
+    "version": "2.1.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/ms",
+    "links": [
+      "https://www.npmjs.com/package/ms"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "negotiator",
+    "version": "0.6.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/negotiator",
+    "links": [
+      "https://www.npmjs.com/package/negotiator"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "node-abi",
+    "version": "3.98.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/node-abi",
+    "links": [
+      "https://www.npmjs.com/package/node-abi"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "node-addon-api",
+    "version": "1.7.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/node-addon-api",
+    "links": [
+      "https://www.npmjs.com/package/node-addon-api"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "node-api-version",
+    "version": "0.2.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/node-api-version",
+    "links": [
+      "https://www.npmjs.com/package/node-api-version"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "nopt",
+    "version": "6.0.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/nopt",
+    "links": [
+      "https://www.npmjs.com/package/nopt"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "normalize-url",
+    "version": "6.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/normalize-url",
+    "links": [
+      "https://www.npmjs.com/package/normalize-url"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "once",
+    "version": "1.4.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/once",
+    "links": [
+      "https://www.npmjs.com/package/once"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "onetime",
+    "version": "5.1.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/onetime",
+    "links": [
+      "https://www.npmjs.com/package/onetime"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ora",
+    "version": "5.4.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/ora",
+    "links": [
+      "https://www.npmjs.com/package/ora"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "p-cancelable",
+    "version": "2.1.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/p-cancelable",
+    "links": [
+      "https://www.npmjs.com/package/p-cancelable"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "p-limit",
+    "version": "3.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/p-limit",
+    "links": [
+      "https://www.npmjs.com/package/p-limit"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "p-map",
+    "version": "4.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/p-map",
+    "links": [
+      "https://www.npmjs.com/package/p-map"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "package-json-from-dist",
+    "version": "1.0.1",
+    "license": "BlueOak-1.0.0",
+    "project": "https://www.npmjs.com/package/package-json-from-dist",
+    "links": [
+      "https://www.npmjs.com/package/package-json-from-dist"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "path-is-absolute",
+    "version": "1.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/path-is-absolute",
+    "links": [
+      "https://www.npmjs.com/package/path-is-absolute"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "path-key",
+    "version": "3.1.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/path-key",
+    "links": [
+      "https://www.npmjs.com/package/path-key"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "path-scurry",
+    "version": "1.11.1",
+    "license": "BlueOak-1.0.0",
+    "project": "https://www.npmjs.com/package/path-scurry",
+    "links": [
+      "https://www.npmjs.com/package/path-scurry"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "pe-library",
+    "version": "0.4.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/pe-library",
+    "links": [
+      "https://www.npmjs.com/package/pe-library"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "picocolors",
+    "version": "1.1.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/picocolors",
+    "links": [
+      "https://www.npmjs.com/package/picocolors"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "plist",
+    "version": "3.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/plist",
+    "links": [
+      "https://www.npmjs.com/package/plist"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "postject",
+    "version": "1.0.0-alpha.6",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/postject",
+    "links": [
+      "https://www.npmjs.com/package/postject"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "proc-log",
+    "version": "2.0.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/proc-log",
+    "links": [
+      "https://www.npmjs.com/package/proc-log"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "progress",
+    "version": "2.0.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/progress",
+    "links": [
+      "https://www.npmjs.com/package/progress"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "promise-inflight",
+    "version": "1.0.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/promise-inflight",
+    "links": [
+      "https://www.npmjs.com/package/promise-inflight"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "promise-retry",
+    "version": "2.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/promise-retry",
+    "links": [
+      "https://www.npmjs.com/package/promise-retry"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "pump",
+    "version": "3.0.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/pump",
+    "links": [
+      "https://www.npmjs.com/package/pump"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "punycode",
+    "version": "2.3.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/punycode",
+    "links": [
+      "https://www.npmjs.com/package/punycode"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "quick-lru",
+    "version": "5.1.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/quick-lru",
+    "links": [
+      "https://www.npmjs.com/package/quick-lru"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "read-binary-file-arch",
+    "version": "1.0.6",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/read-binary-file-arch",
+    "links": [
+      "https://www.npmjs.com/package/read-binary-file-arch"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "readable-stream",
+    "version": "3.6.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/readable-stream",
+    "links": [
+      "https://www.npmjs.com/package/readable-stream"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "require-directory",
+    "version": "2.1.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/require-directory",
+    "links": [
+      "https://www.npmjs.com/package/require-directory"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "resedit",
+    "version": "1.7.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/resedit",
+    "links": [
+      "https://www.npmjs.com/package/resedit"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "resolve-alpn",
+    "version": "1.2.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/resolve-alpn",
+    "links": [
+      "https://www.npmjs.com/package/resolve-alpn"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "responselike",
+    "version": "2.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/responselike",
+    "links": [
+      "https://www.npmjs.com/package/responselike"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "restore-cursor",
+    "version": "3.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/restore-cursor",
+    "links": [
+      "https://www.npmjs.com/package/restore-cursor"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "retry",
+    "version": "0.12.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/retry",
+    "links": [
+      "https://www.npmjs.com/package/retry"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "rimraf",
+    "version": "3.0.2",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/rimraf",
+    "links": [
+      "https://www.npmjs.com/package/rimraf"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "safe-buffer",
+    "version": "5.2.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/safe-buffer",
+    "links": [
+      "https://www.npmjs.com/package/safe-buffer"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "safer-buffer",
+    "version": "2.1.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/safer-buffer",
+    "links": [
+      "https://www.npmjs.com/package/safer-buffer"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "sanitize-filename",
+    "version": "1.6.4",
+    "license": "WTFPL OR ISC",
+    "project": "https://www.npmjs.com/package/sanitize-filename",
+    "links": [
+      "https://www.npmjs.com/package/sanitize-filename"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "sax",
+    "version": "1.6.1",
+    "license": "BlueOak-1.0.0",
+    "project": "https://www.npmjs.com/package/sax",
+    "links": [
+      "https://www.npmjs.com/package/sax"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "semver",
+    "version": "7.8.5",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/semver",
+    "links": [
+      "https://www.npmjs.com/package/semver"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "shebang-command",
+    "version": "2.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/shebang-command",
+    "links": [
+      "https://www.npmjs.com/package/shebang-command"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "shebang-regex",
+    "version": "3.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/shebang-regex",
+    "links": [
+      "https://www.npmjs.com/package/shebang-regex"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "signal-exit",
+    "version": "3.0.7",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/signal-exit",
+    "links": [
+      "https://www.npmjs.com/package/signal-exit"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "simple-update-notifier",
+    "version": "2.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/simple-update-notifier",
+    "links": [
+      "https://www.npmjs.com/package/simple-update-notifier"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "slice-ansi",
+    "version": "3.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/slice-ansi",
+    "links": [
+      "https://www.npmjs.com/package/slice-ansi"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "smart-buffer",
+    "version": "4.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/smart-buffer",
+    "links": [
+      "https://www.npmjs.com/package/smart-buffer"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "socks",
+    "version": "2.8.10",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/socks",
+    "links": [
+      "https://www.npmjs.com/package/socks"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "socks-proxy-agent",
+    "version": "7.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/socks-proxy-agent",
+    "links": [
+      "https://www.npmjs.com/package/socks-proxy-agent"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "source-map",
+    "version": "0.6.1",
+    "license": "BSD-3-Clause",
+    "project": "https://www.npmjs.com/package/source-map",
+    "links": [
+      "https://www.npmjs.com/package/source-map"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "source-map-support",
+    "version": "0.5.21",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/source-map-support",
+    "links": [
+      "https://www.npmjs.com/package/source-map-support"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "ssri",
+    "version": "9.0.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/ssri",
+    "links": [
+      "https://www.npmjs.com/package/ssri"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "stat-mode",
+    "version": "1.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/stat-mode",
+    "links": [
+      "https://www.npmjs.com/package/stat-mode"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "string_decoder",
+    "version": "1.3.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/string_decoder",
+    "links": [
+      "https://www.npmjs.com/package/string_decoder"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "string-width",
+    "version": "4.2.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/string-width",
+    "links": [
+      "https://www.npmjs.com/package/string-width"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "string-width-cjs",
+    "version": "4.2.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/string-width-cjs",
+    "links": [
+      "https://www.npmjs.com/package/string-width-cjs"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "strip-ansi",
+    "version": "6.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/strip-ansi",
+    "links": [
+      "https://www.npmjs.com/package/strip-ansi"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "strip-ansi-cjs",
+    "version": "6.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/strip-ansi-cjs",
+    "links": [
+      "https://www.npmjs.com/package/strip-ansi-cjs"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "sumchecker",
+    "version": "3.0.1",
+    "license": "Apache-2.0",
+    "project": "https://www.npmjs.com/package/sumchecker",
+    "links": [
+      "https://www.npmjs.com/package/sumchecker"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "supports-color",
+    "version": "7.2.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/supports-color",
+    "links": [
+      "https://www.npmjs.com/package/supports-color"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "tar",
+    "version": "6.2.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/tar",
+    "links": [
+      "https://www.npmjs.com/package/tar"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "temp",
+    "version": "0.9.4",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/temp",
+    "links": [
+      "https://www.npmjs.com/package/temp"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "temp-file",
+    "version": "3.4.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/temp-file",
+    "links": [
+      "https://www.npmjs.com/package/temp-file"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "tiny-async-pool",
+    "version": "1.3.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/tiny-async-pool",
+    "links": [
+      "https://www.npmjs.com/package/tiny-async-pool"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "tmp",
+    "version": "0.2.7",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/tmp",
+    "links": [
+      "https://www.npmjs.com/package/tmp"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "tmp-promise",
+    "version": "3.0.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/tmp-promise",
+    "links": [
+      "https://www.npmjs.com/package/tmp-promise"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "truncate-utf8-bytes",
+    "version": "1.0.2",
+    "license": "WTFPL",
+    "project": "https://www.npmjs.com/package/truncate-utf8-bytes",
+    "links": [
+      "https://www.npmjs.com/package/truncate-utf8-bytes"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "typescript",
+    "version": "5.9.3",
+    "license": "Apache-2.0",
+    "project": "https://www.npmjs.com/package/typescript",
+    "links": [
+      "https://www.npmjs.com/package/typescript"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "undici",
+    "version": "7.30.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/undici",
+    "links": [
+      "https://www.npmjs.com/package/undici"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "undici-types",
+    "version": "7.24.6",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/undici-types",
+    "links": [
+      "https://www.npmjs.com/package/undici-types"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "unique-filename",
+    "version": "2.0.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/unique-filename",
+    "links": [
+      "https://www.npmjs.com/package/unique-filename"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "unique-slug",
+    "version": "3.0.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/unique-slug",
+    "links": [
+      "https://www.npmjs.com/package/unique-slug"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "universalify",
+    "version": "2.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/universalify",
+    "links": [
+      "https://www.npmjs.com/package/universalify"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "uri-js",
+    "version": "4.4.1",
+    "license": "BSD-2-Clause",
+    "project": "https://www.npmjs.com/package/uri-js",
+    "links": [
+      "https://www.npmjs.com/package/uri-js"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "utf8-byte-length",
+    "version": "1.0.5",
+    "license": "(WTFPL OR MIT)",
+    "project": "https://www.npmjs.com/package/utf8-byte-length",
+    "links": [
+      "https://www.npmjs.com/package/utf8-byte-length"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "util-deprecate",
+    "version": "1.0.2",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/util-deprecate",
+    "links": [
+      "https://www.npmjs.com/package/util-deprecate"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "verror",
+    "version": "1.10.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/verror",
+    "links": [
+      "https://www.npmjs.com/package/verror"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "wcwidth",
+    "version": "1.0.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/wcwidth",
+    "links": [
+      "https://www.npmjs.com/package/wcwidth"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "which",
+    "version": "2.0.2",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/which",
+    "links": [
+      "https://www.npmjs.com/package/which"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "wrap-ansi",
+    "version": "7.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/wrap-ansi",
+    "links": [
+      "https://www.npmjs.com/package/wrap-ansi"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "wrap-ansi-cjs",
+    "version": "7.0.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/wrap-ansi-cjs",
+    "links": [
+      "https://www.npmjs.com/package/wrap-ansi-cjs"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "wrappy",
+    "version": "1.0.2",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/wrappy",
+    "links": [
+      "https://www.npmjs.com/package/wrappy"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "xmlbuilder",
+    "version": "15.1.1",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/xmlbuilder",
+    "links": [
+      "https://www.npmjs.com/package/xmlbuilder"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "y18n",
+    "version": "5.0.8",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/y18n",
+    "links": [
+      "https://www.npmjs.com/package/y18n"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "yallist",
+    "version": "4.0.0",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/yallist",
+    "links": [
+      "https://www.npmjs.com/package/yallist"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "yargs",
+    "version": "17.7.3",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/yargs",
+    "links": [
+      "https://www.npmjs.com/package/yargs"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "yargs-parser",
+    "version": "21.1.1",
+    "license": "ISC",
+    "project": "https://www.npmjs.com/package/yargs-parser",
+    "links": [
+      "https://www.npmjs.com/package/yargs-parser"
+    ]
+  },
+  {
+    "ecosystem": "npm/desktop",
+    "name": "yocto-queue",
+    "version": "0.1.0",
+    "license": "MIT",
+    "project": "https://www.npmjs.com/package/yocto-queue",
+    "links": [
+      "https://www.npmjs.com/package/yocto-queue"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "autocfg",
+    "version": "1.5.1",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/autocfg",
+    "links": [
+      "https://docs.rs/autocfg"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "cfg-if",
+    "version": "1.0.5",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/cfg-if",
+    "links": [
+      "https://docs.rs/cfg-if"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "heck",
+    "version": "0.5.0",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/heck",
+    "links": [
+      "https://docs.rs/heck"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "indoc",
+    "version": "2.0.8",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/indoc",
+    "links": [
+      "https://docs.rs/indoc"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "libc",
+    "version": "0.2.190",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/libc",
+    "links": [
+      "https://docs.rs/libc"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "memoffset",
+    "version": "0.9.1",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/memoffset",
+    "links": [
+      "https://docs.rs/memoffset"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "once_cell",
+    "version": "1.21.4",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/once_cell",
+    "links": [
+      "https://docs.rs/once_cell"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "portable-atomic",
+    "version": "1.15.0",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/portable-atomic",
+    "links": [
+      "https://docs.rs/portable-atomic"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "proc-macro2",
+    "version": "1.0.107",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/proc-macro2",
+    "links": [
+      "https://docs.rs/proc-macro2"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "pyo3",
+    "version": "0.22.6",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/pyo3",
+    "links": [
+      "https://docs.rs/pyo3"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "pyo3-build-config",
+    "version": "0.22.6",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/pyo3-build-config",
+    "links": [
+      "https://docs.rs/pyo3-build-config"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "pyo3-ffi",
+    "version": "0.22.6",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/pyo3-ffi",
+    "links": [
+      "https://docs.rs/pyo3-ffi"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "pyo3-macros",
+    "version": "0.22.6",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/pyo3-macros",
+    "links": [
+      "https://docs.rs/pyo3-macros"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "pyo3-macros-backend",
+    "version": "0.22.6",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/pyo3-macros-backend",
+    "links": [
+      "https://docs.rs/pyo3-macros-backend"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "quote",
+    "version": "1.0.47",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/quote",
+    "links": [
+      "https://docs.rs/quote"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "rustversion",
+    "version": "1.0.23",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/rustversion",
+    "links": [
+      "https://docs.rs/rustversion"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "syn",
+    "version": "2.0.119",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/syn",
+    "links": [
+      "https://docs.rs/syn"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "target-lexicon",
+    "version": "0.12.16",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/target-lexicon",
+    "links": [
+      "https://docs.rs/target-lexicon"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "unicode-ident",
+    "version": "1.0.27",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/unicode-ident",
+    "links": [
+      "https://docs.rs/unicode-ident"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "unindent",
+    "version": "0.2.4",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/unindent",
+    "links": [
+      "https://docs.rs/unindent"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "bumpalo",
+    "version": "3.20.3",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/bumpalo",
+    "links": [
+      "https://docs.rs/bumpalo"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "bytemuck",
+    "version": "1.25.2",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/bytemuck",
+    "links": [
+      "https://docs.rs/bytemuck"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "bytemuck_derive",
+    "version": "1.11.0",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/bytemuck_derive",
+    "links": [
+      "https://docs.rs/bytemuck_derive"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "cfg-if",
+    "version": "1.0.4",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/cfg-if",
+    "links": [
+      "https://docs.rs/cfg-if"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "equivalent",
+    "version": "1.0.2",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/equivalent",
+    "links": [
+      "https://docs.rs/equivalent"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "fixedbitset",
+    "version": "0.5.7",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/fixedbitset",
+    "links": [
+      "https://docs.rs/fixedbitset"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "foldhash",
+    "version": "0.1.5",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/foldhash",
+    "links": [
+      "https://docs.rs/foldhash"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "futures-core",
+    "version": "0.3.33",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/futures-core",
+    "links": [
+      "https://docs.rs/futures-core"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "futures-task",
+    "version": "0.3.33",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/futures-task",
+    "links": [
+      "https://docs.rs/futures-task"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "futures-util",
+    "version": "0.3.33",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/futures-util",
+    "links": [
+      "https://docs.rs/futures-util"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "glam",
+    "version": "0.33.2",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/glam",
+    "links": [
+      "https://docs.rs/glam"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "hashbrown",
+    "version": "0.15.5",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/hashbrown",
+    "links": [
+      "https://docs.rs/hashbrown"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "hashbrown",
+    "version": "0.17.1",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/hashbrown",
+    "links": [
+      "https://docs.rs/hashbrown"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "indexmap",
+    "version": "2.14.0",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/indexmap",
+    "links": [
+      "https://docs.rs/indexmap"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "js-sys",
+    "version": "0.3.103",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/js-sys",
+    "links": [
+      "https://docs.rs/js-sys"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "once_cell",
+    "version": "1.21.4",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/once_cell",
+    "links": [
+      "https://docs.rs/once_cell"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "petgraph",
+    "version": "0.8.3",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/petgraph",
+    "links": [
+      "https://docs.rs/petgraph"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "pin-project-lite",
+    "version": "0.2.17",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/pin-project-lite",
+    "links": [
+      "https://docs.rs/pin-project-lite"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "proc-macro2",
+    "version": "1.0.107",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/proc-macro2",
+    "links": [
+      "https://docs.rs/proc-macro2"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "quote",
+    "version": "1.0.47",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/quote",
+    "links": [
+      "https://docs.rs/quote"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "rustversion",
+    "version": "1.0.23",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/rustversion",
+    "links": [
+      "https://docs.rs/rustversion"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "serde",
+    "version": "1.0.229",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/serde",
+    "links": [
+      "https://docs.rs/serde"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "serde-wasm-bindgen",
+    "version": "0.6.5",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/serde-wasm-bindgen",
+    "links": [
+      "https://docs.rs/serde-wasm-bindgen"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "serde_core",
+    "version": "1.0.229",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/serde_core",
+    "links": [
+      "https://docs.rs/serde_core"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "serde_derive",
+    "version": "1.0.229",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/serde_derive",
+    "links": [
+      "https://docs.rs/serde_derive"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "slab",
+    "version": "0.4.12",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/slab",
+    "links": [
+      "https://docs.rs/slab"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "syn",
+    "version": "2.0.119",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/syn",
+    "links": [
+      "https://docs.rs/syn"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "syn",
+    "version": "3.0.3",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/syn",
+    "links": [
+      "https://docs.rs/syn"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "unicode-ident",
+    "version": "1.0.24",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/unicode-ident",
+    "links": [
+      "https://docs.rs/unicode-ident"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "wasm-bindgen",
+    "version": "0.2.126",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/wasm-bindgen",
+    "links": [
+      "https://docs.rs/wasm-bindgen"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "wasm-bindgen-macro",
+    "version": "0.2.126",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/wasm-bindgen-macro",
+    "links": [
+      "https://docs.rs/wasm-bindgen-macro"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "wasm-bindgen-macro-support",
+    "version": "0.2.126",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/wasm-bindgen-macro-support",
+    "links": [
+      "https://docs.rs/wasm-bindgen-macro-support"
+    ]
+  },
+  {
+    "ecosystem": "Rust",
+    "name": "wasm-bindgen-shared",
+    "version": "0.2.126",
+    "license": "see bundled crate notices / crates.io",
+    "project": "https://crates.io/crates/wasm-bindgen-shared",
+    "links": [
+      "https://docs.rs/wasm-bindgen-shared"
+    ]
+  }
+]

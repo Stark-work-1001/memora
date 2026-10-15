@@ -1,0 +1,45 @@
+{
+  "name": "memora-desktop",
+  "version": "1.0.1",
+  "private": true,
+  "main": "main.cjs",
+  "description": "Memora memory entity desktop shell",
+  "author": "Memora contributors",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir"
+  },
+  "devDependencies": {
+    "electron": "44.7.2",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "local.memora.desktop",
+    "productName": "Memora",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.cjs",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../dist/memora-backend",
+        "to": "backend"
+      }
+    ],
+    "win": {
+      "target": "dir",
+      "signAndEditExecutable": false
+    },
+    "mac": {
+      "target": "dir"
+    },
+    "linux": {
+      "target": "dir"
+    },
+    "electronDist": "node_modules/electron/dist"
+  }
+}

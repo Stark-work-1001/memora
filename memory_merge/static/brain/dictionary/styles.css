@@ -1,0 +1,464 @@
+:root{--sa-bg:#f7f7f5;--sa-ink:#1a1a19;--sa-muted:#6a6a66;--sa-faint:#9a9a96;--sa-line:#e3e3df;--sa-panel:#fff;--sa-accent:#286e58;}
+/* Dictionary Graph, standalone.
+ *
+ * Colours come from six custom properties so one stylesheet serves every shell
+ * and both themes; the app reads the same properties to tint the 3D scene, which
+ * is why they sit on :root rather than being hard-coded in the renderer.
+ *
+ * The layout is one column: a strip, the graph, and a definition panel that
+ * becomes an overlay on the right in a wide window and a bottom sheet in a
+ * narrow one.
+ */
+
+.sa-body {
+  margin: 0;
+  background: var(--sa-bg);
+  color: var(--sa-ink);
+  font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.sa-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  --sa-gap: 12px;
+  --sa-radius: 14px;
+  --sa-panel-width: 380px;
+  --sa-panel-height: 46%;
+}
+
+/* --- top strip ------------------------------------------------------------ */
+.sa-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--sa-line);
+  background: var(--sa-panel);
+  flex: 0 0 auto;
+  z-index: 3;
+}
+
+.sa-brand {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+  position: relative;
+  padding-left: 0;
+}
+
+.sa-brand-name {
+  font-size: 14px;
+  font-weight: 650;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 30vw;
+}
+
+.sa-brand-count {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sa-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sa-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.sa-btn {
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--sa-muted);
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sa-btn:hover {
+  background: color-mix(in srgb, var(--sa-ink) 8%, transparent);
+  color: var(--sa-ink);
+}
+
+.sa-btn.is-toggle.is-on {
+  color: var(--sa-accent);
+  border-color: var(--sa-line);
+}
+
+.sa-tabs {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  max-width: 40%;
+  scrollbar-width: thin;
+}
+
+.sa-tab {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--sa-line);
+  background: transparent;
+  color: var(--sa-muted);
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sa-tab.is-active {
+  background: color-mix(in srgb, var(--sa-accent) 16%, transparent);
+  border-color: color-mix(in srgb, var(--sa-accent) 40%, transparent);
+  color: var(--sa-ink);
+}
+
+/* --- stage ---------------------------------------------------------------- */
+.sa-stage {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  touch-action: none;
+  isolation: isolate;
+}
+
+.dg-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* The label layer is shared with the plugin build, so it carries the plugin's
+ * class name; only the positioning is declared here. Without `position` the
+ * labels lay out as ordinary block flow and stack in a column, which is exactly
+ * what they did before this was spelled out.
+ *
+ * `inset: 0` is relative to the stage only when the stage establishes a
+ * containing block, so that is stated here as well — an absolutely positioned
+ * child of a static parent escapes to the nearest positioned ancestor and would
+ * otherwise land on top of the toolbar. */
+.sa-stage {
+  position: relative;
+  isolation: isolate;
+}
+
+.sa-label-layer,
+.dg-labels {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dg-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform, opacity;
+  white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--dg-label-dim, var(--sa-muted));
+  text-shadow: 0 1px 2px var(--sa-bg), 0 0 6px var(--sa-bg);
+  cursor: pointer;
+}
+
+.dg-label.is-selected { font-weight: 700; color: var(--dg-label, var(--sa-ink)); }
+.dg-label.is-related { color: var(--dg-label, var(--sa-ink)); }
+
+.sa-overlay {
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
+  z-index: 2;
+  pointer-events: none;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sa-faint);
+}
+
+.sa-status {
+  flex: 0 0 auto;
+  padding: 5px 14px;
+  border-top: 1px solid var(--sa-line);
+  font-size: 11px;
+  color: var(--sa-faint);
+  background: var(--sa-panel);
+}
+
+/* --- definition panel ------------------------------------------------------ */
+.sa-panel {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  background: var(--sa-panel);
+  border: 1px solid var(--sa-line);
+  box-shadow: 0 18px 48px rgb(0 0 0 / 0.18);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sa-panel.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sa-panel--side, .sa-root.panel-right .sa-panel {
+  top: calc(var(--sa-gap) + 44px);
+  right: var(--sa-gap);
+  bottom: var(--sa-gap);
+  width: min(var(--sa-panel-width), 42%);
+  border-radius: var(--sa-radius);
+  transform: translateX(12px);
+}
+
+.sa-root.panel-bottom .sa-panel {
+  left: var(--sa-gap);
+  right: var(--sa-gap);
+  bottom: var(--sa-gap);
+  height: var(--sa-panel-height);
+  border-radius: var(--sa-radius);
+  transform: translateY(12px);
+}
+
+.sa-panel.is-open.sa-panel--side,
+.sa-root.panel-right .sa-panel.is-open { transform: translateX(0); }
+.sa-root.panel-bottom .sa-panel.is-open { transform: translateY(0); }
+
+.sa-panel-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 12px 14px 8px;
+  border-bottom: 1px solid var(--sa-line);
+}
+
+.sa-panel-kicker {
+  flex: 1 1 auto;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sa-faint);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sa-panel-counter {
+  font-size: 11px;
+  color: var(--sa-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.sa-panel-close {
+  border: none;
+  background: transparent;
+  color: var(--sa-muted);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.sa-panel-scroll {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 14px 16px 8px;
+  scrollbar-width: thin;
+}
+
+.sa-panel-title {
+  margin: 0 0 6px;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.sa-panel-description {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--sa-muted);
+  margin-bottom: 14px;
+}
+
+.sa-panel-body {
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+.sa-panel-body > :first-child { margin-top: 0; }
+.sa-panel-body > :last-child { margin-bottom: 0; }
+.sa-panel-body table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 10px 0; }
+.sa-panel-body th, .sa-panel-body td { border: 1px solid var(--sa-line); padding: 5px 8px; text-align: left; vertical-align: top; }
+.sa-panel-body blockquote { margin: 10px 0; padding: 6px 10px; border-left: 2px solid var(--sa-line); color: var(--sa-muted); }
+.sa-panel-body code { background: color-mix(in srgb, var(--sa-ink) 8%, transparent); padding: 1px 4px; border-radius: 4px; font-size: 12.5px; }
+.sa-panel-body pre { background: color-mix(in srgb, var(--sa-ink) 6%, transparent); padding: 10px; border-radius: 8px; overflow-x: auto; }
+.sa-panel-body pre code { background: none; padding: 0; }
+
+.md-task {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 6px;
+  border: 1px solid var(--sa-faint);
+  border-radius: 3px;
+  vertical-align: -1px;
+}
+.md-task.is-done { background: var(--sa-accent); border-color: var(--sa-accent); }
+
+.sa-panel-body a.md-wiki {
+  color: var(--sa-accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--sa-line);
+  cursor: pointer;
+}
+.sa-panel-body a.md-wiki:hover { border-bottom-color: var(--sa-accent); }
+
+.sa-panel-related-title {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid var(--sa-line);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sa-faint);
+}
+
+.sa-panel-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.sa-chip {
+  font-size: 12px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--sa-line);
+  background: transparent;
+  color: var(--sa-muted);
+  cursor: pointer;
+}
+
+.sa-chip:hover { color: var(--sa-ink); border-color: var(--sa-accent); }
+
+.sa-panel-foot {
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--sa-line);
+}
+
+.sa-panel-step {
+  flex: 1 1 0;
+  padding: 6px 10px;
+  border-radius: 9px;
+  border: 1px solid var(--sa-line);
+  background: transparent;
+  color: var(--sa-muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.sa-panel-step.is-next { text-align: right; }
+.sa-panel-step:hover:not(:disabled) { color: var(--sa-ink); border-color: var(--sa-accent); }
+.sa-panel-step:disabled { opacity: 0.4; cursor: default; }
+
+/* --- drop overlay ---------------------------------------------------------- */
+.sa-dropzone {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: none;
+  place-items: center;
+  background: color-mix(in srgb, var(--sa-bg) 82%, transparent);
+  backdrop-filter: blur(2px);
+}
+
+.sa-dropzone.is-active { display: grid; }
+
+.sa-dropzone-inner {
+  border: 2px dashed var(--sa-accent);
+  border-radius: 20px;
+  padding: 40px 60px;
+  font-size: 16px;
+  color: var(--sa-ink);
+}
+
+/* --- narrow windows -------------------------------------------------------- */
+@media (max-width: 860px) {
+  .sa-root.panel-right .sa-panel {
+    top: auto;
+    left: var(--sa-gap);
+    right: var(--sa-gap);
+    width: auto;
+    height: var(--sa-panel-height);
+    transform: translateY(12px);
+  }
+  .sa-root.panel-right .sa-panel.is-open { transform: translateY(0); }
+  .sa-tabs { max-width: 30%; }
+}
+
+/* Original Memora controls and repairs for the copied standalone graph hosts. */
+.sa-root{position:relative}
+.sa-root.panel-right .sa-panel{top:var(--memora-chrome-height,112px)}
+.sa-root.panel-right.has-selection .sa-stage{margin-right:calc(min(380px,42%) + 24px)}
+.sa-panel-title{font-size:20px;line-height:1.35;overflow-wrap:anywhere}
+.sa-panel-description[hidden]{display:none}
+.memora-graph-controls{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--sa-bg);border-bottom:1px solid var(--sa-line);z-index:5;flex-wrap:wrap}
+.memora-graph-controls button,.memora-graph-controls select{border:1px solid var(--sa-line);background:var(--sa-panel);color:var(--sa-ink);padding:8px 12px;border-radius:8px;cursor:pointer;font:inherit;font-size:12px}
+.memora-graph-controls button[aria-pressed=true]{background:#dce9df;border-color:#90b59f}
+.memora-graph-search{position:relative;min-width:210px;flex:0 1 330px}
+.memora-graph-search input{box-sizing:border-box;width:100%;border:1px solid var(--sa-line);background:var(--sa-panel);color:var(--sa-ink);border-radius:8px;padding:10px 62px 10px 12px;outline-offset:2px;font:inherit;font-size:13px}
+.memora-graph-match-count{position:absolute;right:28px;top:12px;font-size:10px;color:var(--sa-muted);pointer-events:none}
+.memora-graph-results{position:absolute;top:calc(100% + 6px);left:0;width:min(450px,85vw);max-height:350px;overflow:auto;border:1px solid var(--sa-line);box-shadow:0 12px 35px #18362b22;background:var(--sa-panel);border-radius:10px;padding:5px}
+.memora-graph-results[hidden]{display:none}
+.memora-graph-results button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px}
+.memora-graph-results button:hover,.memora-graph-results [aria-selected=true]{background:#edf3ed}
+.memora-graph-results strong,.memora-graph-results small{display:block;white-space:normal}
+.memora-graph-results small{font-size:11px;color:var(--sa-muted);margin-top:5px;line-height:1.5}
+.memora-graph-results p{font-size:12px;padding:8px;color:var(--sa-muted)}
+.memora-graph-help{font-size:11px;color:var(--sa-muted);margin-left:auto}
+.sa-actions{overflow-x:auto;scrollbar-width:thin}
+.sa-tabs{display:none}.sa-brand{min-width:120px}.sa-brand-name{max-width:200px}
+.dg-label{max-width:240px;overflow:hidden;text-overflow:ellipsis;border-radius:4px;padding:2px 4px}
+.dg-label:focus-visible{outline:2px solid var(--sa-accent)}
+.dg-label.is-selected{background:#e5eee2}
+.mm-stage{cursor:grab}.mm-stage:focus-visible{outline:2px solid var(--sa-accent);outline-offset:-3px}
+.om3d-canvas{display:block;width:100%;height:100%}
+.om3d-labels{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.om3d-label{position:absolute;top:0;left:0;max-width:240px;white-space:nowrap;line-height:1.45;font-size:13px;color:#243c33;text-shadow:0 1px 3px #f7f7f5,0 0 5px #f7f7f5;transform-origin:center bottom;cursor:pointer;padding:2px 4px;border-radius:4px;pointer-events:auto}
+.om3d-label-text{display:inline-block;max-width:230px;overflow:hidden;text-overflow:ellipsis;vertical-align:middle}
+.om3d-label:not(.is-shown){pointer-events:none}
+.om3d-label[data-state=selected]{background:#e0ebdf;font-weight:700;outline:1px solid #8bae94}
+.om3d-label[data-state=hover],.om3d-label:focus-visible{outline:2px solid #80a88b;background:#edf3ed}
+.om3d-note-dot{display:inline-block;width:4px;height:4px;border-radius:50%;background:#6e9679;margin-left:3px;vertical-align:middle}
+.om3d-code{background:#dae6dd;border-radius:3px;padding:0 3px}
+.mm-inspector{display:none;flex-basis:290px}.mm-root.has-selection .mm-inspector{display:block}
+.mm-outline{flex-basis:220px}.mm-title{overflow-wrap:anywhere;font-size:18px}
+.mm-note{overflow-wrap:anywhere}.mm-note blockquote{margin:8px 0;padding-left:10px;border-left:2px solid #a6bcac}
+.mm-chips button{border:1px solid var(--sa-line);background:var(--sa-bg);color:var(--sa-ink);border-radius:6px;padding:5px;cursor:pointer;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:760px){.sa-bar{flex-wrap:wrap;gap:4px}.sa-brand{min-width:90px}.sa-actions{width:100%;margin:0}.memora-graph-help{display:none}.memora-graph-controls{gap:6px;padding:8px}.memora-graph-search{flex:1 1 180px}.mm-row{position:relative}.mm-root.has-selection .mm-inspector{position:absolute;right:8px;bottom:10px;width:min(280px,65vw);max-height:45%;z-index:4;border:1px solid var(--sa-line);border-radius:10px;box-shadow:0 8px 30px #18362b22}.mm-outline{flex-basis:150px}}
+@media(max-width:860px){.sa-root.panel-right .sa-panel{top:auto}.sa-root.panel-right.has-selection .sa-stage{margin-right:0}.sa-root:not(.mm-root).has-selection .sa-stage{margin-bottom:220px}.sa-root.panel-bottom .sa-panel,.sa-root.panel-right .sa-panel{height:210px}}

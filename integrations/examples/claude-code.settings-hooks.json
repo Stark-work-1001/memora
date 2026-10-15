@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          { "type": "command", "command": "memory-merge --data /absolute/path/to/your/memory-data session hook" }
+        ]
+      }
+    ]
+  }
+}

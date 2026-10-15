@@ -1,0 +1,727 @@
+[
+  {
+    "source": "upstream/dictionary-graph/data/ai-coding-dictionary.json",
+    "copy": "frontend/vendor/dictionary-graph/data/ai-coding-dictionary.json",
+    "sha256": "a595dd9274338b2c5e93f76d4b793d41b50f79389d84e6c9c883db34301deaf6"
+  },
+  {
+    "source": "upstream/dictionary-graph/LICENSE",
+    "copy": "frontend/vendor/dictionary-graph/LICENSE",
+    "sha256": "f484273ea401896b1ef5ce1f3b4c7986ad8672d16f2af96000391b5d4488d7d5"
+  },
+  {
+    "source": "upstream/dictionary-graph/locales/zh.json",
+    "copy": "frontend/vendor/dictionary-graph/locales/zh.json",
+    "sha256": "4d5bebd5cd88f4bc430f40c1cc5f3ef62c8ffea662f91e0a673b379848d39834"
+  },
+  {
+    "source": "upstream/dictionary-graph/package.json",
+    "copy": "frontend/vendor/dictionary-graph/package.json",
+    "sha256": "43396d8bef9cc18be59e75483ca4f29cbe7e138ca94b78ffa801d919c26e96a4"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/data/dictionary.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/data/dictionary.ts",
+    "sha256": "a7b357d4e75e6a248b371592609adea77b997850bae33cc93eef5009e824179c"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/env.d.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/env.d.ts",
+    "sha256": "85e0b56879d79c6a259ae70b163bb287a2d26dd7aa9b6db4764e92a16d9ff10e"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/i18n/en.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/i18n/en.ts",
+    "sha256": "470840412c9be33a6a6efc31183dafbd3062985dabd3b114d31587cfd89efddf"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/i18n/index.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/i18n/index.ts",
+    "sha256": "c77793227fc3f35c9f561e6537bc4458cd92d02964383f2b1a26ed10ce279e04"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/main.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/main.ts",
+    "sha256": "e7229d4b2b6be736050ef40e8d507c5014096e8e7257cf7e6e7e1a7bed59a252"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/model/graph.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/model/graph.ts",
+    "sha256": "50cc9cb172ddbe48ff2f392077d6598548cfdc33d0a7c8eff48431219d534333"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/model/settings.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/model/settings.ts",
+    "sha256": "a0406b33e86a1fa3ef78909abafef5753efe93c20069227b86edb13558200fda"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/model/types.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/model/types.ts",
+    "sha256": "94ea42da6e748ccabd9479ebeac43259c3f281470959a8327434064a972cbc7c"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/plugin.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/plugin.ts",
+    "sha256": "ebe99e099def855956c0edab3f0b846c9ca0e5ee5b1fb01a501a2677a871a67b"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/render/labels.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/render/labels.ts",
+    "sha256": "0e7bf7585a8284370b8f8cfa647ab2f82127a7489f75e7bbbddcbfa72f141e96"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/render/scene.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/render/scene.ts",
+    "sha256": "ca31002c3901233f9dfd5620f0d5b3e2de51383e0102d371e7482c5599ed3cb2"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/settings-tab.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/settings-tab.ts",
+    "sha256": "265569698a1f227ec11d12562a0036759213e064a42599f991a23450d66633d7"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/ui/detail-panel.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/ui/detail-panel.ts",
+    "sha256": "55074ff76fa4db520d9a2c3630db3194b693d1a775ef70b0027e386001a6f38a"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/ui/toolbar.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/ui/toolbar.ts",
+    "sha256": "a65a406e212b789cecc571c0d2926e02bede76ba63681517b543696ae79dc3fa"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/view/dictionary-view.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/view/dictionary-view.ts",
+    "sha256": "9b85f23d01afcc59d96db8836386a5ef48b1a3c83f03151a44e4de0ccf8243cd"
+  },
+  {
+    "source": "upstream/dictionary-graph/src/view/orbit-camera.ts",
+    "copy": "frontend/vendor/dictionary-graph/src/view/orbit-camera.ts",
+    "sha256": "39a482d9ef54332212cef6159b0404733339b8914bc705cae76508f9d7607eaf"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/app.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/app.ts",
+    "sha256": "ca8fe0bab115bf0dfa0ab8c86860a7652c3c6c71ceb8c9c5e5ee15ae7b6a5120"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/core/dom.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/core/dom.ts",
+    "sha256": "262c78be835292b6cfbd0f5a5719a74e175d48cab5b06b0a3df73adfbe935497"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/core/i18n.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/core/i18n.ts",
+    "sha256": "7dab608f95bead1deef3f25ad2a25485cb8b522be6f8ceed44f4404ffcb41ed7"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/core/markdown.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/core/markdown.ts",
+    "sha256": "c3c757a285dc43682a97cf91b68ba4b9b3c86af68ae3ea4a0a243cf5f748c150"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/core/source-desktop.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/core/source-desktop.ts",
+    "sha256": "214a49e151a466c6e28ecad425d7780433ed230ae31483c3b9f31739800ec863"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/core/source-web.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/core/source-web.ts",
+    "sha256": "cf15de60a6d8739a59ff7a783897e0d300ea4bbe6836cc7e2ec760b8db2b92f2"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/core/source.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/core/source.ts",
+    "sha256": "f7d323370dad76bac8e8ae4184b2904e65c62013bda80c3be6f8d6ec6cb6719b"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/env.d.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/env.d.ts",
+    "sha256": "dd5b301747506516c7506deb20619fb12f4bf9cbb132aa800fd19b26b48b811f"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/main-desktop.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/main-desktop.ts",
+    "sha256": "5cc25763604e3017816664fb1375d3c0da51086aef2fe11c5e714625e2913a92"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/src/main-web.ts",
+    "copy": "frontend/vendor/dictionary-graph/standalone/src/main-web.ts",
+    "sha256": "0e7717c59e95b13abf687a5ac4168ca8c76e4d8619795baf8c73d7025fb72362"
+  },
+  {
+    "source": "upstream/dictionary-graph/standalone/styles.css",
+    "copy": "frontend/vendor/dictionary-graph/standalone/styles.css",
+    "sha256": "1408df62d5fe3e054420f40fb5aaf927ba110cba2a7e34f7f714a0c8d85d1391"
+  },
+  {
+    "source": "upstream/dictionary-graph/tsconfig.json",
+    "copy": "frontend/vendor/dictionary-graph/tsconfig.json",
+    "sha256": "2aa072ba099c9e38c4bfe66d9cff5adc9bda6471e510954b012b5edf5de014b7"
+  },
+  {
+    "source": "upstream/original-dev/crates/graph-physics/.cargo/config.toml",
+    "copy": "frontend/vendor/original-dev/crates/graph-physics/.cargo/config.toml",
+    "sha256": "91a502066e179b2525929d903b188b1b6bb10e6b105a81b33a834497c50481a4"
+  },
+  {
+    "source": "upstream/original-dev/crates/graph-physics/Cargo.lock",
+    "copy": "frontend/vendor/original-dev/crates/graph-physics/Cargo.lock",
+    "sha256": "1ae8c2e8b5c681de308a08737ed62c1227fc458595ede3a5e86b124df047af9f"
+  },
+  {
+    "source": "upstream/original-dev/crates/graph-physics/Cargo.toml",
+    "copy": "frontend/vendor/original-dev/crates/graph-physics/Cargo.toml",
+    "sha256": "a5f46b3142bbaef71bdd87f76824a05b0096ef4baf3631559e2f5b8479f03bff"
+  },
+  {
+    "source": "upstream/original-dev/crates/graph-physics/LICENSE",
+    "copy": "frontend/vendor/original-dev/crates/graph-physics/LICENSE",
+    "sha256": "710af00c6d24d571c4aedb316cd2a1b6be9d296d97a31b2726724f617ef3722c"
+  },
+  {
+    "source": "upstream/original-dev/crates/graph-physics/rustfmt.toml",
+    "copy": "frontend/vendor/original-dev/crates/graph-physics/rustfmt.toml",
+    "sha256": "125df13fa74de3621da6d80ec9ec562515515fa9dfdb71a9809090103a224b62"
+  },
+  {
+    "source": "upstream/original-dev/crates/graph-physics/src/lib.rs",
+    "copy": "frontend/vendor/original-dev/crates/graph-physics/src/lib.rs",
+    "sha256": "2d4252718ff8f5e44a43f35848f08dae90d44f16181e119bc3db3479ba87d3a8"
+  },
+  {
+    "source": "upstream/original-dev/crates/graph-physics/src/physics.rs",
+    "copy": "frontend/vendor/original-dev/crates/graph-physics/src/physics.rs",
+    "sha256": "e71e46cc2f1c8cda2c2eed08f8d85960b8b3565120e3ebf9dc0aeb8bfbcc6a6b"
+  },
+  {
+    "source": "upstream/original-dev/LICENSE",
+    "copy": "frontend/vendor/original-dev/LICENSE",
+    "sha256": "fbe86efd9484e8002b878c40cfdf48943820aeca1527237e7f804d6a9c92dc4a"
+  },
+  {
+    "source": "upstream/original-dev/licenses/d3_array_3_2_4_license.txt",
+    "copy": "frontend/vendor/original-dev/licenses/d3_array_3_2_4_license.txt",
+    "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+  },
+  {
+    "source": "upstream/original-dev/licenses/d3_binarytree_1_0_2_license.txt",
+    "copy": "frontend/vendor/original-dev/licenses/d3_binarytree_1_0_2_license.txt",
+    "sha256": "7262e566e874d1ce8cfadace01d4f635f8d704b6bdf7b4345cc028e5faeafded"
+  },
+  {
+    "source": "upstream/original-dev/licenses/d3_dispatch_3_0_1_license.txt",
+    "copy": "frontend/vendor/original-dev/licenses/d3_dispatch_3_0_1_license.txt",
+    "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+  },
+  {
+    "source": "upstream/original-dev/licenses/d3_force_3d_MIT.txt",
+    "copy": "frontend/vendor/original-dev/licenses/d3_force_3d_MIT.txt",
+    "sha256": "7262e566e874d1ce8cfadace01d4f635f8d704b6bdf7b4345cc028e5faeafded"
+  },
+  {
+    "source": "upstream/original-dev/licenses/d3_octree_1_1_0_license.txt",
+    "copy": "frontend/vendor/original-dev/licenses/d3_octree_1_1_0_license.txt",
+    "sha256": "7262e566e874d1ce8cfadace01d4f635f8d704b6bdf7b4345cc028e5faeafded"
+  },
+  {
+    "source": "upstream/original-dev/licenses/d3_quadtree_3_0_1_license.txt",
+    "copy": "frontend/vendor/original-dev/licenses/d3_quadtree_3_0_1_license.txt",
+    "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+  },
+  {
+    "source": "upstream/original-dev/licenses/d3_timer_3_0_1_license.txt",
+    "copy": "frontend/vendor/original-dev/licenses/d3_timer_3_0_1_license.txt",
+    "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+  },
+  {
+    "source": "upstream/original-dev/licenses/katex_MIT.txt",
+    "copy": "frontend/vendor/original-dev/licenses/katex_MIT.txt",
+    "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+  },
+  {
+    "source": "upstream/original-dev/licenses/obsidian_3d_graph_MIT.txt",
+    "copy": "frontend/vendor/original-dev/licenses/obsidian_3d_graph_MIT.txt",
+    "sha256": "710af00c6d24d571c4aedb316cd2a1b6be9d296d97a31b2726724f617ef3722c"
+  },
+  {
+    "source": "upstream/original-dev/licenses/rust-crates.txt",
+    "copy": "frontend/vendor/original-dev/licenses/rust-crates.txt",
+    "sha256": "a34b89c0649f21e1565c3d468145be5c5806a954a57b8fa76dd52e3dfbf2bca9"
+  },
+  {
+    "source": "upstream/original-dev/licenses/three_MIT.txt",
+    "copy": "frontend/vendor/original-dev/licenses/three_MIT.txt",
+    "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+  },
+  {
+    "source": "upstream/original-dev/locales/zh.json",
+    "copy": "frontend/vendor/original-dev/locales/zh.json",
+    "sha256": "47de7f209cdd0cc111da29e4ad762bae6bd2643e78021399f034808a123adef2"
+  },
+  {
+    "source": "upstream/original-dev/package.json",
+    "copy": "frontend/vendor/original-dev/package.json",
+    "sha256": "dfc68338636d773b8fe8b03be1262657afa033dae44ac4506687db739d7edaf3"
+  },
+  {
+    "source": "upstream/original-dev/src/camera/camera-rig.ts",
+    "copy": "frontend/vendor/original-dev/src/camera/camera-rig.ts",
+    "sha256": "6c9b09c12d7a8842c8319a89bf18c78119f29978ad162b2a4c991c86182a96cc"
+  },
+  {
+    "source": "upstream/original-dev/src/camera/navigation-history.ts",
+    "copy": "frontend/vendor/original-dev/src/camera/navigation-history.ts",
+    "sha256": "416bb31b91b0651c32e9344b2fa828adae3ce3e23c50c266047091f7bbd9ce0c"
+  },
+  {
+    "source": "upstream/original-dev/src/camera/pose.ts",
+    "copy": "frontend/vendor/original-dev/src/camera/pose.ts",
+    "sha256": "8e8fd0687167d0ed4fb139e8d8e9df8c3fd4ca3f8f019ea0913cca283845db09"
+  },
+  {
+    "source": "upstream/original-dev/src/env.d.ts",
+    "copy": "frontend/vendor/original-dev/src/env.d.ts",
+    "sha256": "9cc4417019685796b7f62f0c8d2e6b11ad1d5fad0fb4d82fb47d35f53e6dc482"
+  },
+  {
+    "source": "upstream/original-dev/src/i18n/en.ts",
+    "copy": "frontend/vendor/original-dev/src/i18n/en.ts",
+    "sha256": "66e13ae1e05cd3f7a42c89568f05469ac2e27aba9c259db747434badde9b80c6"
+  },
+  {
+    "source": "upstream/original-dev/src/i18n/index.ts",
+    "copy": "frontend/vendor/original-dev/src/i18n/index.ts",
+    "sha256": "cd17d01313fb6e1f84d78a3e80b995886ee64de084bfb52d5dee6b49a7c987cc"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/catalog.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/catalog.ts",
+    "sha256": "4b7235573832259c6c66102f7af19559442ec5964919649f10bce94f67479ae7"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/common.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/common.ts",
+    "sha256": "53ada8d564042c15ac179dd79f93855a64675f95362ef857c3f1933680ec4131"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/experimental-layouts.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/experimental-layouts.ts",
+    "sha256": "68bfea9a75cc63992e6bb6e54acb272917eb71953669d9e8e4df3de8aab4f0a6"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/hierarchy.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/hierarchy.ts",
+    "sha256": "c3be9288f39745faf203c9dfff1e5ba3eab205544c35ccc3ef39b0647ba19a5f"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/layout-engine.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/layout-engine.ts",
+    "sha256": "37a947b625eaf176fcc1a31fb6c449dada10653b6e06512592e2a18fa4ed17d5"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/radius.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/radius.ts",
+    "sha256": "54873655af5486a9a68d378cafc81c214e582daf145d1c86511647f6b547ecea"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/run-layout.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/run-layout.ts",
+    "sha256": "a7f41d509e5d1e1f816cb484dca9dab476869e6770f3d4608ddb34e8d0e0a260"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/separation.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/separation.ts",
+    "sha256": "d1d3de24307d8af1d5a7d2dabd31ee2402054d6a6ff8a18f0cc59928d66989e9"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/structure-layouts.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/structure-layouts.ts",
+    "sha256": "343b3dd50c750ae498f13853072e1b96018f0b4686f43ecdebf163766728439a"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/study-layouts.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/study-layouts.ts",
+    "sha256": "c79a78bfc187dd90676abb08479268107ae9afea8faed8d0614e6015a6dc4fbc"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/transition.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/transition.ts",
+    "sha256": "7e9e024df9824b233baaf7eb90ac028c31b3f5159b673091650990be17092c6b"
+  },
+  {
+    "source": "upstream/original-dev/src/layout/types.ts",
+    "copy": "frontend/vendor/original-dev/src/layout/types.ts",
+    "sha256": "c47c5c06851d3cd9a9ec177efd1447c6515e47bcd1f289f52d927a18feea8b7a"
+  },
+  {
+    "source": "upstream/original-dev/src/main.ts",
+    "copy": "frontend/vendor/original-dev/src/main.ts",
+    "sha256": "5c55d2e15ee6d655d04fbd5f5fd8b4874e1d1dc694cef3dbacb9ab8eecc2311a"
+  },
+  {
+    "source": "upstream/original-dev/src/model/formula-scan.ts",
+    "copy": "frontend/vendor/original-dev/src/model/formula-scan.ts",
+    "sha256": "6d25d218b90f7a22c1b2af8c8e3d726839bb9d438136a2cba68a3465921e15a4"
+  },
+  {
+    "source": "upstream/original-dev/src/model/history.ts",
+    "copy": "frontend/vendor/original-dev/src/model/history.ts",
+    "sha256": "66df7effa38fd8276062de48537cc4bb40f3dd4a7b981ed3de5ee02ca438694d"
+  },
+  {
+    "source": "upstream/original-dev/src/model/id-matching.ts",
+    "copy": "frontend/vendor/original-dev/src/model/id-matching.ts",
+    "sha256": "4318b6f2491e8ef6d505928fa5b711fcd4ee26f03b5db40cb8af827eaa0b3217"
+  },
+  {
+    "source": "upstream/original-dev/src/model/markdown-parser.ts",
+    "copy": "frontend/vendor/original-dev/src/model/markdown-parser.ts",
+    "sha256": "126405aa5ae8aa27de96e19d2b30a9d0144fdc3f3abf7be528afd06b2d350446"
+  },
+  {
+    "source": "upstream/original-dev/src/model/node-paths.ts",
+    "copy": "frontend/vendor/original-dev/src/model/node-paths.ts",
+    "sha256": "d2b9655b15fc9cb8c6f806244e6e6d9c659d8db7d5a856b95975b63519e2946f"
+  },
+  {
+    "source": "upstream/original-dev/src/model/note-links.ts",
+    "copy": "frontend/vendor/original-dev/src/model/note-links.ts",
+    "sha256": "abbc9a629f9d76910dd6bd7119d01633b4d74a131327c54ed8294c36dd1f6e49"
+  },
+  {
+    "source": "upstream/original-dev/src/model/outline-model.ts",
+    "copy": "frontend/vendor/original-dev/src/model/outline-model.ts",
+    "sha256": "a201ff638c761c98b2f8920cf9410354a0c452c5ed15ed41b9f54f78b0bcbfd7"
+  },
+  {
+    "source": "upstream/original-dev/src/model/outline-ops.ts",
+    "copy": "frontend/vendor/original-dev/src/model/outline-ops.ts",
+    "sha256": "5e794e6cc5758e32cd250015548face9e3deb648ddef2d2bbb0009c8c9798812"
+  },
+  {
+    "source": "upstream/original-dev/src/model/rules.ts",
+    "copy": "frontend/vendor/original-dev/src/model/rules.ts",
+    "sha256": "a878dcbbe23c0ac6bea7738b9905e8592f5a7cf470cc6db7c9e5e157dc7bc520"
+  },
+  {
+    "source": "upstream/original-dev/src/model/text-edits.ts",
+    "copy": "frontend/vendor/original-dev/src/model/text-edits.ts",
+    "sha256": "5beac694f090a27edd95c26b8924f4b792207191b6f7474d351acadfc826f57d"
+  },
+  {
+    "source": "upstream/original-dev/src/model/tree-utils.ts",
+    "copy": "frontend/vendor/original-dev/src/model/tree-utils.ts",
+    "sha256": "68f630d241250c461d186a9aba2c18682d46fdd56bfeb347992ccd28b6b8b266"
+  },
+  {
+    "source": "upstream/original-dev/src/model/types.ts",
+    "copy": "frontend/vendor/original-dev/src/model/types.ts",
+    "sha256": "5a6bc8fd72eb751b5ce1eb43ae3d58f4f946638e965363ea9b69a10092954198"
+  },
+  {
+    "source": "upstream/original-dev/src/outline-bridge.ts",
+    "copy": "frontend/vendor/original-dev/src/outline-bridge.ts",
+    "sha256": "6d30ee27f142e01f961f0e8190de6976ef53f8d05709dd7ebe348308e78f4f88"
+  },
+  {
+    "source": "upstream/original-dev/src/persistence/migrate.ts",
+    "copy": "frontend/vendor/original-dev/src/persistence/migrate.ts",
+    "sha256": "e165e8d0c9e93d89ece16dc06629963d6bb56e0f90b14ff0f4f54a6dfb3cf545"
+  },
+  {
+    "source": "upstream/original-dev/src/persistence/schema.ts",
+    "copy": "frontend/vendor/original-dev/src/persistence/schema.ts",
+    "sha256": "a270680cd871d745b9e4407e0ca702c385a6e780e11dbc1488f214364a559d60"
+  },
+  {
+    "source": "upstream/original-dev/src/persistence/settings.ts",
+    "copy": "frontend/vendor/original-dev/src/persistence/settings.ts",
+    "sha256": "cbb6fb8910bcb9f19a1fe4af6f8544776c6bbe97c0b9306d46f4080429716f61"
+  },
+  {
+    "source": "upstream/original-dev/src/persistence/store.ts",
+    "copy": "frontend/vendor/original-dev/src/persistence/store.ts",
+    "sha256": "fba7daf5d5becaeda7724075e149b69ef345a9d462148a131bae457541933e3a"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/generated/graph-physics-glue.d.ts",
+    "copy": "frontend/vendor/original-dev/src/physics/generated/graph-physics-glue.d.ts",
+    "sha256": "d5cf0e1f234ae6fdb8bb7bf4f12d97057f9faeadaa1a39d30cb4d776576346f7"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/generated/graph-physics-glue.js",
+    "copy": "frontend/vendor/original-dev/src/physics/generated/graph-physics-glue.js",
+    "sha256": "cdf6f65e0eb6d6c20b5ba2d4dff1c4f1f06eb875dbc5f0237822f02f6ffeffad"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/generated/wasm-asset.ts",
+    "copy": "frontend/vendor/original-dev/src/physics/generated/wasm-asset.ts",
+    "sha256": "036b3bbd0706749abcd6c08e0ee38032013cd06150870a9f983e22160d375386"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/js-engine.ts",
+    "copy": "frontend/vendor/original-dev/src/physics/js-engine.ts",
+    "sha256": "f2f41387c42689272740d2ffe52d4d0c2e6227cd3f782de582ea28a1c2200a06"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/physics-client.ts",
+    "copy": "frontend/vendor/original-dev/src/physics/physics-client.ts",
+    "sha256": "678f5fee6db7b93b22d1700ea4acd3af6c4add16bdee7c1cbf7b398e9329ecc6"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/protocol.ts",
+    "copy": "frontend/vendor/original-dev/src/physics/protocol.ts",
+    "sha256": "a5e38e8a06b5f359ea623de111510f156d47ef445c56eb9d23a8aad4683cab78"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/types.ts",
+    "copy": "frontend/vendor/original-dev/src/physics/types.ts",
+    "sha256": "470106c975bc8dd92a56fcad504df1a64c39bbd1270b619541466ab14c4bcf5d"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/wasm-backend.ts",
+    "copy": "frontend/vendor/original-dev/src/physics/wasm-backend.ts",
+    "sha256": "24df81dcaa61d0d3ee6fda2320cf06884d6fa7822c2c66ab2e9377527d0049b2"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/worker-core.ts",
+    "copy": "frontend/vendor/original-dev/src/physics/worker-core.ts",
+    "sha256": "a31602d64fdb4550dcad647f0994893cbc279130e75f198c7fee2ef9ad536263"
+  },
+  {
+    "source": "upstream/original-dev/src/physics/worker.ts",
+    "copy": "frontend/vendor/original-dev/src/physics/worker.ts",
+    "sha256": "6d7e73493533423e96386fda878e998de468774e025a9badf3850368616b4644"
+  },
+  {
+    "source": "upstream/original-dev/src/plugin.ts",
+    "copy": "frontend/vendor/original-dev/src/plugin.ts",
+    "sha256": "85e9692ae121d72de483d9e8e52fa684e8c958659fdd0c70aae6187e477f0911"
+  },
+  {
+    "source": "upstream/original-dev/src/render/background.ts",
+    "copy": "frontend/vendor/original-dev/src/render/background.ts",
+    "sha256": "573a5d18fd3ed4048de5a160c26b6b71a07ebd662e94175995c540c66c17e775"
+  },
+  {
+    "source": "upstream/original-dev/src/render/colors.ts",
+    "copy": "frontend/vendor/original-dev/src/render/colors.ts",
+    "sha256": "1955c180efd68227daa72da01948c5e04a99ff774072f160f0ff94b16f9b9237"
+  },
+  {
+    "source": "upstream/original-dev/src/render/depth-fade.ts",
+    "copy": "frontend/vendor/original-dev/src/render/depth-fade.ts",
+    "sha256": "272b90c84ebca3ac932d442c1d816bd5c35c0b0cf6e9c11379a74c7b6ec6d20e"
+  },
+  {
+    "source": "upstream/original-dev/src/render/edge-layer.ts",
+    "copy": "frontend/vendor/original-dev/src/render/edge-layer.ts",
+    "sha256": "e83fc69a23768ee4060361044a0984e6961d7488691be278796338f4050dda51"
+  },
+  {
+    "source": "upstream/original-dev/src/render/label-format.ts",
+    "copy": "frontend/vendor/original-dev/src/render/label-format.ts",
+    "sha256": "e3125c9937c94bcac54517321cf4688a9b823454f30fedc5255099077ea92ece"
+  },
+  {
+    "source": "upstream/original-dev/src/render/labels.ts",
+    "copy": "frontend/vendor/original-dev/src/render/labels.ts",
+    "sha256": "3828d44885bf995d3550d6f6c4e9a320e7411eb9fc003ebe2e57717583da5228"
+  },
+  {
+    "source": "upstream/original-dev/src/render/link-layer.ts",
+    "copy": "frontend/vendor/original-dev/src/render/link-layer.ts",
+    "sha256": "bceb10f2a2ccdaadd024988f0a549b3c2cd411fd7222e7f0741ae04a22dc9596"
+  },
+  {
+    "source": "upstream/original-dev/src/render/node-layer.ts",
+    "copy": "frontend/vendor/original-dev/src/render/node-layer.ts",
+    "sha256": "6e1026b68e5f02652ceecc6b1326ea7f12faa4ffa734eda8439e79d1c7382e73"
+  },
+  {
+    "source": "upstream/original-dev/src/render/picking.ts",
+    "copy": "frontend/vendor/original-dev/src/render/picking.ts",
+    "sha256": "d95e1e74961b735dd732dc0f5c0daf3c297a24f32b81a315b05877a40f08e151"
+  },
+  {
+    "source": "upstream/original-dev/src/render/scene-renderer.ts",
+    "copy": "frontend/vendor/original-dev/src/render/scene-renderer.ts",
+    "sha256": "af8a961de66bbabdb1b687a6354773e435dcbf48676cf92099991c864c6b363b"
+  },
+  {
+    "source": "upstream/original-dev/src/settings-tab.ts",
+    "copy": "frontend/vendor/original-dev/src/settings-tab.ts",
+    "sha256": "17908ac454941eb451dd375e3855800ed4decc34009553465e75e591a7af72d4"
+  },
+  {
+    "source": "upstream/original-dev/src/sync/document-sync.ts",
+    "copy": "frontend/vendor/original-dev/src/sync/document-sync.ts",
+    "sha256": "527f4b741c7f2dd687cb05c750eaac99502b8a4422ec416993476ad36c4157bc"
+  },
+  {
+    "source": "upstream/original-dev/src/sync/obsidian-note-io.ts",
+    "copy": "frontend/vendor/original-dev/src/sync/obsidian-note-io.ts",
+    "sha256": "23c4e3f26f7fcbe3ddb6a0d6090d4c27895e969789d4cd9b7b56753871cd9a60"
+  },
+  {
+    "source": "upstream/original-dev/src/ui/dom.ts",
+    "copy": "frontend/vendor/original-dev/src/ui/dom.ts",
+    "sha256": "13234d3a90d8c77f8426d9719321bbe09e24bba9c4a07bee01b138381d399eff"
+  },
+  {
+    "source": "upstream/original-dev/src/ui/hover-card.ts",
+    "copy": "frontend/vendor/original-dev/src/ui/hover-card.ts",
+    "sha256": "59fd9cfea0e314eb9f05ea79b61ded5439671359c8bfa6e467fff11421e4e83e"
+  },
+  {
+    "source": "upstream/original-dev/src/ui/inspector.ts",
+    "copy": "frontend/vendor/original-dev/src/ui/inspector.ts",
+    "sha256": "c43c2ac78eae457facb166c5f75d20cac488f90a0083d1b60852561c5b0b16ab"
+  },
+  {
+    "source": "upstream/original-dev/src/ui/menu.ts",
+    "copy": "frontend/vendor/original-dev/src/ui/menu.ts",
+    "sha256": "268a8ed422454488c5099823740730cb4c4ad9154616e290c5202a30f176f66f"
+  },
+  {
+    "source": "upstream/original-dev/src/ui/modals.ts",
+    "copy": "frontend/vendor/original-dev/src/ui/modals.ts",
+    "sha256": "cf54f126c3790b1797f66afd3565d44fe96ba5c70a8c428bffedf2f729fa1956"
+  },
+  {
+    "source": "upstream/original-dev/src/ui/node-editor.ts",
+    "copy": "frontend/vendor/original-dev/src/ui/node-editor.ts",
+    "sha256": "ab3b3ea95aa0ae6885ef29061067c19e79bac0a721e55f91b797e84e984d9831"
+  },
+  {
+    "source": "upstream/original-dev/src/ui/outline-panel.ts",
+    "copy": "frontend/vendor/original-dev/src/ui/outline-panel.ts",
+    "sha256": "1fd34586c9e33f0089a3153a6ff32d872c3bba247c982c5fb2d3e889dc4e238b"
+  },
+  {
+    "source": "upstream/original-dev/src/ui/search-bar.ts",
+    "copy": "frontend/vendor/original-dev/src/ui/search-bar.ts",
+    "sha256": "9bd215a96f8971aebccc70c54510670ddf9eaca9e792de0d4e1d32d3acfe484e"
+  },
+  {
+    "source": "upstream/original-dev/src/ui/toolbar.ts",
+    "copy": "frontend/vendor/original-dev/src/ui/toolbar.ts",
+    "sha256": "dc7a68c28ec9b5e6dd19ec7964c9545b373ae086e59c2fb83096a0a152a30078"
+  },
+  {
+    "source": "upstream/original-dev/src/view/diagnostics.ts",
+    "copy": "frontend/vendor/original-dev/src/view/diagnostics.ts",
+    "sha256": "7b168886834f05ca53e1ca97cf87ec9f6d6ce8e165d0c98488db556ffce7213a"
+  },
+  {
+    "source": "upstream/original-dev/src/view/emphasis.ts",
+    "copy": "frontend/vendor/original-dev/src/view/emphasis.ts",
+    "sha256": "7628cffd6da6aadb03461b0e96716c74b7e50f4397e3c9769ff796b48fbc021a"
+  },
+  {
+    "source": "upstream/original-dev/src/view/graph-builder.ts",
+    "copy": "frontend/vendor/original-dev/src/view/graph-builder.ts",
+    "sha256": "024c7b356c4c015dbaa6165c17bdde9e18be1dfafa4554db6aed1ca64191ff5a"
+  },
+  {
+    "source": "upstream/original-dev/src/view/inspector-data.ts",
+    "copy": "frontend/vendor/original-dev/src/view/inspector-data.ts",
+    "sha256": "c72e5cd69567295a8248a8d257d0081a26d5df6cf23ac5945f2bbe24d42104db"
+  },
+  {
+    "source": "upstream/original-dev/src/view/interaction.ts",
+    "copy": "frontend/vendor/original-dev/src/view/interaction.ts",
+    "sha256": "b97bbf7ca6a47448f6ac7a99cea0bbf95d992e7df7014c195c4d37c0b61120b4"
+  },
+  {
+    "source": "upstream/original-dev/src/view/keyboard.ts",
+    "copy": "frontend/vendor/original-dev/src/view/keyboard.ts",
+    "sha256": "26dc5b2defe1050c5ec9adbf46adf2c2e2de2d8940349e629b435b4c2c426a83"
+  },
+  {
+    "source": "upstream/original-dev/src/view/mind-map-view.ts",
+    "copy": "frontend/vendor/original-dev/src/view/mind-map-view.ts",
+    "sha256": "dbbc78df03031d0782d41765c7b5e404adfb7a451fd36c06b7f292aca83cad9c"
+  },
+  {
+    "source": "upstream/original-dev/src/view/view-host.ts",
+    "copy": "frontend/vendor/original-dev/src/view/view-host.ts",
+    "sha256": "661040e218e9b627eaff3a29be912d0ab57fbe0993b3a3d635dbac71c3d366c0"
+  },
+  {
+    "source": "upstream/original-dev/src/view/view-menus.ts",
+    "copy": "frontend/vendor/original-dev/src/view/view-menus.ts",
+    "sha256": "81a9023ec98a422989c059987919ee98c75f33b0de2501302d5a05ad26877687"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/app.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/app.ts",
+    "sha256": "8bb4c3deb71c29ea4ac465d6a9059fc8fa52f9f354e3c818f8cfdc12d131763c"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/core/dom.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/core/dom.ts",
+    "sha256": "262c78be835292b6cfbd0f5a5719a74e175d48cab5b06b0a3df73adfbe935497"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/core/i18n.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/core/i18n.ts",
+    "sha256": "139eeef14f66973000823d371aba13551a399b47f956cc2e4643c826f2285bee"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/core/icons.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/core/icons.ts",
+    "sha256": "5b17f77c8afac310c931c43949f64e24129617f1393206ccc0f4785b0c2c8df0"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/core/markdown.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/core/markdown.ts",
+    "sha256": "c3c757a285dc43682a97cf91b68ba4b9b3c86af68ae3ea4a0a243cf5f748c150"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/core/source-desktop.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/core/source-desktop.ts",
+    "sha256": "214a49e151a466c6e28ecad425d7780433ed230ae31483c3b9f31739800ec863"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/core/source-web.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/core/source-web.ts",
+    "sha256": "cf15de60a6d8739a59ff7a783897e0d300ea4bbe6836cc7e2ec760b8db2b92f2"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/core/source.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/core/source.ts",
+    "sha256": "f7d323370dad76bac8e8ae4184b2904e65c62013bda80c3be6f8d6ec6cb6719b"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/env.d.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/env.d.ts",
+    "sha256": "99e62b2e9679ff8be6f10085b8dda266b50064bc11828ad9f66e479fddde9a83"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/main-desktop.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/main-desktop.ts",
+    "sha256": "ef84f742d0e9ecf51311a44e2b8b0f63e5e8cf2b0e4431d82a18f7aa53734b01"
+  },
+  {
+    "source": "upstream/original-dev/standalone/src/main-web.ts",
+    "copy": "frontend/vendor/original-dev/standalone/src/main-web.ts",
+    "sha256": "2bc6a4774bb4e0d602519f7b4a9df49dbb2775abf269603aebe2b3361a3729cc"
+  },
+  {
+    "source": "upstream/original-dev/standalone/styles.css",
+    "copy": "frontend/vendor/original-dev/standalone/styles.css",
+    "sha256": "69853d8c245eb5c5294aec8aa68263e3794e4ff71e8a9208a2dcb3d7ddb0d391"
+  },
+  {
+    "source": "upstream/original-dev/THIRD_PARTY_NOTICES.md",
+    "copy": "frontend/vendor/original-dev/THIRD_PARTY_NOTICES.md",
+    "sha256": "2165a27608ff589be87749ed7db929eacbb2c3d4557bafca99b5a24b3884625f"
+  },
+  {
+    "source": "upstream/original-dev/tsconfig.json",
+    "copy": "frontend/vendor/original-dev/tsconfig.json",
+    "sha256": "d08bfe61ad1932ced514637d3486b983bbbb5e4fca4601d449160a9d46e2b082"
+  }
+]

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Memory Merge</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><div class="eyebrow" data-i18n="eyebrow">LOCAL MEMORY / EVIDENCE FIRST</div>
+<div class="titlebar"><h1>Memory Merge</h1><button id="lang" type="button" aria-label="Language">中文</button></div>
+<p data-i18n="tagline">From conversations to traceable long-term memory. Only reviewed memories are shown.</p></header>
+<section class="toolbar" aria-label="Filters">
+<label><span data-i18n="project">Project</span> <input id="project" value="demo" maxlength="80"></label>
+<label class="check"><input id="includeUser" type="checkbox" checked> <span data-i18n="includeUser">include personal scope</span></label>
+<button id="load" type="button" data-i18n="load">Load</button>
+<label><span data-i18n="category">Category</span> <select id="category"><option value="" data-i18n="all">all</option></select></label>
+<label><span data-i18n="relation">Relations</span> <select id="relation"><option value="" data-i18n="all">all</option></select></label>
+<label><span data-i18n="tag">Tag</span> <input id="tag" maxlength="60"></label>
+<label><span data-i18n="filter">Filter</span> <input id="filter" type="search" data-i18n-ph="filterPh" placeholder="text or category"></label>
+<form id="searchForm"><label><span data-i18n="search">Search</span> <input id="search" type="search" data-i18n-ph="searchPh" placeholder="query the index"></label></form>
+<span class="views" role="group" aria-label="View"><button id="viewGraph" type="button" class="on" data-i18n="graph">Graph</button><button id="viewTimeline" type="button" data-i18n="timeline">Timeline</button></span>
+<button id="zoomIn" type="button" aria-label="Zoom in">+</button><button id="zoomOut" type="button" aria-label="Zoom out">−</button><button id="reset" type="button" data-i18n="reset">Reset</button>
+<button id="export" type="button" data-i18n="export">Export JSON</button>
+</section>
+<p id="status" role="status" aria-live="polite"></p>
+<main>
+<section class="panel" id="graphPanel"><h2><span data-i18n="network">Relation network</span> <small data-i18n="hint">drag to pan · wheel to zoom · click a node</small></h2>
+<svg id="graph" viewBox="0 0 900 620" role="img" aria-label="Memory nodes and explicit relations"><g id="layer"></g></svg>
+<p class="note" id="legend"></p></section>
+<section class="panel hidden" id="timelinePanel"><h2 data-i18n="timeline">Timeline</h2><div id="timeline"></div><button id="more" type="button" class="hidden" data-i18n="more">Load more</button></section>
+<aside>
+<section id="reviewBox" class="hidden"><h2 data-i18n="review">Review queue</h2><div id="queue"></div></section>
+<h2 data-i18n="detail">Memory detail</h2><div id="detail" data-i18n="detailEmpty">Select a node to see its text, source and relations.</div>
+<div id="edges"></div>
+<h2 data-i18n="index">Index</h2><div id="list"></div>
+</aside></main>
+<footer data-i18n="footer">SQLite source of truth · Markdown mirror · loopback-only viewer · no CDN, no model calls</footer>
+</body></html>

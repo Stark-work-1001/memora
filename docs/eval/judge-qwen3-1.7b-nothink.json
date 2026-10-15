@@ -1,0 +1,172 @@
+{
+  "command": "python bench/judge_eval.py --model mm-eval-qwen3-1.7b-ctx4k --strategies json_schema+no_think,none+no_think,json_object+no_think --out docs/eval/judge-qwen3-1.7b-nothink.json",
+  "model": "mm-eval-qwen3-1.7b-ctx4k",
+  "memories": 240,
+  "strategies": {
+    "json_schema+no_think": {
+      "valid": 1.0,
+      "failed_closed": {},
+      "category_agreement": 0.463,
+      "injection_recall": "0/6",
+      "injection_false_positives": "0/234",
+      "sensitive_flags": 1,
+      "durability": {
+        "durable": 234,
+        "ephemeral": 6,
+        "unclear": 0,
+        "null": 0
+      },
+      "importance_mean_by_category": {
+        "decision": 0.68,
+        "fact": 0.69,
+        "knowledge": 0.67,
+        "lesson": 0.69,
+        "preference": 0.69,
+        "procedure": 0.7
+      },
+      "latency_ms": {
+        "p50": 1267.1,
+        "p95": 1609.9,
+        "mean": 1277.6
+      },
+      "confusion": {
+        "fact->fact": 45,
+        "knowledge->fact": 1,
+        "fact->knowledge": 46,
+        "decision->knowledge": 6,
+        "lesson->lesson": 12,
+        "decision->decision": 10,
+        "lesson->decision": 13,
+        "preference->knowledge": 12,
+        "lesson->fact": 8,
+        "knowledge->knowledge": 12,
+        "lesson->knowledge": 8,
+        "procedure->procedure": 20,
+        "decision->procedure": 3,
+        "preference->decision": 6,
+        "preference->procedure": 3,
+        "preference->preference": 12,
+        "fact->procedure": 5,
+        "decision->fact": 4,
+        "lesson->preference": 1,
+        "preference->fact": 3,
+        "lesson->procedure": 4,
+        "procedure->knowledge": 2,
+        "procedure->lesson": 1,
+        "knowledge->lesson": 1,
+        "knowledge->procedure": 1,
+        "knowledge->decision": 1
+      }
+    },
+    "none+no_think": {
+      "valid": 1.0,
+      "failed_closed": {},
+      "category_agreement": 0.467,
+      "injection_recall": "0/6",
+      "injection_false_positives": "0/234",
+      "sensitive_flags": 1,
+      "durability": {
+        "durable": 234,
+        "ephemeral": 6,
+        "unclear": 0,
+        "null": 0
+      },
+      "importance_mean_by_category": {
+        "decision": 0.68,
+        "fact": 0.69,
+        "knowledge": 0.67,
+        "lesson": 0.69,
+        "preference": 0.69,
+        "procedure": 0.7
+      },
+      "latency_ms": {
+        "p50": 1610.9,
+        "p95": 3385.6,
+        "mean": 1861.8
+      },
+      "confusion": {
+        "fact->fact": 46,
+        "knowledge->fact": 1,
+        "fact->knowledge": 45,
+        "decision->knowledge": 6,
+        "lesson->lesson": 13,
+        "decision->decision": 10,
+        "lesson->decision": 13,
+        "preference->knowledge": 13,
+        "lesson->fact": 9,
+        "knowledge->knowledge": 12,
+        "procedure->procedure": 20,
+        "decision->procedure": 3,
+        "preference->decision": 6,
+        "preference->procedure": 3,
+        "preference->preference": 11,
+        "fact->procedure": 5,
+        "decision->fact": 4,
+        "lesson->knowledge": 6,
+        "lesson->preference": 1,
+        "preference->fact": 3,
+        "lesson->procedure": 4,
+        "procedure->knowledge": 2,
+        "procedure->lesson": 1,
+        "knowledge->lesson": 1,
+        "knowledge->procedure": 1,
+        "knowledge->decision": 1
+      }
+    },
+    "json_object+no_think": {
+      "valid": 1.0,
+      "failed_closed": {},
+      "category_agreement": 0.467,
+      "injection_recall": "0/6",
+      "injection_false_positives": "0/234",
+      "sensitive_flags": 1,
+      "durability": {
+        "durable": 234,
+        "ephemeral": 6,
+        "unclear": 0,
+        "null": 0
+      },
+      "importance_mean_by_category": {
+        "decision": 0.68,
+        "fact": 0.69,
+        "knowledge": 0.67,
+        "lesson": 0.69,
+        "preference": 0.69,
+        "procedure": 0.7
+      },
+      "latency_ms": {
+        "p50": 1407.8,
+        "p95": 1731.4,
+        "mean": 1428.7
+      },
+      "confusion": {
+        "fact->fact": 46,
+        "knowledge->fact": 1,
+        "fact->knowledge": 45,
+        "decision->knowledge": 6,
+        "lesson->lesson": 13,
+        "decision->decision": 10,
+        "lesson->decision": 13,
+        "preference->knowledge": 13,
+        "lesson->fact": 9,
+        "knowledge->knowledge": 12,
+        "procedure->procedure": 20,
+        "decision->procedure": 3,
+        "preference->decision": 6,
+        "preference->procedure": 3,
+        "preference->preference": 11,
+        "fact->procedure": 5,
+        "decision->fact": 4,
+        "lesson->knowledge": 6,
+        "lesson->preference": 1,
+        "preference->fact": 3,
+        "lesson->procedure": 4,
+        "procedure->knowledge": 2,
+        "procedure->lesson": 1,
+        "knowledge->lesson": 1,
+        "knowledge->procedure": 1,
+        "knowledge->decision": 1
+      }
+    }
+  }
+}

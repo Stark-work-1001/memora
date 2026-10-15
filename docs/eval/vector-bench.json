@@ -1,0 +1,69 @@
+{
+  "command": "python bench/vector_bench.py --out docs/eval/vector-bench.json",
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "note": "median per-query top-10 latency in ms over 5 queries; single process",
+  "rows": [
+    {
+      "dim": 256,
+      "vectors": 1000,
+      "decode_10k_json_ms": 72.2,
+      "decode_10k_blob_ms": 2.3,
+      "native_ms": 0.29,
+      "python-sumprod_ms": 4.5,
+      "python-fsum_ms": 19.21,
+      "rankings_identical": true
+    },
+    {
+      "dim": 256,
+      "vectors": 10000,
+      "decode_10k_json_ms": 754.4,
+      "decode_10k_blob_ms": 6.6,
+      "native_ms": 0.91,
+      "python-sumprod_ms": 52.79,
+      "python-fsum_ms": 197.83,
+      "rankings_identical": true
+    },
+    {
+      "dim": 256,
+      "vectors": 100000,
+      "decode_10k_json_ms": 739.4,
+      "decode_10k_blob_ms": 29.8,
+      "native_ms": 4.08,
+      "python-sumprod_ms": 528.02,
+      "python-fsum_ms": 2086.33,
+      "rankings_identical": true
+    },
+    {
+      "dim": 1024,
+      "vectors": 1000,
+      "decode_10k_json_ms": 311.3,
+      "decode_10k_blob_ms": 2.0,
+      "native_ms": 1.17,
+      "python-sumprod_ms": 18.6,
+      "python-fsum_ms": 82.57,
+      "rankings_identical": true
+    },
+    {
+      "dim": 1024,
+      "vectors": 10000,
+      "decode_10k_json_ms": 3074.7,
+      "decode_10k_blob_ms": 25.4,
+      "native_ms": 1.99,
+      "python-sumprod_ms": 185.42,
+      "python-fsum_ms": 783.81,
+      "rankings_identical": true
+    },
+    {
+      "dim": 1024,
+      "vectors": 100000,
+      "decode_10k_json_ms": 2771.7,
+      "decode_10k_blob_ms": 30.3,
+      "native_ms": 13.56,
+      "python-sumprod_ms": 1693.87,
+      "python-fsum_ms": null,
+      "rankings_identical": true
+    }
+  ]
+}
