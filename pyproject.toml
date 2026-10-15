@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memora"
+dynamic = ["version"]  # single source of truth: memory_merge/__init__.py
+description = "Memora: local-first memory entity, model assembly, agent archives, MCP and dual 3D knowledge views"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "LICENSES/*"]
+authors = [{ name = "Stark-work-1001" }]
+keywords = ["mcp", "memory", "agents", "sqlite", "fts5", "rag", "local-first"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Database",
+]
+dependencies = ["mcp==1.30.0"]
+
+[project.optional-dependencies]
+pdf = ["pypdf>=4"]                      # PDF import
+local = ["sentence-transformers>=3.0"]  # in-process embeddings (reference implementation)
+gguf = ["llama-cpp-python>=0.3"]        # in-process GGUF embeddings / judge
+# The compiled vector kernel is built from ./native (pip install ./native); it is not on PyPI.
+
+[project.urls]
+Homepage = "https://github.com/Stark-work-1001/memora"
+Issues = "https://github.com/Stark-work-1001/memora/issues"
+Changelog = "https://github.com/Stark-work-1001/memora/blob/main/CHANGELOG.md"
+
+[project.scripts]
+memora = "memory_merge.__main__:main"
+memora-mcp = "memory_merge.server:main"
+memory-merge = "memory_merge.__main__:main"
+memory-merge-mcp = "memory_merge.server:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "memory_merge.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["memory_merge*"]
+
+[tool.setuptools.package-data]
+memory_merge = ["static/*.html", "static/*.js", "static/*.css", "static/*.svg", "static/brain/*/*.html", "static/brain/*/*.js", "static/brain/*/*.css"]

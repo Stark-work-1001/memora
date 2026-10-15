@@ -1,0 +1,20 @@
+[package]
+name = "memory_merge_native"
+version = "1.0.1"
+edition = "2021"
+license = "MIT"
+description = "Optional exact top-k vector kernel for Memory Merge"
+publish = false
+
+[lib]
+name = "memory_merge_native"
+crate-type = ["cdylib"]
+
+[dependencies]
+# abi3-py311: one wheel per platform for every CPython >= 3.11 (the buffer protocol joined the
+# stable ABI in 3.11). No other dependencies: threads come from std.
+pyo3 = { version = "0.22", features = ["abi3-py311"] }
+
+[profile.release]
+lto = true
+codegen-units = 1

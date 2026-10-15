@@ -1,0 +1,14 @@
+[build-system]
+requires = ["maturin>=1.5,<2"]
+build-backend = "maturin"
+
+[project]
+name = "memory-merge-native"
+version = "1.0.1"
+description = "Optional compiled exact top-k vector kernel for Memory Merge"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "memory_merge_native"
